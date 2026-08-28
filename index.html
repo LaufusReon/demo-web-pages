@@ -3,447 +3,380 @@
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>KANTU | Calzado Neo-Andino de Lujo</title>
+<title>PRECIZE ACCOUNTING | Precisión en cada asiento</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script src="actions.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "secondary-container": "#b9c7fd",
-                    "tertiary-fixed-dim": "#66d6e3",
-                    "on-tertiary": "#ffffff",
-                    "outline-variant": "#dbc1bb",
-                    "on-surface": "#1b1c19",
-                    "surface-bright": "#fbf9f4",
-                    "surface-lowest": "#fff",
-                    "surface-container-highest": "#e4e2dd",
-                    "primary": "#853622",
-                    "on-primary-fixed-variant": "#7b2e1b",
-                    "on-secondary-fixed-variant": "#364572",
-                    "primary-container": "#a44d37",
-                    "surface-tint": "#994530",
-                    "inverse-primary": "#ffb4a2",
-                    "tertiary-fixed": "#88f3ff",
-                    "surface-container": "#f0eee9",
-                    "surface-container-lowest": "#ffffff",
-                    "on-surface-variant": "#55423e",
-                    "surface-container-high": "#eae8e3",
-                    "on-secondary-fixed": "#061845",
-                    "secondary-fixed": "#dbe1ff",
-                    "on-error-container": "#93000a",
-                    "on-background": "#1b1c19",
-                    "surface-container-low": "#f5f3ee",
-                    "tertiary-container": "#00727b",
-                    "inverse-surface": "#30312e",
-                    "tertiary": "#00585f",
-                    "on-primary-container": "#ffdfd8",
-                    "secondary-fixed-dim": "#b6c5fb",
-                    "primary-fixed-dim": "#ffb4a2",
-                    "surface-variant": "#e4e2dd",
-                    "primary-fixed": "#ffdad2",
-                    "on-tertiary-fixed-variant": "#004f56",
-                    "background": "#fbf9f4",
-                    "error-container": "#ffdad6",
-                    "on-tertiary-container": "#9af4ff",
-                    "secondary": "#4e5d8c",
-                    "error": "#ba1a1a",
-                    "on-tertiary-fixed": "#001f23",
-                    "on-secondary-container": "#445281",
-                    "on-secondary": "#ffffff",
-                    "on-error": "#ffffff",
-                    "on-primary-fixed": "#3c0700",
-                    "on-primary": "#ffffff",
-                    "outline": "#88726d",
-                    "surface": "#fbf9f4",
-                    "inverse-on-surface": "#f2f1ec",
-                    "surface-dim": "#dbdad5"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "gutter": "24px",
-                    "container-max": "1440px",
-                    "margin-desktop": "80px",
-                    "margin-mobile": "20px",
-                    "unit": "8px"
-            },
-            "fontFamily": {
-                    "display-lg": ["Plis Jakarta Sans"],
-                    "label-sm": ["Plus Jakarta Sans"],
-                    "body-lg": ["Plus Jakarta Sans"],
-                    "headline-md": ["Syne"],
-                    "headline-lg-mobile": ["Syne"],
-                    "headline-lg": ["Syne"],
-                    "body-md": ["Plus Jakarta Sans"]
-            },
-            "fontSize": {
-                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                    "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.08em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .tocapu-pattern {
-            background-image: radial-gradient(var(--tw-colors-primary) 1px, transparent 1px);
-            background-size: 24px 24px;
-            opacity: 0.05;
-        }
-        .hero-clip {
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-        }
-        .hover-lift {
-            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .hover-lift:hover {
-            transform: translate(2px, -2px);
-            box-shadow: -4px 4px 0px 0px #4e5d8c;
-        }
+        /* Custom scrollbar for refined UI */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f7f9fb; }
+        ::-webkit-scrollbar-thumb { background: #131b2e; }
     </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#d3e4fe",
+                      "tertiary": "#000000",
+                      "surface-container-low": "#f2f4f6",
+                      "inverse-primary": "#bec6e0",
+                      "on-secondary": "#ffffff",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-error-container": "#93000a",
+                      "outline-variant": "#c6c6cd",
+                      "primary": "#000000",
+                      "primary-container": "#131b2e",
+                      "on-secondary-fixed-variant": "#0b513d",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-background": "#191c1e",
+                      "primary-fixed": "#dae2fd",
+                      "surface-dim": "#d8dadc",
+                      "secondary": "#2b6954",
+                      "on-primary-fixed": "#131b2e",
+                      "surface-bright": "#f7f9fb",
+                      "secondary-container": "#adedd3",
+                      "error": "#ba1a1a",
+                      "outline": "#76777d",
+                      "on-secondary-container": "#306d58",
+                      "surface": "#f7f9fb",
+                      "on-tertiary-container": "#75859d",
+                      "secondary-fixed-dim": "#95d3ba",
+                      "on-primary": "#ffffff",
+                      "tertiary-container": "#0b1c30",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "secondary-fixed": "#b0f0d6",
+                      "surface-container": "#eceef0",
+                      "on-surface": "#191c1e",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "background": "#f7f9fb",
+                      "inverse-surface": "#2d3133",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "surface-variant": "#e0e3e5",
+                      "surface-tint": "#565e74",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-secondary-fixed": "#002117",
+                      "on-primary-container": "#7c839b",
+                      "on-surface-variant": "#45464d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-desktop": "40px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Playfair Display"],
+                      "data-mono": ["JetBrains Mono"],
+                      "display-lg": ["Playfair Display"],
+                      "title-md": ["Inter"],
+                      "label-caps": ["Inter"],
+                      "body-sm": ["Inter"],
+                      "headline-lg-mobile": ["Playfair Display"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "data-mono": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "title-md": ["18px", {"lineHeight": "1.5", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline/10">
-<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="font-display-lg text-headline-md tracking-tighter text-primary">KANTU</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#home">Inicio</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#products">Colección</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#location">Ubicación</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contacto</a>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-container-lowest border-b border-outline-variant/30 h-20 flex items-center">
+<div class="max-w-container-max mx-auto px-margin-desktop w-full flex justify-between items-center">
+<div class="font-display-lg text-display-lg tracking-tighter text-primary dark:text-on-surface">
+                PRECIZE ACCOUNTING
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#services">Services</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#expertise">Expertise</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#about">About</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#contact">Contact</a>
 </div>
-<div class="flex items-center space-x-6">
-<button class="text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">shopping_bag</span>
-</button>
-<button class="text-primary hover:scale-110 transition-transform">
-<span class="material-symbols-outlined">person</span>
-</button>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
+<div class="flex items-center gap-4">
+<a class="px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95 duration-150" href="#contact">
+                    Consultation
+                </a>
+</div>
 </div>
 </nav>
-</header>
-<!-- Hero Carousel Section -->
-<section class="relative w-full h-[921px] overflow-hidden hero-clip pt-10">
-<div class="h-full relative" id="hero-slider">
-<div class="absolute inset-0 bg-black/30 z-10"></div>
-<div class="relative h-full transition-opacity duration-1000">
-<div class="absolute inset-0 bg-cover bg-center" data-alt="A wide cinematic shot of the Sacred Valley in Peru during golden hour, featuring majestic Andean peaks and ancient stone terraces. The lighting is warm and ethereal, highlighting the earthy terracotta tones of the landscape against a deep indigo sky. The aesthetic is high-fashion and minimalist, with a sense of grounded luxury and ancestral heritage." style="background-image: url('https://images.pexels.com/photos/6792494/pexels-photo-6792494.jpeg')"></div>
-<div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-margin-mobile">
-<h1 class="font-display-lg text-display-lg text-surface-lowest mb-6 drop-shadow-lg">COMODIDAD EN CADA PASO</h1>
-<p class="font-body-lg text-body-lg text-surface-bright max-w-2xl mb-10">Calzados diseñado para el ciudadano contemporáneo.</p>
-<a class="bg-primary text-surface-lowest px-10 rounded-md py-4 font-bold uppercase tracking-widest hover-lift" href="#products">
-                        Explorar Colección
-                    </a>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[1024px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A sophisticated wide shot of a high-end corporate accounting office with floor-to-ceiling windows overlooking a modern city skyline at dusk. The interior is minimal, featuring marble surfaces, thin black steel structures, and soft, warm architectural lighting. The color palette is dominated by deep blues, muted greys, and crisp whites, conveying a sense of extreme precision and financial authority." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpCaaInTSCSgL_QhmD_NSYzTV3BSOPoc1lgF_YFKqQQQ92-aH3doTlHNGDy3yYCbP3yF_6xYpT2FNWWIDfCRVwxtV7_SXG43FnNWsrN3UqAGH5AvLTqJNwp72lGX5reS--53vuUSK4flxJ-gSdkh5bObjaeFuotvGtCIEIgj8aj7XtI_fvsXWxlr98b0iWDd6MPAf9ZeKiTqXB1QNzCS3rAIto5rZDJMpXh-FJTuFhEJ8yN_bZhpbcb1MmsAu_XHO7QvT0QrflK-Sa')"></div>
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
 </div>
-</div>
-</div>
-</section>
-<!-- Features Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative">
-<div class="absolute top-0 left-0 w-full h-full tocapu-pattern pointer-events-none"></div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative z-10">
-<!-- Feature Card 1 -->
-<div class="p-10 bg-surface-container-low border border-outline/10 flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">eco</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Materiales Orgánicos</h3>
-<p class="text-on-surface-variant">Lana de alpaca premium y cueros vegetales tratados con tintes naturales de la región.</p>
-</div>
-<!-- Feature Card 2 -->
-<div class="p-10 bg-surface-container-low border border-outline/10 flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Calidad Asegurada</h3>
-<p class="text-on-surface-variant">Cada par es tejido por maestros artesanos siguiendo técnicas precisas para asegurar un producto estilizado y duradero.</p>
-</div>
-<!-- Feature Card 3 -->
-<div class="p-10 bg-surface-container-low border border-outline/10 flex flex-col items-center text-center">
-<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Comodidad Moderna</h3>
-<p class="text-on-surface-variant">Suelas ergonómicas de alta tecnología integradas sutilmente en diseños tradicionales y modernos.</p>
-</div>
-</div>
-</section>
-<!-- About Section (Bento Style) -->
-<section class="py-24 bg-surface-container-highest">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="md:col-span-7 space-y-10 pr-0 md:pr-12 flex flex-col justify-center">
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.3em]">Nuestra Historia</span>
-<h2 class="font-display-lg text-headline-lg md:text-display-lg text-primary leading-tight">La Arquitectura del Hilo</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        KANTU nace en el corazón de los Andes como una respuesta a la elegancia tradicional. No solo fabricamos zapatos, construimos articulos de valor que poseen técnica textil avanzada y la estética moderna.
+<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+<div class="max-w-2xl">
+<span class="inline-block mb-6 text-tertiary-fixed font-label-caps text-label-caps tracking-widest bg-primary-container px-3 py-1">ESTÁNDAR DE EXCELENCIA</span>
+<h1 class="font-display-lg text-[64px] md:text-[80px] leading-[1.05] text-white mb-8">
+                        Precisión <br/> en cada ledger.
+                    </h1>
+<p class="font-body-md text-white/80 text-xl mb-12 max-w-lg leading-relaxed">
+                        Transformamos la complejidad financiera en claridad estratégica. Servicios contables de alto nivel para empresas que no permiten errores.
                     </p>
-<p class="font-body-md text-body-md text-on-surface-variant/80 italic border-l-4 border-primary pl-6">
-                        "En cada puntada reside la precisión de un artesano experimentado y la resistencia del cuero más fino."
-                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-white text-primary font-label-caps text-label-caps border border-white hover:bg-transparent hover:text-white transition-all duration-300">
+                            Consultoría Gratuita
+                        </button>
+<button class="px-8 py-4 bg-transparent text-white font-label-caps text-label-caps border border-white/40 hover:border-white transition-all duration-300">
+                            Nuestros Servicios
+                        </button>
 </div>
-<div class="md:col-span-5 relative">
-<div class="aspect-[4/5] bg-cover bg-center shadow-xl" data-alt="Close-up artistic shot of a master Andean artisan's hands weaving intricate geometric patterns using traditional wooden looms. The lighting is focused and warm, capturing the texture of the colorful threads in shades of terracotta, ochre, and deep blue. The background is a rustic but clean stone workshop, emphasizing the Neo-Andean luxury style." style="background-image: url('https://images.pexels.com/photos/11911858/pexels-photo-11911858.jpeg')"></div>
-<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary z-[-1]"></div>
+</div>
+</div>
+<!-- Subtle decorative element -->
+<div class="absolute bottom-10 right-10 flex gap-4 items-center animate-pulse">
+<div class="w-16 h-[1px] bg-white/40"></div>
+<span class="font-data-mono text-white/50 text-[10px] tracking-[0.2em] uppercase">Trusted Financial Rigor</span>
+</div>
+</section>
+<!-- Services Catalog -->
+<section class="py-24 bg-surface-bright" id="services">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4 uppercase tracking-tight">Portafolio de Soluciones</h2>
+<p class="text-on-surface-variant font-body-md">Sistemas integrales diseñados para la gestión patrimonial y corporativa bajo los más estrictos estándares regulatorios.</p>
+</div>
+<div class="font-data-mono text-secondary text-sm flex items-center gap-2">
+<span class="material-symbols-outlined">analytics</span>
+                        06 SERVICIOS CORE
+                    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Close-up macro photography of a high-precision fountain pen resting on top of a detailed financial spreadsheet with complex data columns. The lighting is cold and professional, emphasizing the texture of the paper and the sharp metallic details of the pen. Minimalist aesthetic with high contrast between deep blacks and bright whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqFvrdHk09KEbmNT2QZmz8evL-d05u2adSpdH1xVAve6AVEZbn667vI0l-jnynYQL0JZndU22XO1svcUSXm0qjR2zf5E5asQh8kAmknqPIwNh8iFIzRdRvvnqs61O-TdfidUKXx_eTXTdJH0p5yX_xrc-A0geHxnfTsDj2o9hwgNuJ_Ev3u0coxxsSThkQ077s_y9r-QPokpfoPeYYKk89wWMoeM4iiW2SrZFEODb0F7MvBAtz-CCQkL7k463k8WJfl3lQciQ-3fu"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">AUDIT-01</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Auditoría Financiera</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Examen exhaustivo de estados financieros para garantizar integridad y transparencia institucional absoluta.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
+                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Minimalist architectural shot of a modern boardroom with a large dark wood table reflecting thin overhead LED lighting. The atmosphere is quiet, focused, and executive. Tonal layering of greys and blacks with a clean, sharp focus on structural geometry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5U75rmBbE40KwTgcl9GgkUDEibEi0llJRhAdrjUMWQUfiJ1cb4h9Q3c5DQFjs0saCzXVu2UARQwf94NcCklbYTDM79hBHoYvZT6eec4mFCI_njoJ3BVJBpCobCAsqlK37ltgLLkkEkzwwSiFm0lkmRMJFSOGsriS44hCX14XhtzCfrLqNYH_rwsqPX9KdLJ9OWHVoq5-sChxkqw84bd9_4zCDHoOc6NMHXRYiPkdReWNTuNj2ZOHDBUWvvxV6ID9nifWxokeWCxHe"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">CONS-02</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Consultoría Fiscal</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Optimización de cargas tributarias mediante estrategias legales avanzadas y cumplimiento normativo.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
+                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Abstract digital rendering of floating data shards in a dark environment. The shards represent financial records and digital ledgers, glowing with a soft emerald green hue. Professional, futuristic, and highly organized aesthetic following a strict geometric grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4gYZEf-rn7rvo62AIfYFyA1qu6y0KIunlLm-tO33bzanN3fxBl_RBr3MFO96_zgWW1qwaodE0oGo-NK1mR1DxniyJkYlDfOM7S_PjQrwn5IqBSepiqOUulyaJ69IRCLtlrf_2AAn-EVKmbHYBfGtZ7kFPVE4nk4xkzYNirC4b3gVDUN8viGmJyvrDMjdrBILITRqzDrLYrh4I_jLo9zGpsfaM1I8T5Z12xgy1_7WyYQtSSzdybt3rP334rZ599dMZsio2FNPyowXr"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">MGMT-03</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Gestión de Nóminas</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Procesamiento preciso de pagos, beneficios y obligaciones patronales para equipos de cualquier escala.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
+                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Overhead view of a minimalist workspace. A sleek laptop sits next to a glass of water and a single, perfectly bound annual report. High key lighting, lots of negative space, pristine white desk surface. Everything is aligned to a grid, conveying order and professional calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxfmF6nojzgJTJ_y6oxzuJF9MMJ5AQ9peOj3AtX9_g7072wR8uRn-Mkz1_eK9uwrIWmNLj5mxK0LBp9OjcAfcr6o6HJNoNk9yusXxZwNLnZD4jozumlPiiLn4YqYc7zmhulKr-_VDWgoYJG6RdzFOKHojjYEoTlXpKE5TrfHfIaA3QPjb1ge7wncwCYPeOS7jESkheqMSnCZjua9kdttE3nZbKMSAqVTv_lTjPrS2F8EsG4FuRutkonCjJUNYbpV-n6E9jhGzLrUQj"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">CORP-04</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Contabilidad Corporativa</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Mantenimiento riguroso de libros y registros financieros adaptados a estructuras empresariales complejas.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
+                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A detailed view of architectural blueprints overlaid with digital financial charts. The combination of structural engineering and financial planning is highlighted through clean lines and a monochromatic palette of greys and deep blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6pJeFH6BV4r-nJK-Tah3A4JvcLhgN5Ixip5ZQERO50kZlbe5AaZe_DwYlqxHAX6337EXTi2NtzaF0G8LDCGUPZTuamA2rBa0Ahc4-cQu3mO7jVgc96epKeGhM-oIb0NMreIMp5tx5AjmgkmVM14VQ4BovRW8N5NjdhqPxQ2ThtDu7XxH7x8ByLA7aUej9fvMf6H7dqKWk9SReZxgtg4EYzc20RcCNvMTIsplC8JYb9A070LBSXvTbrZhZDXxM2_fZirwwlHCzwI7k"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">PLAN-05</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Planeación Tributaria</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Visión de largo plazo para mitigar riesgos fiscales y maximizar la reinversión de capital corporativo.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
+                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 6 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Conceptual image of a perfectly balanced scale in a minimalist gallery setting. One side holds a small golden coin, the other a single crystal. Elegant lighting, sharp focus, professional financial atmosphere. High-end financial advisory feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRq_F--ZUtxiJmgGezhu7R_N45lN42caBBu3ciZ_ILWP_bIHevwK3A7tPxrUmDzUABhFYF6DCNjrJ9Xmr_bD9Jb744Ak0-_xmIk0ezf3a-APCUmkyCBt0xfmkTPchzA1RH0ymdtROnsmRfG2kq2_3cGculS24unUqR0U6dqP5tVw1XlaAEqrDN2AV0fumZALWOHsodYo3roEq36Tcx1xGCvRsXXe5T-tnJZs9-8ZMDIPgkvrUjemB2ekwg-ruLUeW42osuw4GkOr9y"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">INVS-06</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Asesoría en Inversiones</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Análisis cuantitativo para la toma de decisiones informadas en mercados de capitales globales.</p>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
+                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Products Slider Section -->
-<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="products">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<!-- About & Testimonials -->
+<section class="py-32 bg-white" id="about">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="w-full lg:w-1/2">
+<div class="relative">
+<div class="aspect-[4/5] bg-cover bg-center border border-black/5" data-alt="Portrait of a senior financial executive in a sharp, tailored navy suit. He is standing in a brightly lit, minimalist office hallway with clean white walls and glass partitions. The lighting is natural and sophisticated. His expression is confident and professional. The overall aesthetic is one of elite financial expertise and modern corporate culture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBL6WNysU2YeG8Z96sNcP0knnrHC536_J6OsgF0H317eDanL5DLsxwLozmpsvdSfswWBFYgrcVdIAr0xymwFIb2NcVKkGTDRyCzz-oyv66USBTotUsWGxEk62sc-eita1VoUzdIWbfUZu5qbA8BnEvie_a4n03d-fmkh4bWguOikqfStaebAUCUTRwcZfU_Kc7DvqUPV4VyIiHCER8IwGaxYrsWJKnQZUEa-S86bFcG8RyiPSWlL0Ab-aofy7n-xsUy8Z0shlngwsp_')"></div>
+<div class="absolute -bottom-10 -right-10 bg-primary p-12 hidden md:block">
+<div class="font-data-mono text-white text-5xl mb-2">25+</div>
+<div class="font-label-caps text-white/60 text-[10px] tracking-widest uppercase leading-none">Años de Rigor Ininterrumpido</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<span class="text-secondary font-label-caps text-label-caps mb-4 block">NUESTRA FILOSOFÍA</span>
+<h2 class="font-headline-lg text-[40px] text-primary mb-8 leading-tight">Expertos en la arquitectura de la confianza financiera.</h2>
+<p class="text-on-surface-variant font-body-md mb-12 leading-relaxed">
+                            En PRECIZE, no solo cuadramos números; diseñamos la estructura sobre la cual crece su patrimonio. Nuestra oficina se rige por la disciplina arquitectónica: cada dato debe estar en su lugar, cada balance debe ser perfecto, y cada cliente debe sentir la seguridad de una gestión impecable.
+                        </p>
+<!-- Testimonials Carousel Placeholder -->
+<div class="border-t border-outline-variant pt-12">
+<div class="mb-6 flex gap-1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-headline-lg text-2xl text-primary italic mb-6">
+                                "La atención al detalle de Precize ha sido fundamental para la expansión de nuestro holding internacional. Su precisión es su firma."
+                            </blockquote>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-full overflow-hidden">
+<img class="w-full h-full object-cover grayscale" data-alt="Headshot of a corporate director, high-end professional lighting, minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO3RRyKUvkFLID0nAMVegwL50qPNLkpYAFW_B5Ghk4h5uvWiCncX4JVuC8T-8IdXcjrg1exbIw18cK2K7OM2pvCaN6JbgkE9savUMCC49lYo44lggb2OKHE6eHvgF-zAuzeYJtrX4-8kuDApTbtL2pJ2MkGb6rU0bCRYkI9Gg_r7877HuXvCMQXevLSpms8ITQ92psas-i9M5-kflE_qxvQ4X2cJb1G-21DcRd9hGcdX6jDZ_2xHohnX-hB7ZXxKybiHNY3yZ3VSuU"/>
+</div>
 <div>
-<h2 class="font-display-lg text-headline-lg text-primary">Colección de Calzados</h2>
-<p class="text-on-surface-variant">Piezas disponibles, elaboradas con propósito y calidad.</p>
-</div>
-<div class="flex space-x-4">
-<button class="p-3 border border-outline hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined">arrow_back</span>
-</button>
-<button class="p-3 border border-outline hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
+<p class="font-label-caps text-label-caps text-primary">ALEJANDRO VARGAS</p>
+<p class="text-[10px] font-data-mono text-on-surface-variant uppercase">Director Ejecutivo, Nexo Corp</p>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-<!-- Product 1 -->
-<div class="group">
-<div class="aspect-[1/1] bg-surface-container overflow-hidden relative mb-6">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="High-end studio photograph of 'Alpaca Boots' by KANTU. The boots feature a minimalist high-top silhouette in a soft clay-colored leather with a geometric woven alpaca wool panel on the ankle. The product is floating in a void with a soft, warm directional light that highlights the fine leather grain and textile detail. Minimalist luxury fashion photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtJrckvtMh4ZF_naWFCuXp0Wx4XyOMuBd7WLRV4TB1cHZR8d6tH1eHzlWQFbY1uUhKeOL0A9pJmnDDH9Eab6oNML1SokTLfdGx2Q_ck0K-EnrV0nZcfvGrssWQqdJC3iTHnAriy4r9zSySOvnxV8mgWayArx6shMdhlDSE6fqsqQYkpDcloFjGjPmCAjiNGeJaDl2qzjU2iVB1d4bbolOehOeMs_QR1DXSJzBYrit36z4ocIYucG4fQcySU2A9Ue6VoB3mDlsjrBUE"/>
-<div class="absolute top-4 left-4 bg-secondary text-surface-lowest text-[10px] uppercase font-bold px-3 py-1 tracking-widest">Limited</div>
 </div>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-headline-md text-headline-md text-on-surface">Botas Altas</h4>
-<p class="text-on-surface-variant">Lana de Alpaca &amp; Cuero</p>
-</div>
-<span class="font-bold text-primary text-2xl">Bs 320</span>
-</div>
-<button class="mt-4 text-secondary font-bold uppercase text-xs tracking-widest border-b-2 border-secondary/20 hover:border-secondary transition-all">Ver Detalle</button>
-</div>
-<!-- Product 2 -->
-<div class="group">
-<div class="aspect-[1/1] bg-surface-container overflow-hidden relative mb-6">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Elegant product shot of 'Chullo Sneakers', featuring a low-profile cream leather base with vibrant, multi-colored hand-woven textile patterns inspired by Cusco's traditional hats. The lighting is clean and bright, emphasizing a premium light-mode aesthetic. The composition is asymmetrical and modern, consistent with a luxury boutique brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRsu0ys8K14JhywEPFo4HrVwUlxTURblwbQnrHz7p3LWr4uzHUZnCnMgrfwSxMMQmIGllh57kkhihTGDcD1CTmQf7kriI6B6mMSfZPqi24GTjC7jyC8ajcYQz1whkXC1mmHNvc-_7T5ppgNZ-hB5nQ2HLll6CNGB9bfoopth3RLRHP_-N-21NGcWBlAccQ16RKlEw8frDY2C5TrCOQknuLCtBHhk1HsmnbdWqCG1msCyFjidt-aGySx26wy9bDzPJviKFqPKIphiPx"/>
-<div class="absolute top-4 left-4 bg-primary text-surface-lowest text-[10px] uppercase font-bold px-3 py-1 tracking-widest">Top Pick</div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-headline-md text-headline-md text-on-surface">Tenis Aguayo</h4>
-<p class="text-on-surface-variant">Textil Ancestral &amp; Goma Natural</p>
-</div>
-<span class="font-bold text-primary text-2xl">Bs 185</span>
-</div>
-<button class="mt-4 text-secondary font-bold uppercase text-xs tracking-widest border-b-2 border-secondary/20 hover:border-secondary transition-all">Ver Detalle</button>
-</div>
-<!-- Product 3 -->
-<div class="group">
-<div class="aspect-[1/1] bg-surface-container overflow-hidden relative mb-6">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Sophisticated 'Cusco Loafers' by KANTU, displayed on a minimalist stone pedestal. The loafers are made of deep indigo suede with gold-thread embroidery in geometric staircase motifs. The setting is a bright, high-key gallery space with soft shadows. The overall mood is one of quiet luxury and artisanal excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXdRpyt84UIUleQu7oiaYBnfv-Ou-yVN0DZsKriTX-0qFUqj5PqybGfn76nj2jiysDHhSl8ffj48qiybXSLLIpp6vwrI6Oyx1LqDyugbbGXLpN2zUq8ZAPkOVnZ1Rrhzd-vXdb31o84gb6ZE4im69omRLfe3Ah7btY-W8MqaaeNAFHK3UrtC2VsvTd1jnXf5qQZx2mjha_7yl9LGbfGLUVrS_C2WhwcmTh1cqEZ-wDCQJMX8TqEI3gD02sSb304qriyu9jg0REqU1K"/>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="font-headline-md text-headline-md text-on-surface">Zapatos de Gala</h4>
-<p class="text-on-surface-variant">Color Indigo &amp; Detalles dorados</p>
-</div>
-<span class="font-bold text-primary text-2xl">Bs 245</span>
-</div>
-<button class="mt-4 text-secondary font-bold uppercase text-xs tracking-widest border-b-2 border-secondary/20 hover:border-secondary transition-all">Ver Detalle</button>
-</div>
-</div>
-</section>
-
-
-</section>
-<!-- Location Section -->
-<section class="py-24 bg-primary text-surface-lowest overflow-hidden" id="location">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-<div class="space-y-8">
-<h2 class="font-display-lg text-headline-lg text-surface-lowest">Visítanos en El Alto</h2>
-<div class="space-y-4">
-<p class="flex items-center gap-4">
-<span class="material-symbols-outlined">location_on</span>
-                        Entre la Av. Chacaltaya y Av. 16 de Julio , Plaza Libertad, Ciudad de El Alto
-                    </p>
-<p class="flex items-center gap-4">
-<span class="material-symbols-outlined">schedule</span>
-                        Lun - Sab: 08:00 - 17:00
-                    </p>
-<p class="flex items-center gap-4">
-<span class="material-symbols-outlined">call</span>
-                        +591 ... ... ..
-                    </p>
-</div>
-<div class="pt-6">
-<button class="bg-surface-lowest text-primary px-8 py-3 font-bold uppercase text-sm tracking-widest hover:bg-secondary hover:text-white transition-colors"> <a href="https://maps.app.goo.gl/UZec4uaAQBv28yaA8">Ver en Google Maps</a></button>
-</div>
-</div>
-<div class="h-[400px] w-auto bg-surface-container flex justify-center align-center relative">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2928.980956571257!2d-68.17292659951326!3d-16.49538626511248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sferia%2016%20de%20julio!5e1!3m2!1ses-419!2sbo!4v1782831022673!5m2!1ses-419!2sbo" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<div class="absolute inset-0 border-[20px] border-primary/20 pointer-events-none"></div>
-<!-- Interactive Marker Simulation -->
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-<div class="w-6 h-6 bg-primary rounded-full animate-ping absolute"></div>
-<div class="w-6 h-6 bg-primary rounded-full relative z-10 border-4 border-white"></div>
 </div>
 </div>
 </div>
 </section>
-<!-- Newsletter Section -->
-<section class="py-16 bg-surface" id="contact">
-    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
-        <div class="max-w-2xl mx-auto space-y-8">
-
-            <span class="material-symbols-outlined text-5xl text-primary/30">
-                mail
-            </span>
-
-            <h2 class="font-display-lg text-headline-lg text-on-surface">
-                Contáctanos
-            </h2>
-
-            <p class="text-on-surface-variant font-body-lg">
-                Cuéntanos qué es lo que necesitas y estas buscando.
-                Te responderemos directamente por WhatsApp para ayudarte a
-                encontrar el producto que estas buscando.
-            </p>
-
-            <form id="whatsapp-form" class="space-y-6 mt-12">
-                <textarea
-                    id="message"
-                    rows="2"
-                    class="w-full bg-transparent border-0 border-b-2 border-outline focus:ring-0 focus:border-primary px-4 py-3 resize-none placeholder:text-outline-variant"
-                    placeholder="Ejemplo: Deseo saber más acerca del modelo  ..."
-                ></textarea>
-
-                <button
-                    type="submit"
-                    class="bg-primary text-white px-10 py-4 uppercase font-bold tracking-widest hover-lift"
-                >
-                    Preguntar ahora por WhatsApp
-                </button>
-            </form>
-
-            <div class="mt-8 flex items-center justify-center gap-4">
-                <p class="text-sm text-on-surface-variant">
-                    Respuesta rápida y sin compromiso
-                </p>
-            </div>
-
-        </div>
-    </div>
+<!-- CTA Section -->
+<section class="py-24 bg-primary-container text-white" id="contact">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-lg text-4xl mb-6">¿Listo para elevar su gestión contable?</h2>
+<p class="text-on-primary-container font-body-md mb-10 max-w-xl mx-auto">Agende una sesión estratégica privada para evaluar su situación fiscal actual y proyectar un crecimiento sólido.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="px-10 py-5 bg-white text-primary font-label-caps text-label-caps hover:bg-surface-bright transition-colors shadow-xl">
+                        AGENDAR CONSULTA
+                    </button>
+<button class="px-10 py-5 bg-transparent border border-white/20 text-white font-label-caps text-label-caps hover:border-white transition-colors">
+                        CONTACTO DIRECTO
+                    </button>
+</div>
+</div>
 </section>
-
-<script>
-document
-    .getElementById('whatsapp-form')
-    .addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const phone = '59170000000'; // Reemplazar por tu número
-
-        const message =
-            document.getElementById('message').value ||
-            'Hola, me gustaría recibir información sobre sus servicios.';
-
-        const text = encodeURIComponent(
-            `Hola, estoy interesado en sus servicios.\n\n${message}`
-        );
-
-        window.open(
-            `https://wa.me/${phone}?text=${text}`,
-            '_blank'
-        );
-    });
-</script>
+</main>
 <!-- Footer -->
-<footer class="bg-surface-container-low py-20 border-t border-outline/5">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="space-y-6">
-<div class="font-display-lg text-headline-md text-primary">KANTU</div>
-<p class="text-on-surface-variant pr-8">Calzados con intención y dedicación.</p>
-<div class="flex space-x-4">
-<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">face_nod</span></a>
-<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
-<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">video_library</span></a>
+<footer class="bg-surface-container-highest dark:bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col gap-2">
+<div class="font-headline-lg text-headline-lg font-bold text-primary">PRECIZE</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Precize Financial Services. All rights reserved. Precision in every ledger.</p>
 </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Regulatory Disclosure</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Sitemap</a>
 </div>
-<div class="space-y-6">
-<h5 class="font-bold text-primary uppercase tracking-widest text-xs">Colecciones</h5>
-<ul class="space-y-3 text-on-surface-variant">
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Lana de Alpaca</a></li>
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Cuero Vegetal</a></li>
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Bordados a Mano</a></li>
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Ediciones Limitadas</a></li>
-</ul>
+<div class="flex gap-4">
+<div class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary cursor-pointer transition-colors group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary">share</span>
 </div>
-<div class="space-y-6">
-<h5 class="font-bold text-primary uppercase tracking-widest text-xs">Soporte</h5>
-<ul class="space-y-3 text-on-surface-variant">
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Guía de Tallas</a></li>
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Envíos y Retornos</a></li>
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Preguntas Frecuentes</a></li>
-<li><a class="hover:underline hover:text-primary transition-all" href="#">Privacidad</a></li>
-</ul>
+<div class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary cursor-pointer transition-colors group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-primary">alternate_email</span>
 </div>
-</div>
-<div class="mt-20 pt-10 border-t border-outline/5 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-on-surface-variant">
-<p>© 2024 KANTU - "LANDING PAGE DEMO, ELEMENTOS POR DEFINIR"</p>
-<div class="flex items-center gap-8">
-<span class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">verified</span> Creaciones Originales</span>
 </div>
 </div>
 </footer>
 <script>
-        // Simple interactive effects
-        document.addEventListener('DOMContentLoaded', () => {
-            const navbar = document.querySelector('header');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('shadow-sm');
-                } else {
-                    navbar.classList.remove('shadow-sm');
-                }
-            });
-
-            // Smooth reveal for images on scroll (simplified)
-            const observerOptions = { threshold: 0.1 };
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('opacity-100');
-                        entry.target.classList.remove('translate-y-10');
-                    }
+        // Simple smooth scroll and active state management
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
                 });
-            }, observerOptions);
-
-            document.querySelectorAll('.group').forEach(el => {
-                el.classList.add('transition-all', 'duration-1000', 'translate-y-10', 'opacity-0');
-                observer.observe(el);
             });
         });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
     </script>
-</body>
-</html>
+</body></html>

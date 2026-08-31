@@ -3,7 +3,7 @@
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>PRECIZE ACCOUNTING | Precisión en cada asiento</title>
+<title>Morani Contaduría | Precisión en cada asiento</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -12,10 +12,17 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        /* Custom scrollbar for refined UI */
+        /* Responsive refinements */
+        html { scroll-padding-top: 88px; }
+        body { overflow-x: hidden; }
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #f7f9fb; }
         ::-webkit-scrollbar-thumb { background: #131b2e; }
+        @media (max-width: 767px) {
+            .mobile-menu-shadow { box-shadow: 0 18px 35px rgba(19,27,46,.10); }
+        }
+        .whatsapp-float { box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+        .map-frame { filter: grayscale(.15) contrast(1.02); }
     </style>
 <script id="tailwind-config">
         tailwind.config = {
@@ -97,7 +104,7 @@
               "fontSize": {
                       "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
                       "data-mono": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "display-lg": ["32px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
                       "title-md": ["18px", {"lineHeight": "1.5", "fontWeight": "600"}],
                       "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
                       "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
@@ -111,165 +118,144 @@
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-primary-fixed">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-surface-container-lowest border-b border-outline-variant/30 h-20 flex items-center">
-<div class="max-w-container-max mx-auto px-margin-desktop w-full flex justify-between items-center">
-<div class="font-display-lg text-display-lg tracking-tighter text-primary dark:text-on-surface">
-                PRECIZE ACCOUNTING
+<nav class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop w-full">
+<div class="h-20 flex justify-between items-center">
+<div class="font-display-lg text-xl sm:text-2xl md:text-display-lg tracking-tighter text-primary">
+                MORANI 
             </div>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#services">Services</a>
-<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#expertise">Expertise</a>
-<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#about">About</a>
-<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#contact">Contact</a>
+<button id="menuButton" type="button" aria-expanded="false" aria-controls="mobileMenu"
+    class="md:hidden w-11 h-11 border border-outline-variant flex items-center justify-center text-primary"
+    aria-label="Abrir menú">
+    <span id="menuIcon" class="material-symbols-outlined">menu</span>
+</button>
+<div class="hidden md:flex space-evenly items-center gap-6 lg:gap-10">
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#about-us">Acerca</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#services">Servicios</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors text-label-caps" href="#location">Ubicación</a>
+<a class="px-5 lg:px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-80 transition-opacity" href="#contact">Consulta</a>
 </div>
-<div class="flex items-center gap-4">
-<a class="px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95 duration-150" href="#contact">
-                    Consultation
-                </a>
+</div>
+
+<div id="mobileMenu" class="hidden md:hidden pb-4 mobile-menu-shadow">
+<div class="flex flex-col border-t border-outline-variant/30 pt-2">
+<a class="mobile-nav-link px-3 py-4 text-on-surface-variant font-label-caps text-label-caps border-b border-outline-variant/20" href="#services">Acerca</a>
+<a class="mobile-nav-link px-3 py-4 text-on-surface-variant font-label-caps text-label-caps border-b border-outline-variant/20" href="#services">Servicios</a>
+<a class="mobile-nav-link px-3 py-4 text-on-surface-variant font-label-caps text-label-caps border-b border-outline-variant/20" href="#location">Ubicación</a>
+<a class="mobile-nav-link px-3 py-4 text-on-surface-variant font-label-caps text-label-caps" href="#contact">Consulta</a>
+</div>
 </div>
 </div>
 </nav>
-<main class="pt-20">
+<main class="mb-5">
 <!-- Hero Section -->
-<section class="relative h-[1024px] flex items-center overflow-hidden">
+<section class="relative min-h-[600px] sm:min-h-[650px] md:min-h-[700px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="w-full h-full bg-cover bg-center" data-alt="A sophisticated wide shot of a high-end corporate accounting office with floor-to-ceiling windows overlooking a modern city skyline at dusk. The interior is minimal, featuring marble surfaces, thin black steel structures, and soft, warm architectural lighting. The color palette is dominated by deep blues, muted greys, and crisp whites, conveying a sense of extreme precision and financial authority." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpCaaInTSCSgL_QhmD_NSYzTV3BSOPoc1lgF_YFKqQQQ92-aH3doTlHNGDy3yYCbP3yF_6xYpT2FNWWIDfCRVwxtV7_SXG43FnNWsrN3UqAGH5AvLTqJNwp72lGX5reS--53vuUSK4flxJ-gSdkh5bObjaeFuotvGtCIEIgj8aj7XtI_fvsXWxlr98b0iWDd6MPAf9ZeKiTqXB1QNzCS3rAIto5rZDJMpXh-FJTuFhEJ8yN_bZhpbcb1MmsAu_XHO7QvT0QrflK-Sa')"></div>
 <div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
 </div>
-<div class="relative z-10 max-w-container-max mx-auto px-margin-desktop w-full">
+<div class="relative z-10 max-w-container-max mx-auto px-6 sm:px-8 lg:px-margin-desktop w-full py-8 md:py-4">
 <div class="max-w-2xl">
-<span class="inline-block mb-6 text-tertiary-fixed font-label-caps text-label-caps tracking-widest bg-primary-container px-3 py-1">ESTÁNDAR DE EXCELENCIA</span>
-<h1 class="font-display-lg text-[64px] md:text-[80px] leading-[1.05] text-white mb-8">
-                        Precisión <br/> en cada ledger.
+<!--<span class="inline-block mb-6 text-tertiary-fixed font-label-caps text-label-caps tracking-widest bg-primary-container px-3 py-1">ESTÁNDAR DE EXCELENCIA</span>
+-->
+<h1 class="font-display-lg text-[42px] sm:text-[54px] md:text-[70px] lg:text-[80px] leading-[1.05] text-white mb-6 md:mb-8">
+                        Precisión <br/> en cada registro.
                     </h1>
-<p class="font-body-md text-white/80 text-xl mb-12 max-w-lg leading-relaxed">
+<p class="font-body-md text-white/80 text-base sm:text-lg md:text-xl mb-8 md:mb-12 max-w-lg leading-relaxed">
                         Transformamos la complejidad financiera en claridad estratégica. Servicios contables de alto nivel para empresas que no permiten errores.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="px-8 py-4 bg-white text-primary font-label-caps text-label-caps border border-white hover:bg-transparent hover:text-white transition-all duration-300">
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+<button onclick="selectService('Consultoría Gratuita')" class="w-full sm:w-auto px-8 py-4 bg-white text-primary font-label-caps text-label-caps border border-white hover:bg-transparent hover:text-white transition-all duration-300">
                             Consultoría Gratuita
                         </button>
-<button class="px-8 py-4 bg-transparent text-white font-label-caps text-label-caps border border-white/40 hover:border-white transition-all duration-300">
+<button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" class="w-full sm:w-auto px-8 py-4 bg-transparent text-white font-label-caps text-label-caps border border-white/40 hover:border-white transition-all duration-300">
                             Nuestros Servicios
                         </button>
 </div>
 </div>
 </div>
 <!-- Subtle decorative element -->
-<div class="absolute bottom-10 right-10 flex gap-4 items-center animate-pulse">
+<div class="absolute bottom-6 right-4 sm:right-10 hidden sm:flex gap-4 items-center animate-pulse">
 <div class="w-16 h-[1px] bg-white/40"></div>
-<span class="font-data-mono text-white/50 text-[10px] tracking-[0.2em] uppercase">Trusted Financial Rigor</span>
 </div>
 </section>
-<!-- Services Catalog -->
-<section class="py-24 bg-surface-bright" id="services">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4 uppercase tracking-tight">Portafolio de Soluciones</h2>
-<p class="text-on-surface-variant font-body-md">Sistemas integrales diseñados para la gestión patrimonial y corporativa bajo los más estrictos estándares regulatorios.</p>
+<!-- Accounting Importance -->
+<section class="py-10 md:py-20 bg-surface-container-low" id="expertise">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="aspect-[4/3] overflow-hidden border border-black/5">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85"
+alt="Profesional revisando información contable y financiera">
 </div>
-<div class="font-data-mono text-secondary text-sm flex items-center gap-2">
-<span class="material-symbols-outlined">analytics</span>
-                        06 SERVICIOS CORE
-                    </div>
+<div class="absolute -bottom-5 -right-2 sm:-right-5 bg-primary p-5 sm:p-8 text-white">
+<div class="font-data-mono text-3xl sm:text-4xl mb-1">01</div>
+<div class="font-label-caps text-white/60 text-[10px] tracking-widest uppercase">Control contable</div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Service Card 1 -->
-<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Close-up macro photography of a high-precision fountain pen resting on top of a detailed financial spreadsheet with complex data columns. The lighting is cold and professional, emphasizing the texture of the paper and the sharp metallic details of the pen. Minimalist aesthetic with high contrast between deep blacks and bright whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqFvrdHk09KEbmNT2QZmz8evL-d05u2adSpdH1xVAve6AVEZbn667vI0l-jnynYQL0JZndU22XO1svcUSXm0qjR2zf5E5asQh8kAmknqPIwNh8iFIzRdRvvnqs61O-TdfidUKXx_eTXTdJH0p5yX_xrc-A0geHxnfTsDj2o9hwgNuJ_Ev3u0coxxsSThkQ077s_y9r-QPokpfoPeYYKk89wWMoeM4iiW2SrZFEODb0F7MvBAtz-CCQkL7k463k8WJfl3lQciQ-3fu"/>
-<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">AUDIT-01</div>
 </div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Auditoría Financiera</h3>
-<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Examen exhaustivo de estados financieros para garantizar integridad y transparencia institucional absoluta.</p>
-<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
-                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+<div class="order-1 lg:order-2">
+<span class="text-secondary font-label-caps text-label-caps mb-4 block">LA BASE DE CADA DECISIÓN</span>
+<h2 class="font-headline-lg text-3xl sm:text-4xl md:text-[42px] text-primary mb-6 leading-tight">La contabilidad convierte los números en dirección.</h2>
+<p class="text-on-surface-variant font-body-md leading-relaxed mb-6">
+Una contabilidad ordenada no solo cumple una obligación: permite conocer la realidad financiera de la empresa, detectar riesgos y tomar decisiones con información confiable.
+</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed mb-8">
+En Morani estructuramos la información contable para que propietarios y equipos directivos puedan entender qué está ocurriendo y actuar con mayor precisión.
+</p>
+<a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-label-caps text-label-caps hover:opacity-80 transition-opacity">
+HABLAR CON UN ASESOR <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 </div>
 </div>
-<!-- Service Card 2 -->
-<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Minimalist architectural shot of a modern boardroom with a large dark wood table reflecting thin overhead LED lighting. The atmosphere is quiet, focused, and executive. Tonal layering of greys and blacks with a clean, sharp focus on structural geometry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5U75rmBbE40KwTgcl9GgkUDEibEi0llJRhAdrjUMWQUfiJ1cb4h9Q3c5DQFjs0saCzXVu2UARQwf94NcCklbYTDM79hBHoYvZT6eec4mFCI_njoJ3BVJBpCobCAsqlK37ltgLLkkEkzwwSiFm0lkmRMJFSOGsriS44hCX14XhtzCfrLqNYH_rwsqPX9KdLJ9OWHVoq5-sChxkqw84bd9_4zCDHoOc6NMHXRYiPkdReWNTuNj2ZOHDBUWvvxV6ID9nifWxokeWCxHe"/>
-<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">CONS-02</div>
 </div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Consultoría Fiscal</h3>
-<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Optimización de cargas tributarias mediante estrategias legales avanzadas y cumplimiento normativo.</p>
-<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
-                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
+</section>
+
+<!-- Business Finance Control -->
+<section class="py-10 md:py-20 bg-white">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+<div class="md:col-span-1 bg-primary text-white p-7 sm:p-10 flex flex-col justify-between min-h-[300px]">
+<div>
+<span class="font-data-mono text-secondary-fixed text-xs">FINANZAS</span>
+<h2 class="font-headline-lg text-3xl sm:text-4xl mt-4 leading-tight">Control financiero para crecer con estructura.</h2>
 </div>
+<p class="text-white/70 font-body-sm mt-8">La visibilidad financiera permite anticipar necesidades de liquidez, medir resultados y proteger el capital.</p>
 </div>
-<!-- Service Card 3 -->
-<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Abstract digital rendering of floating data shards in a dark environment. The shards represent financial records and digital ledgers, glowing with a soft emerald green hue. Professional, futuristic, and highly organized aesthetic following a strict geometric grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4gYZEf-rn7rvo62AIfYFyA1qu6y0KIunlLm-tO33bzanN3fxBl_RBr3MFO96_zgWW1qwaodE0oGo-NK1mR1DxniyJkYlDfOM7S_PjQrwn5IqBSepiqOUulyaJ69IRCLtlrf_2AAn-EVKmbHYBfGtZ7kFPVE4nk4xkzYNirC4b3gVDUN8viGmJyvrDMjdrBILITRqzDrLYrh4I_jLo9zGpsfaM1I8T5Z12xgy1_7WyYQtSSzdybt3rP334rZ599dMZsio2FNPyowXr"/>
-<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">MGMT-03</div>
+<div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div class="border border-black/10 p-7 sm:p-8">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance_wallet</span>
+<h3 class="font-title-md text-title-md text-primary mt-6 mb-3">Liquidez bajo control</h3>
+<p class="text-on-surface-variant font-body-sm leading-relaxed">Monitoree ingresos, egresos y compromisos para anticipar decisiones de caja.</p>
 </div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Gestión de Nóminas</h3>
-<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Procesamiento preciso de pagos, beneficios y obligaciones patronales para equipos de cualquier escala.</p>
-<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
-                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
+<div class="border border-black/10 p-7 sm:p-8">
+<span class="material-symbols-outlined text-primary text-3xl">monitoring</span>
+<h3 class="font-title-md text-title-md text-primary mt-6 mb-3">Resultados medibles</h3>
+<p class="text-on-surface-variant font-body-sm leading-relaxed">Identifique tendencias, costos y oportunidades antes de que afecten la rentabilidad.</p>
 </div>
+<div class="border border-black/10 p-7 sm:p-8">
+<span class="material-symbols-outlined text-primary text-3xl">security</span>
+<h3 class="font-title-md text-title-md text-primary mt-6 mb-3">Menos riesgo</h3>
+<p class="text-on-surface-variant font-body-sm leading-relaxed">Una estructura financiera clara ayuda a detectar inconsistencias y reducir decisiones basadas en intuición.</p>
 </div>
-<!-- Service Card 4 -->
-<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Overhead view of a minimalist workspace. A sleek laptop sits next to a glass of water and a single, perfectly bound annual report. High key lighting, lots of negative space, pristine white desk surface. Everything is aligned to a grid, conveying order and professional calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxfmF6nojzgJTJ_y6oxzuJF9MMJ5AQ9peOj3AtX9_g7072wR8uRn-Mkz1_eK9uwrIWmNLj5mxK0LBp9OjcAfcr6o6HJNoNk9yusXxZwNLnZD4jozumlPiiLn4YqYc7zmhulKr-_VDWgoYJG6RdzFOKHojjYEoTlXpKE5TrfHfIaA3QPjb1ge7wncwCYPeOS7jESkheqMSnCZjua9kdttE3nZbKMSAqVTv_lTjPrS2F8EsG4FuRutkonCjJUNYbpV-n6E9jhGzLrUQj"/>
-<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">CORP-04</div>
-</div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Contabilidad Corporativa</h3>
-<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Mantenimiento riguroso de libros y registros financieros adaptados a estructuras empresariales complejas.</p>
-<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
-                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Service Card 5 -->
-<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A detailed view of architectural blueprints overlaid with digital financial charts. The combination of structural engineering and financial planning is highlighted through clean lines and a monochromatic palette of greys and deep blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6pJeFH6BV4r-nJK-Tah3A4JvcLhgN5Ixip5ZQERO50kZlbe5AaZe_DwYlqxHAX6337EXTi2NtzaF0G8LDCGUPZTuamA2rBa0Ahc4-cQu3mO7jVgc96epKeGhM-oIb0NMreIMp5tx5AjmgkmVM14VQ4BovRW8N5NjdhqPxQ2ThtDu7XxH7x8ByLA7aUej9fvMf6H7dqKWk9SReZxgtg4EYzc20RcCNvMTIsplC8JYb9A070LBSXvTbrZhZDXxM2_fZirwwlHCzwI7k"/>
-<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">PLAN-05</div>
-</div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Planeación Tributaria</h3>
-<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Visión de largo plazo para mitigar riesgos fiscales y maximizar la reinversión de capital corporativo.</p>
-<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
-                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Service Card 6 -->
-<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
-<div class="h-48 overflow-hidden relative">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Conceptual image of a perfectly balanced scale in a minimalist gallery setting. One side holds a small golden coin, the other a single crystal. Elegant lighting, sharp focus, professional financial atmosphere. High-end financial advisory feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRq_F--ZUtxiJmgGezhu7R_N45lN42caBBu3ciZ_ILWP_bIHevwK3A7tPxrUmDzUABhFYF6DCNjrJ9Xmr_bD9Jb744Ak0-_xmIk0ezf3a-APCUmkyCBt0xfmkTPchzA1RH0ymdtROnsmRfG2kq2_3cGculS24unUqR0U6dqP5tVw1XlaAEqrDN2AV0fumZALWOHsodYo3roEq36Tcx1xGCvRsXXe5T-tnJZs9-8ZMDIPgkvrUjemB2ekwg-ruLUeW42osuw4GkOr9y"/>
-<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">INVS-06</div>
-</div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-title-md text-title-md text-primary mb-4 min-h-[54px] leading-tight uppercase">Asesoría en Inversiones</h3>
-<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Análisis cuantitativo para la toma de decisiones informadas en mercados de capitales globales.</p>
-<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary group-hover:gap-4 transition-all" href="#">
-                                VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
+<div class="border border-black/10 p-7 sm:p-8">
+<span class="material-symbols-outlined text-primary text-3xl">query_stats</span>
+<h3 class="font-title-md text-title-md text-primary mt-6 mb-3">Visión empresarial</h3>
+<p class="text-on-surface-variant font-body-sm leading-relaxed">Convierta datos financieros en información útil para planificar y reinvertir.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
+
 <!-- About & Testimonials -->
-<section class="py-32 bg-white" id="about">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="flex flex-col lg:flex-row gap-20 items-center">
+<section class="py-10 md:py-20 bg-white" id="about">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
 <div class="w-full lg:w-1/2">
 <div class="relative">
 <div class="aspect-[4/5] bg-cover bg-center border border-black/5" data-alt="Portrait of a senior financial executive in a sharp, tailored navy suit. He is standing in a brightly lit, minimalist office hallway with clean white walls and glass partitions. The lighting is natural and sophisticated. His expression is confident and professional. The overall aesthetic is one of elite financial expertise and modern corporate culture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBL6WNysU2YeG8Z96sNcP0knnrHC536_J6OsgF0H317eDanL5DLsxwLozmpsvdSfswWBFYgrcVdIAr0xymwFIb2NcVKkGTDRyCzz-oyv66USBTotUsWGxEk62sc-eita1VoUzdIWbfUZu5qbA8BnEvie_a4n03d-fmkh4bWguOikqfStaebAUCUTRwcZfU_Kc7DvqUPV4VyIiHCER8IwGaxYrsWJKnQZUEa-S86bFcG8RyiPSWlL0Ab-aofy7n-xsUy8Z0shlngwsp_')"></div>
-<div class="absolute -bottom-10 -right-10 bg-primary p-12 hidden md:block">
+<div class="absolute -bottom-6 -right-2 sm:-bottom-10 sm:-right-10 bg-primary p-7 sm:p-12 hidden sm:block">
 <div class="font-data-mono text-white text-5xl mb-2">25+</div>
 <div class="font-label-caps text-white/60 text-[10px] tracking-widest uppercase leading-none">Años de Rigor Ininterrumpido</div>
 </div>
@@ -277,9 +263,9 @@
 </div>
 <div class="w-full lg:w-1/2">
 <span class="text-secondary font-label-caps text-label-caps mb-4 block">NUESTRA FILOSOFÍA</span>
-<h2 class="font-headline-lg text-[40px] text-primary mb-8 leading-tight">Expertos en la arquitectura de la confianza financiera.</h2>
+<h2 class="font-headline-lg text-3xl sm:text-4xl md:text-[40px] text-primary mb-6 md:mb-8 leading-tight">Expertos en la arquitectura de la confianza financiera.</h2>
 <p class="text-on-surface-variant font-body-md mb-12 leading-relaxed">
-                            En PRECIZE, no solo cuadramos números; diseñamos la estructura sobre la cual crece su patrimonio. Nuestra oficina se rige por la disciplina arquitectónica: cada dato debe estar en su lugar, cada balance debe ser perfecto, y cada cliente debe sentir la seguridad de una gestión impecable.
+                            En Morani, no solo cuadramos números; diseñamos la estructura sobre la cual crece su patrimonio. Nuestra oficina se rige por la disciplina arquitectónica: cada dato debe estar en su lugar, cada balance debe ser perfecto, y cada cliente debe sentir la seguridad de una gestión impecable.
                         </p>
 <!-- Testimonials Carousel Placeholder -->
 <div class="border-t border-outline-variant pt-12">
@@ -291,7 +277,7 @@
 <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <blockquote class="font-headline-lg text-2xl text-primary italic mb-6">
-                                "La atención al detalle de Precize ha sido fundamental para la expansión de nuestro holding internacional. Su precisión es su firma."
+                                "La atención al detalle de Morani ha sido fundamental para la expansión de nuestro holding internacional. Su precisión es su firma."
                             </blockquote>
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 bg-surface-container rounded-full overflow-hidden">
@@ -307,34 +293,184 @@
 </div>
 </div>
 </section>
-<!-- CTA Section -->
-<section class="py-24 bg-primary-container text-white" id="contact">
-<div class="max-w-container-max mx-auto px-margin-desktop text-center">
-<h2 class="font-headline-lg text-4xl mb-6">¿Listo para elevar su gestión contable?</h2>
-<p class="text-on-primary-container font-body-md mb-10 max-w-xl mx-auto">Agende una sesión estratégica privada para evaluar su situación fiscal actual y proyectar un crecimiento sólido.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-6">
-<button class="px-10 py-5 bg-white text-primary font-label-caps text-label-caps hover:bg-surface-bright transition-colors shadow-xl">
-                        AGENDAR CONSULTA
-                    </button>
-<button class="px-10 py-5 bg-transparent border border-white/20 text-white font-label-caps text-label-caps hover:border-white transition-colors">
-                        CONTACTO DIRECTO
-                    </button>
+<!-- Services Catalog -->
+<section class="py-10 md:py-16 bg-surface-bright" id="services">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop">
+<div class="mb-12 md:mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-2xl sm:text-3xl md:text-headline-lg text-primary mb-4 uppercase tracking-tight">Gama de Servicios</h2>
+<p class="text-on-surface-variant font-body-md">Nuestro portafolio está diseñado para cubrir todo el ciclo de vida de su negocio. Desde el nacimiento de la idea hasta la planificación de la sucesión, ofrecemos un ecosistema de servicios pensado para minimizar riesgos y maximizar oportunidades.</p>
 </div>
+<div class="font-data-mono text-secondary text-sm flex items-center gap-2">
+<span class="material-symbols-outlined">analytics</span>
+                        Realiza tu Consulta
+                    </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-gutter">
+<!-- Service Card 1 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 sm:h-52 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Close-up macro photography of a high-precision fountain pen resting on top of a detailed financial spreadsheet with complex data columns. The lighting is cold and professional, emphasizing the texture of the paper and the sharp metallic details of the pen. Minimalist aesthetic with high contrast between deep blacks and bright whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqFvrdHk09KEbmNT2QZmz8evL-d05u2adSpdH1xVAve6AVEZbn667vI0l-jnynYQL0JZndU22XO1svcUSXm0qjR2zf5E5asQh8kAmknqPIwNh8iFIzRdRvvnqs61O-TdfidUKXx_eTXTdJH0p5yX_xrc-A0geHxnfTsDj2o9hwgNuJ_Ev3u0coxxsSThkQ077s_y9r-QPokpfoPeYYKk89wWMoeM4iiW2SrZFEODb0F7MvBAtz-CCQkL7k463k8WJfl3lQciQ-3fu"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">AUDIT-01</div>
+</div>
+<div class="p-6 sm:p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-base sm:text-title-md text-primary mb-4 min-h-0 sm:min-h-[54px] leading-tight uppercase">Auditoría Financiera</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Examen exhaustivo de estados financieros para garantizar integridad y transparencia institucional absoluta.</p>
+<button type="button" onclick="selectService(this.closest('.group').querySelector('h3').textContent.trim())" class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all text-left">VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 sm:h-52 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Minimalist architectural shot of a modern boardroom with a large dark wood table reflecting thin overhead LED lighting. The atmosphere is quiet, focused, and executive. Tonal layering of greys and blacks with a clean, sharp focus on structural geometry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5U75rmBbE40KwTgcl9GgkUDEibEi0llJRhAdrjUMWQUfiJ1cb4h9Q3c5DQFjs0saCzXVu2UARQwf94NcCklbYTDM79hBHoYvZT6eec4mFCI_njoJ3BVJBpCobCAsqlK37ltgLLkkEkzwwSiFm0lkmRMJFSOGsriS44hCX14XhtzCfrLqNYH_rwsqPX9KdLJ9OWHVoq5-sChxkqw84bd9_4zCDHoOc6NMHXRYiPkdReWNTuNj2ZOHDBUWvvxV6ID9nifWxokeWCxHe"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">CONS-02</div>
+</div>
+<div class="p-6 sm:p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-base sm:text-title-md text-primary mb-4 min-h-0 sm:min-h-[54px] leading-tight uppercase">Consultoría Fiscal</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Optimización de cargas tributarias mediante estrategias legales avanzadas y cumplimiento normativo.</p>
+<button type="button" onclick="selectService(this.closest('.group').querySelector('h3').textContent.trim())" class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all text-left">VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 sm:h-52 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Abstract digital rendering of floating data shards in a dark environment. The shards represent financial records and digital ledgers, glowing with a soft emerald green hue. Professional, futuristic, and highly organized aesthetic following a strict geometric grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4gYZEf-rn7rvo62AIfYFyA1qu6y0KIunlLm-tO33bzanN3fxBl_RBr3MFO96_zgWW1qwaodE0oGo-NK1mR1DxniyJkYlDfOM7S_PjQrwn5IqBSepiqOUulyaJ69IRCLtlrf_2AAn-EVKmbHYBfGtZ7kFPVE4nk4xkzYNirC4b3gVDUN8viGmJyvrDMjdrBILITRqzDrLYrh4I_jLo9zGpsfaM1I8T5Z12xgy1_7WyYQtSSzdybt3rP334rZ599dMZsio2FNPyowXr"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">MGMT-03</div>
+</div>
+<div class="p-6 sm:p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-base sm:text-title-md text-primary mb-4 min-h-0 sm:min-h-[54px] leading-tight uppercase">Gestión de Nóminas</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Procesamiento preciso de pagos, beneficios y obligaciones patronales para equipos de cualquier escala.</p>
+<button type="button" onclick="selectService(this.closest('.group').querySelector('h3').textContent.trim())" class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all text-left">VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 sm:h-52 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Overhead view of a minimalist workspace. A sleek laptop sits next to a glass of water and a single, perfectly bound annual report. High key lighting, lots of negative space, pristine white desk surface. Everything is aligned to a grid, conveying order and professional calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxfmF6nojzgJTJ_y6oxzuJF9MMJ5AQ9peOj3AtX9_g7072wR8uRn-Mkz1_eK9uwrIWmNLj5mxK0LBp9OjcAfcr6o6HJNoNk9yusXxZwNLnZD4jozumlPiiLn4YqYc7zmhulKr-_VDWgoYJG6RdzFOKHojjYEoTlXpKE5TrfHfIaA3QPjb1ge7wncwCYPeOS7jESkheqMSnCZjua9kdttE3nZbKMSAqVTv_lTjPrS2F8EsG4FuRutkonCjJUNYbpV-n6E9jhGzLrUQj"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">CORP-04</div>
+</div>
+<div class="p-6 sm:p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-base sm:text-title-md text-primary mb-4 min-h-0 sm:min-h-[54px] leading-tight uppercase">Contabilidad Corporativa</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Mantenimiento riguroso de libros y registros financieros adaptados a estructuras empresariales complejas.</p>
+<button type="button" onclick="selectService(this.closest('.group').querySelector('h3').textContent.trim())" class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all text-left">VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 sm:h-52 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A detailed view of architectural blueprints overlaid with digital financial charts. The combination of structural engineering and financial planning is highlighted through clean lines and a monochromatic palette of greys and deep blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6pJeFH6BV4r-nJK-Tah3A4JvcLhgN5Ixip5ZQERO50kZlbe5AaZe_DwYlqxHAX6337EXTi2NtzaF0G8LDCGUPZTuamA2rBa0Ahc4-cQu3mO7jVgc96epKeGhM-oIb0NMreIMp5tx5AjmgkmVM14VQ4BovRW8N5NjdhqPxQ2ThtDu7XxH7x8ByLA7aUej9fvMf6H7dqKWk9SReZxgtg4EYzc20RcCNvMTIsplC8JYb9A070LBSXvTbrZhZDXxM2_fZirwwlHCzwI7k"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">PLAN-05</div>
+</div>
+<div class="p-6 sm:p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-base sm:text-title-md text-primary mb-4 min-h-0 sm:min-h-[54px] leading-tight uppercase">Planeación Tributaria</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Visión de largo plazo para mitigar riesgos fiscales y maximizar la reinversión de capital corporativo.</p>
+<button type="button" onclick="selectService(this.closest('.group').querySelector('h3').textContent.trim())" class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all text-left">VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+<!-- Service Card 6 -->
+<div class="group bg-white border border-black/10 hover:border-primary transition-all duration-500 overflow-hidden flex flex-col">
+<div class="h-48 sm:h-52 overflow-hidden relative">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Conceptual image of a perfectly balanced scale in a minimalist gallery setting. One side holds a small golden coin, the other a single crystal. Elegant lighting, sharp focus, professional financial atmosphere. High-end financial advisory feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRq_F--ZUtxiJmgGezhu7R_N45lN42caBBu3ciZ_ILWP_bIHevwK3A7tPxrUmDzUABhFYF6DCNjrJ9Xmr_bD9Jb744Ak0-_xmIk0ezf3a-APCUmkyCBt0xfmkTPchzA1RH0ymdtROnsmRfG2kq2_3cGculS24unUqR0U6dqP5tVw1XlaAEqrDN2AV0fumZALWOHsodYo3roEq36Tcx1xGCvRsXXe5T-tnJZs9-8ZMDIPgkvrUjemB2ekwg-ruLUeW42osuw4GkOr9y"/>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-2 py-1 font-label-caps">INVS-06</div>
+</div>
+<div class="p-6 sm:p-8 flex flex-col flex-grow">
+<h3 class="font-title-md text-base sm:text-title-md text-primary mb-4 min-h-0 sm:min-h-[54px] leading-tight uppercase">Asesoría en Inversiones</h3>
+<p class="text-on-surface-variant font-body-sm mb-8 flex-grow">Análisis cuantitativo para la toma de decisiones informadas en mercados de capitales globales.</p>
+<button type="button" onclick="selectService(this.closest('.group').querySelector('h3').textContent.trim())" class="inline-flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all text-left">VER MÁS <span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Hours -->
+<section class="py-10 md:py-20 bg-surface-bright" id="location">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop">
+<div class="mb-10 md:mb-14">
+<span class="text-secondary font-label-caps text-label-caps mb-4 block">ENCUÉNTRENOS</span>
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-primary leading-tight">Una atención cercana, con la misma precisión.</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-black/10">
+<div class="min-h-[340px] lg:min-h-[500px]">
+<iframe
+class="w-full h-full min-h-[340px] lg:min-h-[500px] map-frame"
+src="https://www.google.com/maps?q=La%20Paz%2C%20Bolivia&output=embed"
+style="border:0;"
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"
+title="Ubicación de Morani Accounting en Google Maps"></iframe>
+</div>
+<div class="bg-primary text-white p-8 sm:p-12 lg:p-14 flex flex-col justify-center">
+<span class="font-data-mono text-secondary-fixed text-xs tracking-widest">HORARIO DE ATENCIÓN</span>
+<h3 class="font-headline-lg text-3xl sm:text-4xl mt-4 mb-8">Estamos disponibles para conversar sobre su empresa.</h3>
+<div class="space-y-5">
+<div class="flex justify-between gap-6 border-b border-white/15 pb-4">
+<span class="font-label-caps text-[11px] text-white/60">LUNES — VIERNES</span>
+<span class="font-data-mono text-sm text-right">08:30 — 18:00</span>
+</div>
+<div class="flex justify-between gap-6 border-b border-white/15 pb-4">
+<span class="font-label-caps text-[11px] text-white/60">SÁBADOS</span>
+<span class="font-data-mono text-sm text-right">09:00 — 13:00</span>
+</div>
+<div class="flex justify-between gap-6 pb-2">
+<span class="font-label-caps text-[11px] text-white/60">DOMINGOS</span>
+<span class="font-data-mono text-sm text-right">CERRADO</span>
+</div>
+</div>
+<a href="https://wa.me/59170000000" target="_blank" rel="noopener noreferrer"
+class="mt-8 inline-flex justify-center items-center gap-3 px-6 py-4 bg-white text-primary font-label-caps text-label-caps hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined">chat</span> CONTACTAR POR WHATSAPP
+</a>
+<p class="text-white/45 text-[10px] font-data-mono mt-4">Actualice el número de WhatsApp y la consulta del mapa con los datos reales de la oficina.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-10 md:py-20 bg-primary-container text-white" id="contact">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+<h2 class="font-headline-lg text-3xl sm:text-4xl md:text-5xl mb-5">¿Listo para elevar su gestión contable?</h2>
+<p class="text-on-primary-container font-body-md mb-10 max-w-xl mx-auto">Seleccione un servicio desde las cards o escriba su consulta. Prepararemos el mensaje para que pueda enviarlo directamente por WhatsApp.</p>
+
+<form id="whatsappForm" class="text-left bg-white/5 border border-white/10 p-5 sm:p-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+<div>
+<label for="clientName" class="block font-label-caps text-[10px] text-white/60 mb-2">NOMBRE</label>
+<input id="clientName" type="text" placeholder="Su nombre" class="w-full bg-white text-primary border-0 px-4 py-3 focus:ring-2 focus:ring-secondary">
+</div>
+<div>
+<label for="companyName" class="block font-label-caps text-[10px] text-white/60 mb-2">EMPRESA</label>
+<input id="companyName" type="text" placeholder="Nombre de su empresa" class="w-full bg-white text-primary border-0 px-4 py-3 focus:ring-2 focus:ring-secondary">
+</div>
+</div>
+<div class="mb-5">
+<label for="whatsappMessage" class="block font-label-caps text-[10px] text-white/60 mb-2">MENSAJE</label>
+<textarea id="whatsappMessage" rows="6" class="w-full bg-white text-primary border-0 px-4 py-3 focus:ring-2 focus:ring-secondary resize-y" placeholder="Seleccione un servicio para generar un pitch personalizado..."></textarea>
+</div>
+<div class="flex flex-col sm:flex-row gap-3">
+<button type="submit" class="flex-1 px-6 py-4 bg-white text-primary font-label-caps text-label-caps hover:bg-surface-bright transition-colors">
+ENVIAR POR WHATSAPP
+</button>
+<button type="button" onclick="clearWhatsAppForm()" class="px-6 py-4 bg-transparent border border-white/20 text-white font-label-caps text-label-caps hover:border-white transition-colors">
+LIMPIAR
+</button>
+</div>
+<p id="serviceSelected" class="font-data-mono text-[10px] text-secondary-fixed mt-4 min-h-[14px]"></p>
+</form>
 </div>
 </section>
 </main>
 <!-- Footer -->
 <footer class="bg-surface-container-highest dark:bg-surface-container-low border-t border-outline-variant">
-<div class="max-w-container-max mx-auto px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="max-w-container-max mx-auto px-4 sm:px-6 lg:px-margin-desktop py-10 md:py-12 flex flex-col md:flex-row justify-between items-center gap-8">
 <div class="flex flex-col gap-2">
-<div class="font-headline-lg text-headline-lg font-bold text-primary">PRECIZE</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Precize Financial Services. All rights reserved. Precision in every ledger.</p>
+<div class="font-headline-lg text-headline-lg font-bold text-primary">Morani</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Morani Servicios Contables. Todos los derechos reservados - Olaborado por Ourobos.</p>
 </div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Terms of Service</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Regulatory Disclosure</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Sitemap</a>
+<div class="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Política de Privacidad</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Términos de Servicio</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary hover:underline transition-all" href="#">Ubicación</a>
 </div>
 <div class="flex gap-4">
 <div class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:border-primary cursor-pointer transition-colors group">
@@ -347,36 +483,109 @@
 </div>
 </footer>
 <script>
-        // Simple smooth scroll and active state management
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+const WHATSAPP_NUMBER = '59175213758';
 
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1
-        };
+const servicePitches = {
+    'Auditoría Financiera': 'Hola, me gustaría conversar sobre una Auditoría Financiera para mi empresa. Busco revisar nuestros estados financieros, fortalecer la transparencia de la información y detectar posibles riesgos o inconsistencias.',
+    'Consultoría Fiscal': 'Hola, me interesa conocer cómo Morani puede ayudarnos con Consultoría Fiscal. Quisiera revisar nuestra situación tributaria, identificar oportunidades de optimización dentro del marco legal y mejorar nuestro cumplimiento.',
+    'Gestión de Nóminas': 'Hola, quisiera información sobre Gestión de Nóminas para mi empresa. Busco optimizar el procesamiento de pagos, beneficios y obligaciones patronales con mayor precisión y control.',
+    'Contabilidad Corporativa': 'Hola, me gustaría recibir asesoría sobre Contabilidad Corporativa. Busco fortalecer nuestros libros y registros financieros y contar con información confiable para la gestión de una estructura empresarial.',
+    'Planeación Tributaria': 'Hola, quisiera conversar sobre Planeación Tributaria para mi empresa. Me interesa anticipar riesgos fiscales, optimizar nuestra carga tributaria legalmente y mejorar la planificación del capital.',
+    'Asesoría en Inversiones': 'Hola, me interesa conocer el servicio de Asesoría en Inversiones. Quisiera evaluar alternativas y contar con análisis financiero para tomar decisiones de inversión mejor fundamentadas.'
+};
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, observerOptions);
+function selectService(service) {
+    const normalized = service.replace(/\s+/g, ' ').trim();
+    const message = servicePitches[normalized] || `Hola, me gustaría recibir información sobre ${normalized}. Quisiera conocer cómo Morani puede ayudarnos a mejorar nuestra gestión financiera y contable.`;
+    const messageField = document.getElementById('whatsappMessage');
+    const selectedField = document.getElementById('serviceSelected');
 
-        document.querySelectorAll('.group').forEach(el => {
-            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
-            observer.observe(el);
-        });
-    </script>
+    messageField.value = message;
+    selectedField.textContent = 'SERVICIO SELECCIONADO: ' + normalized.toUpperCase();
+
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => messageField.focus(), 650);
+}
+
+function clearWhatsAppForm() {
+    document.getElementById('clientName').value = '';
+    document.getElementById('companyName').value = '';
+    document.getElementById('whatsappMessage').value = '';
+    document.getElementById('serviceSelected').textContent = '';
+}
+
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('clientName').value.trim();
+    const company = document.getElementById('companyName').value.trim();
+    const message = document.getElementById('whatsappMessage').value.trim();
+
+    if (!message) {
+        document.getElementById('whatsappMessage').focus();
+        return;
+    }
+
+    const context = [
+        name ? `Nombre: ${name}` : '',
+        company ? `Empresa: ${company}` : ''
+    ].filter(Boolean).join('\n');
+
+    const finalMessage = context ? `${context}\n\n${message}` : message;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(finalMessage)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+});
+
+const menuButton = document.getElementById('menuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuIcon = document.getElementById('menuIcon');
+
+menuButton.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    menuButton.setAttribute('aria-expanded', String(!isOpen));
+    menuIcon.textContent = isOpen ? 'menu' : 'close';
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+
+        if (this.classList.contains('mobile-nav-link')) {
+            mobileMenu.classList.add('hidden');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuIcon.textContent = 'menu';
+        }
+    });
+});
+
+const observerOptions = { threshold: 0.1 };
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.group').forEach(el => {
+    el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+    observer.observe(el);
+});
+</script>
+
+<a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Morani."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp"
+   class="whatsapp-float fixed bottom-5 right-5 z-40 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-105 transition-transform">
+    <span class="material-symbols-outlined text-3xl">chat</span>
+</a>
 </body></html>

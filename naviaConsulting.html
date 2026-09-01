@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Navia Consultora - Academic Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5c5f62",
+                        "inverse-primary": "#b9c7e4",
+                        "surface-container-high": "#e7e8e9",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-fixed": "#121c2a",
+                        "on-background": "#191c1d",
+                        "secondary-container": "#dee0e4",
+                        "on-tertiary-container": "#7a8495",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-fixed-variant": "#44474a",
+                        "surface-tint": "#515f78",
+                        "tertiary-fixed-dim": "#bdc7d9",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#e0e2e6",
+                        "on-tertiary-fixed-variant": "#3d4756",
+                        "on-secondary-fixed": "#191c1f",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f0f1f2",
+                        "tertiary-fixed": "#d9e3f6",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-secondary-container": "#606366",
+                        "primary-container": "#0d1c32",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "tertiary-container": "#121c2a",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#76849f",
+                        "outline-variant": "#c5c6cd",
+                        "surface-bright": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#c4c7ca",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "outline": "#75777e",
+                        "on-primary-fixed-variant": "#39475f",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface-variant": "#44474d",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "primary": "#0a192f",
+                        "surface-container-section": "#263065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "base": "4px",
+                        "xs": "8px",
+                        "sm": "16px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["\"Source Sans 3\""],
+                        "body-lg": ["\"Source Sans 3\""],
+                        "body-md": ["\"Source Sans 3\""]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface docked full-width top-0 sticky z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-sm">
+    <!--<img alt="Navia Consultora Logo" class="h-5 w-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vxy-1cQLv50zTjyY9_mly1PjFu_j34nQ9A9WhFigkNWy55ps_hOWHr5LpjfCX6s4riS68JXhT9lPhe9WR2AiwdGZ-40Nn_50CKmXZZ7L8fvv1lwPasCbZ83YtRzsbcPLLRexpMisKf4lVN67VF13V_dFmE2L5iZn7gwtIuIjknza3vVESa7ZnPE1U4qOael1HoahWHpAHjKZxBpmirm-YhbOkKcpR4HjC0DP6sgtal1Z31OK9kf07deyU"/>
+-->
+<span class="font-headline-md text-headline-md font-semibold text-primary">Navia Consultora</span>
+</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#services">Services</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#methodology">Methodology</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#quality">Quality</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#location">Location</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<a class="hidden md:block bg-primary text-on-primary px-md py-sm rounded font-label-caps hover:bg-inverse-surface transition-colors cursor-pointer active:opacity-80" href="#contact">
+                Contáctate
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<!-- =========================================================
+     BACKGROUND MEDIA SECTION
+
+     Componente padre reutilizable para secciones con imagen.
+
+     Parámetros:
+     --bg-opacity   : opacidad del overlay
+     --bg-color     : color del overlay
+     --bg-blur      : desenfoque de la imagen
+     --bg-scale     : escala opcional de la imagen
+     --bg-position  : posición de la imagen
+
+     Ejemplo:
+
+     style="
+        --bg-opacity: .65;
+        --bg-color: #0a192f;
+        --bg-blur: 4px;
+        --bg-scale: 1.05;
+        --bg-position: center;
+     "
+========================================================= -->
+
+<section
+    class="
+        relative
+        isolate
+        overflow-hidden
+        min-h-[500px]
+        flex
+        items-center
+    "
+    style="
+        --bg-opacity: .30;
+        --bg-color: #0a192f;
+        --bg-blur: 0px;
+        --bg-scale: 1;
+        --bg-position: center;
+    "
+>
+
+    <!-- =====================================================
+         BACKGROUND IMAGE
+    ====================================================== -->
+
+    <div
+        class="
+            absolute
+            inset-0
+            -z-20
+            overflow-hidden
+        "
+        aria-hidden="true"
+    >
+
+        <img
+            src="https://images.pexels.com/photos/34311548/pexels-photo-34311548.jpeg"
+            alt=""
+            class="
+                background-media
+                absolute
+                inset-0
+                w-full
+                h-full
+                object-cover
+            "
+            style="
+                object-position: var(--bg-position);
+                filter: blur(var(--bg-blur));
+                transform: scale(var(--bg-scale));
+            "
+        >
+
+    </div>
+
+
+    <!-- =====================================================
+         COLOR OVERLAY
+    ====================================================== -->
+
+    <div
+        class="
+            absolute
+            inset-0
+            -z-10
+            pointer-events-none
+        "
+        style="
+            background-color: var(--bg-color);
+            opacity: var(--bg-opacity);
+        "
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         CONTENT
+    <div
+        class="
+            relative
+            z-10
+            w-full
+        "
+    >
+
+        <-- CONTENIDO DE LA SECCIÓN --
+
+        <div
+            class="
+                max-w-7xl
+                mx-auto
+                px-5
+                py-20
+                text-white
+            "
+        >
+
+            <span
+                class="
+                    text-xs
+                    uppercase
+                    tracking-[.3em]
+                    text-white/60
+                "
+            >
+                Background Media
+            </span>
+
+            <h2
+                class="
+                    display-font
+                    text-6xl
+                    md:text-8xl
+                    font-semibold
+                    tracking-[-.07em]
+                    mt-6
+                "
+            >
+                Visual Section
+            </h2>
+
+            <p
+                class="
+                    max-w-xl
+                    mt-8
+                    text-white/70
+                    text-lg
+                "
+            >
+                El contenido permanece completamente independiente
+                de las capas visuales del fondo.
+            </p>
+
+        </div>
+
+    </div>
+
+    ====================================================== -->
+
+    <div class=" relative max-w-[1000px] z-1 mx-auto ">
+        <div class="flex flex-col mx-auto text-center items-center space-y-md">
+            <h1 class="font-display-lg-mobile text-white md:font-display-lg md:text-display-lg text-primary">
+                        Te ayudamos a alcanzar altos estándares académicos con consultoría estratégica y experimentada
+                    </h1>
+                 <p class="font-body-lg text-body-lg text-gray-100 max-w-[800px] mx-auto">
+                    Guía experta para el desarrollo de tesis, metodología de investigación y escritura académica profesional. Logra la excelencia académica con Navia Consultora.    
+                </p>
+                 <div class="pt-sm">
+                <a class="inline-block bg-primary text-on-primary px-lg py-sm rounded font-label-caps hover:bg-inverse-surface transition-colors shadow-sm" href="#contact">
+                            Contáctate Ya
+                        </a>
+                 </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Services Section 
+<section class="bg-surface-container-low border-t border-outline-variant"   
+id="services">
+<div class="max-w-container-max mx-auto">
+<div class="mb-md">
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Academic Services</h2>
+</div>
+<div class="">
+
+<article class=" flex flex-col md:flex-row-reverse items-stretch gap-lg mb-sm max-h-[600px] " > 
+    <!-- IMAGE --
+     <div class=" w-full md:w-1/2 min-h-[280px] bg-surface-container-section md:h-[600px] max-h-[600px] relative overflow-hidden rounded-xl bg-[#0a192f] flex items-center justify-center " > 
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOyCLGikfe0C1WAzBw8yLOUUWRHIZ86LUCaG8lcAAMd6gXJ-Kr3n6zbgqw_xv9poanosKRUqdzgF2FVbuvVjcZNxEhsLv5KUNhIFBl9DClFId9a5nvDxvtbJEV5dT8fAL_9fVspH7TqWobTKeUA25Wo0U0viGvp1wGxcVsFjpiISyfA38ZR0KCFyH6Z760iB0W5fb7zFf25sWB0C6L6milhuBGqQF7Tixq65MMwmB8vtbFlN_jGuNS" alt="Professional Training" class=" w-full h-full object-cover rounded-xl shadow-lg " > 
+    </div> 
+    <!-- CONTENT --
+     <div class=" w-full md:w-1/2 md:h-[600px] max-h-[600px] flex flex-col justify-center space-y-md " > 
+        <div class="flex items-center gap-sm"> 
+            <span class=" material-symbols-outlined text-primary text-4xl shrink-0 " data-icon="menu_book" > menu_book </span> 
+            <h3 class=" font-headline-md text-headline-md text-primary " > Professional Training </h3> 
+        </div> 
+        <p class=" font-body-lg text-body-lg text-on-surface-variant " > Workshops and specialized training in academic writing, research methodologies, and critical analysis. </p> 
+    </div> 
+</article>
+    <!-- Service 1: Thesis Consulting (Image | Text) --
+<div class="flex flex-col md:flex-row items-center gap-lg mb-sm">
+<div class="w-full md:w-1/2 max-h-[500px] h-auto relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-[linear-gradient(to_bottom_right,#0a192f,#122647)] p-base">
+<img alt="Thesis Consulting" class="w-full h-full object-cover rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsSZ4kWSGVfgCy8ruD_CyCJnavF94KD0KBe5WcUiu2Iuk3Kbo_Hulcunapuyl0opPIpc9LbnXa9NZQhhn23lWTgi9a9umswUFtBLjWv1VwXaiISrHwP-6RgAlL6t6XSvcBF1S9KJYmnOUXP4NkGLaU39wKddgg3S3bp9KFRBmzAHhheuH6oFNEkoI-95ZOotZCWK_tp3QdwyJoAlHc-5vjjz4cYlCZ0ysSbc--XLirrp_Rn80KI_7n"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 max-h-[500px] h-auto space-y-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="school">school</span>
+<h3 class="font-headline-md text-headline-md text-primary">Asesoría de Tesis</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Comprehensive support for undergraduate and postgraduate thesis development, from proposal to final defense.
+        </p>
+</div>
+</div>
+<!-- Service 2: Professional Training (Text | Image) --
+<div class="flex flex-col md:flex-row-reverse items-center gap-lg mb-sm">
+<div class="w-full md:w-1/2 max-h-[500px] h-auto relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-[linear-gradient(to_bottom_right,#0a192f,#122647)] p-base">
+<img alt="Professional Training" class="w-full h-full object-cover rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOyCLGikfe0C1WAzBw8yLOUUWRHIZ86LUCaG8lcAAMd6gXJ-Kr3n6zbgqw_xv9poanosKRUqdzgF2FVbuvVjcZNxEhsLv5KUNhIFBl9DClFId9a5nvDxvtbJEV5dT8fAL_9fVspH7TqWobTKeUA25Wo0U0viGvp1wGxcVsFjpiISyfA38ZR0KCFyH6Z760iB0W5fb7zFf25sWB0C6L6milhuBGqQF7Tixq65MMwmB8vtbFlN_jGuNS"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 max-h-[500px] h-auto space-y-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="menu_book">menu_book</span>
+<h3 class="font-headline-md text-headline-md text-primary">Professional Training</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Workshops and specialized training in academic writing, research methodologies, and critical analysis.
+        </p>
+</div>
+</div>
+<!-- Service 3: Editorial Review (Image | Text) --
+<div class="flex flex-col md:flex-row items-center gap-lg mb-sm">
+<div class="w-full md:w-1/2 max-h-[500px] h-auto relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-[linear-gradient(to_bottom_right,#0a192f,#122647)] p-base">
+<img alt="Editorial Review" class="w-full h-full object-cover rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASHYXK-VOEGsAlR2Wa0p-EuKE5PVj25s-Kv6fJY64ZxzHzeTVJ3WJO68QCtCXeGiTFQEXvk682BxJMXbVTlYLI6wh2qyknxXVeRTkZwqC-ltkKcg2q2viom2riXlNqORwY0qXOOLbh9BF80C4915eoLO9_IJTJf6gQ1I0kDSJCfkS3Os3lrgZYkEH9XIWWgSuFtoG2wAUNtTmp4y2QmnXLAW5SuPASnCZWwx38t86YRhn3o7dFfoIb"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 max-h-[500px] h-auto space-y-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="edit_document">edit_document</span>
+<h3 class="font-headline-md text-headline-md text-primary">Revisión </h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Rigorous proofreading, formatting according to international standards (APA, Vancouver), and style correction.
+        </p>
+</div>
+</div>
+<!-- Service 4: Academic Success Strategy (Text | Image) --
+<div class="flex flex-col md:flex-row-reverse items-center gap-lg">
+<div class="w-full md:w-1/2 max-h-[500px] h-auto relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-[linear-gradient(to_bottom_right,#0a192f,#122647)] p-base">
+<img alt="Academic Success Strategy" class="w-full h-full object-cover rounded-xl shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfdSA_VX8tZmG6IS89eyjdZFEWXsXOTAf6wp1nlO6HqMEeBeGM4pEa2FAbZjOWrYUd9tAqjfX94IjpSauVO5tU1skj2TD3nJBWU4e4VUQiXocjEDhAy99MVRusrRq2RhHGVUX1ESCahPC0XSdq1yGc0LVYhzv6Mvqr1LEQNK1NI85aCqp0J6DQ2Ta1nz9A99qs0klnVw855M6NAD2yXwRMAN5lhYn2hpfOidQibbex4xEV4iPLavp3"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 max-h-[500px] h-auto space-y-md">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="verified">verified</span>
+<h3 class="font-headline-md text-headline-md text-primary">Academic Success Strategy</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Personalized planning and strategic guidance to navigate your academic journey and achieve your professional goals.
+        </p>
+</div>
+</div></div>
+</div>
+</section> 
+
+-->
+
+<section class="py-xl px-sm md:px-lg bg-[linear-gradient(to_bottom,_var(--tw-gradient-stops))] from-surface-container-low to-surface-container-lowest border-t border-outline-variant overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="space-y-md">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary leading-tight">
+                Elabora tu tesis ahora mismo con nuestra ayuda
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Transforma tu investigación en un trabajo de excelencia académica. Nuestro equipo de expertos te acompaña en cada paso hacia tu titulación.
+            </p>
+<div class="pt-sm">
+<a class="inline-block bg-primary text-on-primary px-lg py-md rounded font-label-caps hover:bg-inverse-surface transition-colors shadow-md" href="#contact">
+                    Empezar Mi Tesis
+                </a>
+</div>
+</div>
+<div class="relative flex justify-center items-center">
+<div class="relative w-full max-w-[500px] aspect-square">
+<div class="absolute top-0 left-0 w-4/5 h-4/5 rounded shadow-lg overflow-hidden -rotate-2 z-10 border border-white/20">
+<img alt="Academic research environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLPNb3xzhA6hvd2orloc8QzuPqEa4XX_Bd5klNxD4Xya28ZmN2ufyQEecFw22zUzYWWbXKsoE4SWms12ugT3fP7tMaeiWlEB7DgXGQDSdhFfY_ZRtxnjK25JJwDPyH5hchL1AYcN2C5OE4eKVsGrL-VmhB89SN4AlK7BfkOGJyahOVRAi3hajjdtLLkthmdhNapPVoM4seo7UMQOty1MKUiKQV1fSXLxrSY8VsGwQ0L2AGbBTtZaLS"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="absolute bottom-0 right-0 w-4/5 h-4/5 rounded shadow-lg overflow-hidden rotate-2 border border-white/20">
+<img alt="Modern academic workspace" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr_CmlLQVagjRGDrV2jHkYQStYljhlwBOzpjHdZ-I3cL7WaBpV0o_DYc0zr9avRYU8r1kuwpBAniirF6FnPm1IbPf4cfF936FEMQYc7qzUa3e4brMIdOYI6Uj_5hQm3t4AsmAmE9EigZdEc2co878LFJy0fOPHXBYAyIVrPF3SyPRLXfXpqTI1POFr7Y2ZDulLGidSQFCWluWg8-eaKsGcPOTlY4Fad11X9hqYdZfPnQgnWLC7OqxJ"/>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<div class="w-full flex flex-col" id="sections-container"></div>
+<script>
+    const rawData = [
+        {
+            title: "Asesoría de Tesis",
+            symbol: "school",
+            text: "Apoyo completo para el desarrollo de tesis de grado y posgrado, desde la propuesta hasta la defensa final.",
+            image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+            title: "Entrenamiento Profesional",
+            symbol: "menu_book",
+            text: "Talleres y formación especializada en escritura académica, metodologías de investigación y análisis crítico.",
+            image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+            title: "Revisión",
+            symbol: "edit_document",
+            text: "Revisión rigurosa, formato según normas internacionales (APA, Vancouver) y corrección de estilo.",
+            image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+            title: "Estrategia para el Éxito Académico",
+            symbol: "verified",
+            text: "Planificación personalizada y orientación estratégica para guiarte en tu camino académico y alcanzar tus metas profesionales.",
+            image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=800&auto=format&fit=crop"
+        }
+    ];
+
+    const container = document.getElementById('sections-container');
+
+    container.innerHTML = rawData.map((item, index) => {
+        const isEven = index % 2 === 0;
+        const flexDir = isEven ? 'lg:flex-row' : 'lg:flex-row-reverse';
+
+        return `
+            <section class="w-full min-h-[500px] bg-black flex flex-col ${flexDir} items-stretch m-0 p-0 border-0">
+                <div class="w-full lg:w-1/2 bg-black flex items-center justify-center overflow-hidden max-w-[500px] lg:max-w-none mx-auto m-0 p-0">
+                    <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover max-h-[500px] transition-transform duration-700 hover:scale-105">
+                </div>
+                <div class="w-full lg:w-1/2 bg-[#0B132B] flex items-center justify-center py-8 px-6 sm:py-12 sm:px-10 lg:py-16 lg:px-14 m-0">
+                    <div class="clay-card w-full max-w-xl py-8 px-2 sm:py-10 sm:px-4 flex flex-col justify-center">
+                        <div class="flex items-center gap-sm">
+                        <span class="material-symbols-outlined text-white text-4xl" data-icon="${item.symbol}">${item.symbol}</span>
+                        <h3 class="font-headline-md text-headline-md mb-4 text-white">${item.title}</h3>
+                        </div>
+                        <p class="font-body-lg text-gray-100">
+                        ${item.text}
+                        </p>
+                    </div>
+                </div>
+            </section>
+        `;
+    }).join('');
+</script>
+<div class="w-full flex flex-col" id="sections-container"></div>
+<!-- Methodology Section -->
+<section class="py-xl px-sm md:px-lg bg-surface border-t border-outline-variant" id="methodology">
+<div class="max-w-container-max mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Methodology</h2>
+<p class="font-body-md text-on-surface-variant mt-sm max-w-[600px]">Our proven 4-step process ensures rigorous academic standards and timely completion of your project.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md relative">
+<div class="hidden lg:block absolute top-[48px] left-[12.5%] right-[12.5%] h-0.5 bg-outline-variant -z-10"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">1</div>
+<h3 class="font-headline-sm text-primary mb-sm">Consultation</h3>
+<p class="font-body-md text-on-surface-variant">Initial assessment of your academic needs and project scope.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">2</div>
+<h3 class="font-headline-sm text-primary mb-sm">Research</h3>
+<p class="font-body-md text-on-surface-variant">In-depth literature review and methodological framework design.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">3</div>
+<h3 class="font-headline-sm text-primary mb-sm">Writing</h3>
+<p class="font-body-md text-on-surface-variant">Drafting chapters with rigorous adherence to academic conventions.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">4</div>
+<h3 class="font-headline-sm text-primary mb-sm">Final Delivery</h3>
+<p class="font-body-md text-on-surface-variant">Comprehensive review, formatting, and presentation preparation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality & Standards Section -->
+<section class="py-xl px-sm md:px-lg bg-surface-container-low border-t border-outline-variant" id="quality">
+<div class="max-w-container-max mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Quality &amp; Standards</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="p-lg bg-surface border border-outline-variant rounded flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-sm text-4xl" data-icon="verified">verified</span>
+<h3 class="font-headline-sm text-primary mb-xs">Plagiarism-Free</h3>
+<p class="font-body-md text-on-surface-variant">Originality guaranteed through advanced software checks and strict ethical guidelines.</p>
+</div>
+<div class="p-lg bg-surface border border-outline-variant rounded flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-sm text-4xl" data-icon="lock">lock</span>
+<h3 class="font-headline-sm text-primary mb-xs">Confidentiality</h3>
+<p class="font-body-md text-on-surface-variant">Complete privacy of your research data, personal information, and final documents.</p>
+</div>
+<div class="p-lg bg-surface border border-outline-variant rounded flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-sm text-4xl" data-icon="schedule">schedule</span>
+<h3 class="font-headline-sm text-primary mb-xs">Deadline Compliance</h3>
+<p class="font-body-md text-on-surface-variant">Punctual delivery of drafts and final projects to meet your academic timeline.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+
+<section class="py-xl px-sm md:px-lg bg-surface border-t border-outline-variant" id="location">
+<div class="max-w-container-max mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Ubicación</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-lg bg-surface-container-low p-md rounded border border-outline-variant">
+<div class="w-full md:w-2/3 bg-surface border border-outline-variant rounded min-h-[300px] flex items-center justify-center">
+<span class="text-on-surface-variant font-body-lg flex flex-col items-center gap-xs">
+<span class="material-symbols-outlined text-4xl" data-icon="map">map</span>
+            Map Placeholder
+        </span>
+</div>
+<div class="w-full md:w-1/3 flex flex-col justify-center">
+<h3 class="font-headline-sm text-primary mb-sm">Dirección de la Oficina</h3>
+<p class="font-body-md text-on-surface-variant mb-md">
+            123 Academic Avenue<br/>
+            Suite 400<br/>
+            University District, 10001
+        </p>
+<h3 class="font-headline-sm text-primary mb-sm">Horario</h3>
+<p class="font-body-md text-on-surface-variant">
+            Lunes - Viernes<br/>
+            9:00 AM - 6:00 PM
+        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl px-sm md:px-lg bg-[#0a192f] border-t border-outline-variant text-white" id="contact">
+<div class="max-w-container-max mx-auto max-w-[600px]">
+<div class="mb-lg text-center">
+<h2 class="font-headline-md text-headline-md text-white">Formulario de Contacto</h2>
+<p class="font-body-md text-surface-variant mt-xs">Envíanos los detalles de tu Proyecto / Tesis para iniciar una consultoría por medio de Whatsapp.</p>
+</div>
+<form class="bg-[#122647] p-lg rounded border border-white/10 shadow-sm flex flex-col gap-md">
+<div>
+<label class="block font-label-caps text-white mb-xs" for="name">Nombre</label>
+<input class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white placeholder:text-surface-variant" id="name" placeholder="Tu nombre" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-white mb-xs" for="academic-level">Nivel Académico</label>
+<select class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white" id="academic-level">
+<option>Pregrado</option>
+<option>Licenciatura</option>
+<option>Maestría</option>
+<option>Doctorado (PhD)</option>
+<option value="">Otro</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-white mb-xs" for="message">Detalles del Proyecto</label>
+<textarea class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white min-h-[100px] placeholder:text-surface-variant" id="message" placeholder="Descirbe brevemente tu tema y tu progreso actual..."></textarea>
+</div>
+<button class="w-full bg-[#25D366] text-white px-md py-sm rounded font-label-caps hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-xs mt-sm shadow-sm" type="button">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+        Contacto via WhatsApp
+    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant full-width bottom-0">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-lg max-w-container-max mx-auto gap-md">
+<div class="flex items-center gap-sm">
+<img alt="Navia Consultora Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vxy-1cQLv50zTjyY9_mly1PjFu_j34nQ9A9WhFigkNWy55ps_hOWHr5LpjfCX6s4riS68JXhT9lPhe9WR2AiwdGZ-40Nn_50CKmXZZ7L8fvv1lwPasCbZ83YtRzsbcPLLRexpMisKf4lVN67VF13V_dFmE2L5iZn7gwtIuIjknza3vVESa7ZnPE1U4qOael1HoahWHpAHjKZxBpmirm-YhbOkKcpR4HjC0DP6sgtal1Z31OK9kf07deyU"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Navia Consultora</span>
+</div>
+<div class="flex gap-md flex-wrap justify-center">
+<a class="text-on-surface-variant hover:text-primary transition-opacity hover:opacity-90 font-label-caps" href="#">Política de Privacidad</a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity hover:opacity-90 font-label-caps" href="#">Términos del Servicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity hover:opacity-90 font-label-caps" href="#contact">Contáctanos</a>
+</div>
+<div class="text-on-surface-variant font-body-md text-sm">
+                © 2024 Navia Consultora. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+</body></html>

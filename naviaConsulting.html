@@ -444,25 +444,25 @@ id="services">
             title: "Asesoría de Tesis",
             symbol: "school",
             text: "Apoyo completo para el desarrollo de tesis de grado y posgrado, desde la propuesta hasta la defensa final.",
-            image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.pexels.com/photos/7968074/pexels-photo-7968074.jpeg"
         },
         {
             title: "Entrenamiento Profesional",
             symbol: "menu_book",
             text: "Talleres y formación especializada en escritura académica, metodologías de investigación y análisis crítico.",
-            image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.pexels.com/photos/8439669/pexels-photo-8439669.jpeg"
         },
         {
             title: "Revisión",
             symbol: "edit_document",
             text: "Revisión rigurosa, formato según normas internacionales (APA, Vancouver) y corrección de estilo.",
-            image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.pexels.com/photos/7968067/pexels-photo-7968067.jpeg"
         },
         {
             title: "Estrategia para el Éxito Académico",
             symbol: "verified",
             text: "Planificación personalizada y orientación estratégica para guiarte en tu camino académico y alcanzar tus metas profesionales.",
-            image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=800&auto=format&fit=crop"
+            image: "https://images.pexels.com/photos/11158641/pexels-photo-11158641.jpeg"
         }
     ];
 
@@ -475,17 +475,25 @@ id="services">
         return `
             <section class="w-full min-h-[500px] bg-black flex flex-col ${flexDir} items-stretch m-0 p-0 border-0">
                 <div class="w-full lg:w-1/2 bg-black flex items-center justify-center overflow-hidden max-w-[500px] lg:max-w-none mx-auto m-0 p-0">
-                    <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover max-h-[500px] transition-transform duration-700 hover:scale-105">
+                    <img src="${item.image}" loading="lazy" alt="${item.title}" class="w-full h-full object-cover max-h-[500px] transition-transform duration-700 hover:scale-105">
                 </div>
-                <div class="w-full lg:w-1/2 bg-[#0B132B] flex items-center justify-center py-8 px-6 sm:py-12 sm:px-10 lg:py-16 lg:px-14 m-0">
+                <div id="clientName" class="w-full lg:w-1/2 bg-[#0B132B] flex items-center justify-center py-8 px-6 sm:py-12 sm:px-10 lg:py-16 lg:px-14 m-0">
                     <div class="clay-card w-full max-w-xl py-8 px-2 sm:py-10 sm:px-4 flex flex-col justify-center">
-                        <div class="flex items-center gap-sm">
+                        <div class="flex items-between gap-sm">
                         <span class="material-symbols-outlined text-white text-4xl" data-icon="${item.symbol}">${item.symbol}</span>
                         <h3 class="font-headline-md text-headline-md mb-4 text-white">${item.title}</h3>
                         </div>
                         <p class="font-body-lg text-gray-100">
                         ${item.text}
                         </p>
+                        <button id="whatsappButton"
+                        type="button"
+                        data-whatsapp-context="${item.text}"
+                        class="consultation-card w-full sm:w-auto px-8 py-2 mt-4
+                                text-white font-body-lg text-body-lg 
+                                border border-white/40 hover:border-white transition-all duration-300">
+                            Preguntar
+                        </button>
                     </div>
                 </div>
             </section>
@@ -497,34 +505,34 @@ id="services">
 <section class="py-xl px-sm md:px-lg bg-surface border-t border-outline-variant" id="methodology">
 <div class="max-w-container-max mx-auto">
 <div class="mb-lg">
-<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Methodology</h2>
-<p class="font-body-md text-on-surface-variant mt-sm max-w-[600px]">Our proven 4-step process ensures rigorous academic standards and timely completion of your project.</p>
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Metodología</h2>
+<p class="font-body-md text-on-surface-variant mt-sm max-w-[600px]">Nuestro comprobado proceso de 4 pasos garantiza estándares académicos apropiados para la finalización puntual de tu proyecto.</p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md relative">
 <div class="hidden lg:block absolute top-[48px] left-[12.5%] right-[12.5%] h-0.5 bg-outline-variant -z-10"></div>
 <!-- Step 1 -->
 <div class="flex flex-col items-center text-center">
 <div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">1</div>
-<h3 class="font-headline-sm text-primary mb-sm">Consultation</h3>
-<p class="font-body-md text-on-surface-variant">Initial assessment of your academic needs and project scope.</p>
+<h3 class="font-headline-sm text-primary mb-sm">Consultoría</h3>
+<p class="font-body-md text-on-surface-variant">Evaluación inicial de tus necesidades académicas y el alcance del proyecto.</p>
 </div>
 <!-- Step 2 -->
 <div class="flex flex-col items-center text-center">
 <div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">2</div>
-<h3 class="font-headline-sm text-primary mb-sm">Research</h3>
-<p class="font-body-md text-on-surface-variant">In-depth literature review and methodological framework design.</p>
+<h3 class="font-headline-sm text-primary mb-sm">Investigación</h3>
+<p class="font-body-md text-on-surface-variant">Revisión profunda de la literatura y diseño del marco metodológico.</p>
 </div>
 <!-- Step 3 -->
 <div class="flex flex-col items-center text-center">
 <div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">3</div>
-<h3 class="font-headline-sm text-primary mb-sm">Writing</h3>
-<p class="font-body-md text-on-surface-variant">Drafting chapters with rigorous adherence to academic conventions.</p>
+<h3 class="font-headline-sm text-primary mb-sm">Redacción</h3>
+<p class="font-body-md text-on-surface-variant">Elaboración de capítulos con estricto apego a las convenciones académicas</p>
 </div>
 <!-- Step 4 -->
 <div class="flex flex-col items-center text-center">
 <div class="w-lg h-lg rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm mb-md shadow-md">4</div>
-<h3 class="font-headline-sm text-primary mb-sm">Final Delivery</h3>
-<p class="font-body-md text-on-surface-variant">Comprehensive review, formatting, and presentation preparation.</p>
+<h3 class="font-headline-sm text-primary mb-sm">Entrega Final</h3>
+<p class="font-body-md text-on-surface-variant">Revisión completa, formato y preparación para la presentación.</p>
 </div>
 </div>
 </div>
@@ -533,23 +541,23 @@ id="services">
 <section class="py-xl px-sm md:px-lg bg-surface-container-low border-t border-outline-variant" id="quality">
 <div class="max-w-container-max mx-auto">
 <div class="mb-lg">
-<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Quality &amp; Standards</h2>
+<h2 class="font-headline-md text-headline-md text-primary border-l-4 border-primary pl-sm">Estándares &amp; Calidad</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
 <div class="p-lg bg-surface border border-outline-variant rounded flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-sm text-4xl" data-icon="verified">verified</span>
-<h3 class="font-headline-sm text-primary mb-xs">Plagiarism-Free</h3>
-<p class="font-body-md text-on-surface-variant">Originality guaranteed through advanced software checks and strict ethical guidelines.</p>
+<h3 class="font-headline-sm text-primary mb-xs">Libre de Plagio</h3>
+<p class="font-body-md text-on-surface-variant">Garantizamos originalidad mediante controles avanzados de software y estrictas normas éticas.</p>
 </div>
 <div class="p-lg bg-surface border border-outline-variant rounded flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-sm text-4xl" data-icon="lock">lock</span>
-<h3 class="font-headline-sm text-primary mb-xs">Confidentiality</h3>
-<p class="font-body-md text-on-surface-variant">Complete privacy of your research data, personal information, and final documents.</p>
+<h3 class="font-headline-sm text-primary mb-xs">Confidencialidad</h3>
+<p class="font-body-md text-on-surface-variant">Privacidad completa de tus datos de investigación, información personal y documentos finales.</p>
 </div>
 <div class="p-lg bg-surface border border-outline-variant rounded flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-primary mb-sm text-4xl" data-icon="schedule">schedule</span>
-<h3 class="font-headline-sm text-primary mb-xs">Deadline Compliance</h3>
-<p class="font-body-md text-on-surface-variant">Punctual delivery of drafts and final projects to meet your academic timeline.</p>
+<h3 class="font-headline-sm text-primary mb-xs">Cumplimiento de plazos</h3>
+<p class="font-body-md text-on-surface-variant">Entrega puntual de borradores y proyectos finales para cumplir con tu calendario académico.</p>
 </div>
 </div>
 </div>
@@ -563,13 +571,16 @@ id="services">
 </div>
 <div class="flex flex-col md:flex-row gap-lg bg-surface-container-low p-md rounded border border-outline-variant">
 <div class="w-full md:w-2/3 bg-surface border border-outline-variant rounded min-h-[300px] flex items-center justify-center">
-<span class="text-on-surface-variant font-body-lg flex flex-col items-center gap-xs">
-<span class="material-symbols-outlined text-4xl" data-icon="map">map</span>
-            Map Placeholder
-        </span>
+<iframe
+class="w-full h-full min-h-[340px] lg:min-h-[500px] map-frame"
+src="https://www.google.com/maps?q=La%20Paz%2C%20Bolivia&output=embed"
+style="border:0;"
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"
+title="Ubicación de Pacioli Accounting en Google Maps"></iframe>
 </div>
 <div class="w-full md:w-1/3 flex flex-col justify-center">
-<h3 class="font-headline-sm text-primary mb-sm">Dirección de la Oficina</h3>
+<h3 class="font-display-lg text-primary mb-sm">Dirección de la Oficina</h3>
 <p class="font-body-md text-on-surface-variant mb-md">
             123 Academic Avenue<br/>
             Suite 400<br/>
@@ -584,45 +595,162 @@ id="services">
 </div>
 </div>
 </section>
-<!-- Contact Section -->
-<section class="py-xl px-sm md:px-lg bg-[#0a192f] border-t border-outline-variant text-white" id="contact">
-<div class="max-w-container-max mx-auto max-w-[600px]">
-<div class="mb-lg text-center">
-<h2 class="font-headline-md text-headline-md text-white">Formulario de Contacto</h2>
-<p class="font-body-md text-surface-variant mt-xs">Envíanos los detalles de tu Proyecto / Tesis para iniciar una consultoría por medio de Whatsapp.</p>
-</div>
-<form class="bg-[#122647] p-lg rounded border border-white/10 shadow-sm flex flex-col gap-md">
-<div>
-<label class="block font-label-caps text-white mb-xs" for="name">Nombre</label>
-<input class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white placeholder:text-surface-variant" id="name" placeholder="Tu nombre" type="text"/>
-</div>
-<div>
-<label class="block font-label-caps text-white mb-xs" for="academic-level">Nivel Académico</label>
-<select class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white" id="academic-level">
-<option>Pregrado</option>
-<option>Licenciatura</option>
-<option>Maestría</option>
-<option>Doctorado (PhD)</option>
-<option value="">Otro</option>
-</select>
-</div>
-<div>
-<label class="block font-label-caps text-white mb-xs" for="message">Detalles del Proyecto</label>
-<textarea class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white min-h-[100px] placeholder:text-surface-variant" id="message" placeholder="Descirbe brevemente tu tema y tu progreso actual..."></textarea>
-</div>
-<button class="w-full bg-[#25D366] text-white px-md py-sm rounded font-label-caps hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-xs mt-sm shadow-sm" type="button">
-<span class="material-symbols-outlined" data-icon="chat">chat</span>
-        Contacto via WhatsApp
-    </button>
-</form>
-</div>
+
+<!-- =========================================================
+     BACKGROUND MEDIA SECTION
+
+     Componente padre reutilizable para secciones con imagen.
+
+     Parámetros:
+     --bg-opacity   : opacidad del overlay
+     --bg-color     : color del overlay
+     --bg-blur      : desenfoque de la imagen
+     --bg-scale     : escala opcional de la imagen
+     --bg-position  : posición de la imagen
+
+     Ejemplo:
+
+     style="
+        --bg-opacity: .65;
+        --bg-color: #0a192f;
+        --bg-blur: 4px;
+        --bg-scale: 1.05;
+        --bg-position: center;
+     "
+========================================================= -->
+
+<section
+    class="
+        relative
+        isolate
+        overflow-hidden
+        min-h-[600px]
+        py-2
+        flex
+        items-center
+    "
+    style="
+        --bg-opacity: .65;
+        --bg-color: #0a192f;
+        --bg-blur: 0px;
+        --bg-scale: 1;
+        --bg-position: center;
+    "
+>
+
+    <!-- =====================================================
+         BACKGROUND IMAGE
+    ====================================================== -->
+
+    <div
+        class="
+            absolute
+            inset-0
+            -z-20
+            overflow-hidden
+        "
+        aria-hidden="true"
+    >
+
+        <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+            class="
+                background-media
+                absolute
+                inset-0
+                w-full
+                h-full
+                object-cover
+            "
+            style="
+                object-position: var(--bg-position);
+                filter: blur(var(--bg-blur));
+                transform: scale(var(--bg-scale));
+            "
+        >
+
+    </div>
+
+
+    <!-- =====================================================
+         COLOR OVERLAY
+    ====================================================== -->
+
+    <div
+        class="
+            absolute
+            inset-0
+            -z-10
+            pointer-events-none
+        "
+        style="
+            background-color: var(--bg-color);
+            opacity: var(--bg-opacity);
+        "
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+
+    <div
+        class="
+            relative
+            z-10
+            w-full
+        "
+    >
+
+        <!-- CONTENIDO DE LA SECCIÓN -->
+
+        <div class="max-w-container-max mt-5 mx-auto max-w-[600px]">
+        <div class="mb-lg text-center">
+        <h2 class="font-headline-md text-headline-md text-white">Formulario de Contacto</h2>
+        <p class="font-body-md text-surface-variant mt-xs">Envíanos los detalles de tu Proyecto / Tesis para iniciar una consultoría por medio de Whatsapp.</p>
+        </div>
+        <form class="bg-[#122647] p-lg rounded border border-white/10 shadow-sm flex flex-col gap-md">
+        <div>
+        <label class="block font-label-caps text-white mb-xs" for="name">Nombre</label>
+        <input class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white placeholder:text-surface-variant" id="name" placeholder="Tu nombre" type="text"/>
+        </div>
+        <div>
+        <label class="block font-label-caps text-white mb-xs" for="academic-level">Nivel Académico</label>
+        <select id="academicDegree" class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white" id="academic-level">
+        <option>Pregrado</option>
+        <option>Licenciatura</option>
+        <option>Maestría</option>
+        <option>Doctorado (PhD)</option>
+        <option value="">Otro</option>
+        </select>
+        </div>
+        <div>
+        <label class="block font-label-caps text-white mb-xs" for="message">Detalles del Proyecto</label>
+        <textarea 
+            id="cardContext" name="cardContext" value=""
+            class="w-full rounded border-white/20 bg-[#0a192f] px-sm py-xs font-body-md text-white focus:border-white focus:ring-white min-h-[100px] placeholder:text-surface-variant" id="message" placeholder="Descirbe brevemente tu tema y tu progreso actual..."></textarea>
+        </div>
+        <input type="hidden" id="cardContext" name="cardContext" value="">
+        <button class="w-full bg-[#25D366] text-white px-md py-sm rounded font-label-caps hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-xs mt-sm shadow-sm" type="button">
+        <span class="material-symbols-outlined" data-icon="chat">chat</span>
+                Contacto via WhatsApp
+            </button>
+        </form>
+        </div>
+
+    </div>
+
 </section>
+
+<!-- Contact Section -->
+
 </main>
 <!-- Footer -->
 <footer class="bg-surface border-t border-outline-variant full-width bottom-0">
 <div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-lg max-w-container-max mx-auto gap-md">
 <div class="flex items-center gap-sm">
-<img alt="Navia Consultora Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vxy-1cQLv50zTjyY9_mly1PjFu_j34nQ9A9WhFigkNWy55ps_hOWHr5LpjfCX6s4riS68JXhT9lPhe9WR2AiwdGZ-40Nn_50CKmXZZ7L8fvv1lwPasCbZ83YtRzsbcPLLRexpMisKf4lVN67VF13V_dFmE2L5iZn7gwtIuIjknza3vVESa7ZnPE1U4qOael1HoahWHpAHjKZxBpmirm-YhbOkKcpR4HjC0DP6sgtal1Z31OK9kf07deyU"/>
 <span class="font-headline-sm text-headline-sm font-bold text-primary">Navia Consultora</span>
 </div>
 <div class="flex gap-md flex-wrap justify-center">
@@ -631,8 +759,84 @@ id="services">
 <a class="text-on-surface-variant hover:text-primary transition-opacity hover:opacity-90 font-label-caps" href="#contact">Contáctanos</a>
 </div>
 <div class="text-on-surface-variant font-body-md text-sm">
-                © 2024 Navia Consultora. Todos los derechos reservados.
+                © 2026 Navia Consultora. Todos los derechos reservados.
             </div>
 </div>
 </footer>
+
+<script>
+const whatsappNumber = "59170000000";
+
+const whatsappButton = document.getElementById("whatsappButton");
+const contactForm = document.querySelector("#contact form");
+
+whatsappButton.addEventListener("click", () => {
+    const name = document.getElementById("name").value.trim();
+    const academicDegree = document.getElementById("academicDegree").value;
+    const message = document.getElementById("message").value.trim();
+    const cardContext = document.getElementById("cardContext").value.trim();
+
+    if (!name) {
+        alert("Por favor, ingresa tu nombre.");
+        document.getElementById("name").focus();
+        return;
+    }
+
+    if (!message) {
+        alert("Por favor, describe brevemente tu proyecto.");
+        document.getElementById("message").focus();
+        return;
+    }
+
+    let whatsappMessage = `Hola, mi nombre es ${name}.
+
+Me gustaría solicitar una consultoría para mi Proyecto / Tesis.
+
+Nivel académico: ${academicDegree}
+
+Detalles del proyecto:
+${message}`;
+
+    if (cardContext) {
+        whatsappMessage += `
+
+Estoy interesado/a específicamente en:
+${cardContext}`;
+    }
+
+    whatsappMessage += `
+
+Quedo atento/a para conocer cómo podemos trabajar en mi proyecto.`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    const whatsappUrl =
+        `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+});
+</script>
+
+<script>
+document.querySelectorAll(".consultation-card").forEach(card => {
+    card.addEventListener("click", () => {
+        const context = card.dataset.whatsappContext;
+
+        document.getElementById("cardContext").value = context;
+
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+});
+</script>
+
+<a href="https://wa.me/59170000000?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Pacioli."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp"
+   class="whatsapp-float fixed bottom-5 right-5 z-40 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-105 transition-transform">
+    <span class="material-symbols-outlined text-3xl">chat</span>
+</a>
+
 </body></html>

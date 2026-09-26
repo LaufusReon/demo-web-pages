@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Belleza Dental</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#13707b",
+                    "on-primary-fixed": "#001f24",
+                    "background": "#f5fafc",
+                    "primary": "#006874",
+                    "secondary": "#006687",
+                    "primary-fixed": "#a1effc",
+                    "tertiary-container": "#ffe38b",
+                    "on-secondary-fixed": "#001e2b",
+                    "surface-container-highest": "#dee3e5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#171c1e",
+                    "surface-tint": "#006874",
+                    "surface-variant": "#dee3e5",
+                    "tertiary": "#705d11",
+                    "inverse-primary": "#85d3df",
+                    "secondary-fixed-dim": "#82d0f7",
+                    "surface-bright": "#f5fafc",
+                    "secondary-fixed": "#c0e8ff",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#a3f1fe",
+                    "on-error": "#ffffff",
+                    "surface": "#f5fafc",
+                    "error": "#ba1a1a",
+                    "outline": "#6f797b",
+                    "inverse-surface": "#2c3133",
+                    "outline-variant": "#bec8ca",
+                    "tertiary-fixed-dim": "#dfc570",
+                    "tertiary-fixed": "#fde189",
+                    "surface-container-low": "#eff4f6",
+                    "on-tertiary-fixed": "#231b00",
+                    "surface-container": "#eaeff1",
+                    "on-surface-variant": "#3f484a",
+                    "on-secondary-fixed-variant": "#004d66",
+                    "surface-dim": "#d6dbdd",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#564500",
+                    "on-background": "#171c1e",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#88d6fd",
+                    "on-secondary-container": "#005d7b",
+                    "surface-container-high": "#e4e9eb",
+                    "on-primary-fixed-variant": "#004f57",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#786419",
+                    "inverse-on-surface": "#ecf2f4",
+                    "primary-fixed-dim": "#85d3df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+        }
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA5F36pXxD7Ue-TS6Osv9qwgZvz07zFSyFgnq4LSclYEkeAZbmLeqFZLltH2I2BbfSRTZysvvRvnu8BqV5XgV5xtzQkX8uq7ShJwzdmaiD75Me88Wq_jjBSjkT8GmGkjiY33D0RoHL20K0qkPXvKJ6Ks6C1b7griANotP60OFXbQlIcTW1jql5gJIA1Cklbqn6q_w_CU_eeJV2zIOdcVNdXzZj_F4N3fqA600ycK1kw_es855sLy35hpC6GTqfEMyuIMifF3H4xu1yF);
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 9999
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<div class="noise-overlay"></div>
+<!-- Navigation -->
+<nav
+    class="fixed top-3 left-1/2 z-50 w-[calc(100%-1.5rem)] max-w-5xl -translate-x-1/2 rounded-xl bg-white/70 px-4 py-3 shadow-[0px_20px_40px_rgba(0,104,116,0.06)] backdrop-blur-xl dark:bg-slate-900/70 sm:top-4 sm:w-[90%] sm:px-6 sm:py-4"
+>
+    <!-- HEADER -->
+    <div class="flex items-center justify-between">
+
+        <!-- LOGO -->
+        <a
+            href="#"
+            class="text-xl font-bold tracking-tighter text-cyan-900 dark:text-cyan-100 font-headline sm:text-2xl"
+        >
+            Belleza Dental
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <div class="hidden items-center gap-6 md:flex lg:gap-8">
+
+            <a
+                class="border-b-2 border-cyan-700 pb-1 font-bold tracking-tight text-cyan-700 transition-transform duration-300 hover:scale-105 dark:border-cyan-400 dark:text-cyan-300 font-headline"
+                href="#"
+            >
+                Servicios
+            </a>
+
+            <a
+                class="tracking-tight text-slate-600 transition-transform duration-300 hover:scale-105 hover:text-cyan-800 dark:text-slate-400 dark:hover:text-cyan-300 font-headline"
+                href="#"
+            >
+                Nosotros
+            </a>
+
+            <a
+                class="tracking-tight text-slate-600 transition-transform duration-300 hover:scale-105 hover:text-cyan-800 dark:text-slate-400 dark:hover:text-cyan-300 font-headline"
+                href="#"
+            >
+                Sedes
+            </a>
+
+            <a
+                class="tracking-tight text-slate-600 transition-transform duration-300 hover:scale-105 hover:text-cyan-800 dark:text-slate-400 dark:hover:text-cyan-300 font-headline"
+                href="#"
+            >
+                Contacto
+            </a>
+        </div>
+
+        <!-- DESKTOP CTA -->
+        <a
+            href="#contacto"
+            class="hidden rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-on-primary transition-transform duration-300 hover:scale-105 active:scale-95 md:block lg:px-6"
+        >
+            Reserve su cita
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+            id="mobile-menu-button"
+            type="button"
+            class="flex h-10 w-10 items-center justify-center rounded-lg text-cyan-900 transition-colors hover:bg-cyan-50 dark:text-cyan-100 dark:hover:bg-slate-800 md:hidden"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <span
+                id="menu-icon"
+                class="material-symbols-outlined text-2xl"
+            >
+                menu
+            </span>
+        </button>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div
+        id="mobile-menu"
+        class="grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-out md:hidden"
+    >
+        <div class="overflow-hidden">
+
+            <div class="mt-4 border-t border-cyan-900/10 pt-4 dark:border-white/10">
+
+                <div class="flex flex-col gap-1">
+
+                    <a
+                        href="#"
+                        class="rounded-lg bg-cyan-50 px-4 py-3 font-bold text-cyan-700 transition-colors hover:bg-cyan-100 dark:bg-cyan-900/20 dark:text-cyan-300 dark:hover:bg-cyan-900/30"
+                    >
+                        Servicios
+                    </a>
+
+                    <a
+                        href="#"
+                        class="rounded-lg px-4 py-3 text-slate-600 transition-colors hover:bg-cyan-50 hover:text-cyan-800 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-cyan-300"
+                    >
+                        Nosotros
+                    </a>
+
+                    <a
+                        href="#"
+                        class="rounded-lg px-4 py-3 text-slate-600 transition-colors hover:bg-cyan-50 hover:text-cyan-800 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-cyan-300"
+                    >
+                        Sedes
+                    </a>
+
+                    <a
+                        href="#"
+                        class="rounded-lg px-4 py-3 text-slate-600 transition-colors hover:bg-cyan-50 hover:text-cyan-800 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-cyan-300"
+                    >
+                        Contacto
+                    </a>
+
+                    <!-- MOBILE CTA -->
+                    <a
+                        href="#contacto"
+                        class="mt-2 flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-bold text-on-primary transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                        Reserve su cita
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</nav>
+<!-- Hero Section -->
+<header
+    class="relative flex min-h-[100svh] items-center overflow-hidden
+           bg-surface
+           px-5 pt-24 pb-10
+           sm:px-6
+           md:pt-28"
+>
+
+    <!-- =====================================================
+         VIDEO BACKGROUND
+         ===================================================== -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            class="h-full w-full object-cover object-center
+                   md:object-center"
+        >
+            <source
+                src="https://www.pexels.com/download/video/4489264/"
+                type="video/mp4"
+            >
+        </video>
+
+
+        <!-- Overlay escritorio -->
+        <div
+            class="absolute inset-0
+                   bg-gradient-to-r
+                   from-surface
+                   via-surface/80
+                   to-surface/20
+                   md:via-surface/60
+                   md:to-transparent"
+        ></div>
+
+
+        <!-- Overlay adicional para móvil -->
+        <div
+            class="absolute inset-0 bg-surface/25 md:hidden"
+        ></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTENIDO
+         ===================================================== -->
+    <div
+        class="container relative z-10 mx-auto
+               px-0
+               sm:px-2
+               md:px-6"
+    >
+        <div
+            class="max-w-3xl"
+        >
+
+            <!-- =================================================
+                 TÍTULO
+                 ================================================= -->
+            <h1
+                class="mb-6
+                       max-w-[700px]
+                       text-5xl
+                       font-headline
+                       font-extrabold
+                       leading-[0.92]
+                       tracking-tighter
+                       text-on-surface
+                       sm:text-6xl
+                       md:mb-8
+                       md:text-7xl
+                       lg:text-8xl"
+            >
+                El Santuario de tu Sonrisa
+            </h1>
+            <!-- =================================================
+                 DESCRIPCIÓN
+                 ================================================= -->
+            <p
+                class="mb-8
+                       max-w-xl
+                       text-base
+                       leading-relaxed
+                       text-on-surface-variant
+                       sm:text-lg
+                       md:mb-10
+                       md:text-xl"
+            >
+                Donde la precisión quirúrgica se encuentra con
+                la serenidad de un retiro de bienestar.
+                Redefinimos el cuidado dental a través del arte
+                y la tecnología.
+            </p>
+            <!-- =================================================
+                 BOTONES
+                 ================================================= -->
+            <div
+                class="flex
+                       w-full
+                       flex-col
+                       gap-3
+                       sm:flex-row
+                       sm:gap-4"
+            >
+                <!-- CTA PRINCIPAL -->
+                <button
+                    type="button"
+                    class="flex min-h-14 w-full
+                           items-center justify-center
+                           rounded-xl
+                           bg-primary
+                           px-7 py-3
+                           text-base
+                           font-headline
+                           font-bold
+                           text-on-primary
+                           shadow-xl
+                           shadow-primary/20
+                           transition-transform
+                           duration-300
+                           hover:scale-[1.02]
+                           active:scale-[0.98]
+                           sm:w-auto
+                           sm:px-10
+                           sm:text-lg"
+                >
+                    Reserve su cita
+                </button>
+                <!-- CTA SECUNDARIO -->
+                <button
+                    type="button"
+                    class="flex min-h-14 w-full
+                           items-center
+                           justify-center
+                           gap-2
+                           rounded-xl
+                           bg-surface-container-lowest/95
+                           px-7 py-3
+                           text-base
+                           font-headline
+                           font-bold
+                           text-primary
+                           shadow-lg
+                           backdrop-blur-sm
+                           transition-colors
+                           duration-300
+                           hover:bg-surface-container-low
+                           active:bg-surface-container
+                           sm:w-auto
+                           sm:px-10
+                           sm:text-lg"
+                >
+                    <span
+                        class="material-symbols-outlined text-[24px]"
+                        aria-hidden="true"
+                    >
+                        play_circle
+                    </span>
+                    <span>
+                        Ver Experiencia
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Benefits Section -->
+<section class="py-12 bg-surface">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-10 rounded-xl hover:translate-y-[-8px] transition-transform duration-500 group">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">verified_user</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Tecnología de Punta</h3>
+<p class="text-on-surface-variant leading-relaxed">Sistemas digitales de diagnóstico por imagen y láser de precisión para tratamientos indoloros y exactos.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:translate-y-[-8px] transition-transform duration-500 group">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">spa</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Ambiente Zen</h3>
+<p class="text-on-surface-variant leading-relaxed">Espacios diseñados para eliminar la ansiedad clínica, utilizando aromaterapia y diseño biofílico.</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl hover:translate-y-[-8px] transition-transform duration-500 group">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">medical_services</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Cuidado Integral</h3>
+<p class="text-on-surface-variant leading-relaxed">Un equipo multidisciplinario dedicado a tu salud oral desde la prevención hasta la estética avanzada.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section (NEW) -->
+<section class="py-16 bg-white border-y border-surface-container">
+<div class="container mx-auto px-6">
+<div class="flex flex-wrap justify-center gap-12 md:gap-24 items-center opacity-70">
+<div class="flex items-center gap-4">
+<div class="text-4xl font-headline font-black text-primary">99%</div>
+<div class="text-xs font-bold uppercase tracking-widest leading-tight">Satisfacción<br/>del Paciente</div>
+</div>
+<div class="flex items-center gap-4 border-l border-outline-variant/30 pl-12">
+<div class="text-4xl font-headline font-black text-primary">25+</div>
+<div class="text-xs font-bold uppercase tracking-widest leading-tight">Certificaciones<br/>Internacionales</div>
+</div>
+<div class="flex items-center gap-4 border-l border-outline-variant/30 pl-12">
+<div class="text-4xl font-headline font-black text-primary">15k</div>
+<div class="text-xs font-bold uppercase tracking-widest leading-tight">Tratamientos<br/>Exitosos</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Identity / Brand Story -->
+<section class="py-20 bg-surface-container-low overflow-hidden">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative">
+<div class="relative z-10 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Professional dentist" class="w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJqY2oS13tucpTQR-AUeTeM5O4JGOeZmreBzdf9qRyORcYNC91VDXpotO4JTzC7MOKkhU1U25BSpPpOqkLpPqVeod9v_9ToLI7n3ssbzb7BZ1jLyjjj6AgjgpSF6hIokApPqqGgImjmAOWA9zDPN3s7K0_kNcKiE-ei75t1d5GWy5gIq7_vmMMKNoIRiDJsrSCyJz8BQR9aZyUWYU1nwAxLhqmb_VCbwZyOOagVmcl1m5oVZ85kR9POIC56_WH2Yu3uDLkYMSP6pyu"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-30 z-0"></div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-8 tracking-tight">Nuestra Historia: Belleza Dental</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-6">
+                        Nacimos con la visión de transformar la odontología tradicional. No solo tratamos dientes; cuidamos personas que desean sonreír con confianza en un entorno que respeta sus sentidos.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10">
+                        Cada detalle en nuestras clínicas, desde la música hasta la ergonomía de nuestros sillones, ha sido curado para ofrecer una experiencia de hospitalidad superior unida al rigor médico más estricto.
+                    </p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-10">
+<div>
+<div class="text-4xl font-headline font-black text-primary mb-1">15+</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Años de Perfección</div>
+</div>
+<div>
+<div class="text-4xl font-headline font-black text-primary mb-1">12k</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Sonrisas Creadas</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Carousel Services (REPLACED MOSAIC) -->
+<section class="overflow-hidden bg-surface py-16 md:py-20">
+
+    <div class="container mx-auto px-5 sm:px-6">
+
+        <!-- =====================================================
+             HEADER
+             ===================================================== -->
+        <div
+            class="mb-10 flex flex-col gap-6 md:mb-16 md:flex-row md:items-end md:justify-between"
+        >
+
+            <div class="max-w-xl">
+
+                <h2
+                    class="mb-4 text-3xl font-headline font-extrabold tracking-tight text-on-surface sm:text-4xl"
+                >
+                    Especialidades del Santuario
+                </h2>
+
+                <p
+                    class="text-base leading-relaxed text-on-surface-variant sm:text-lg"
+                >
+                    Procedimientos de vanguardia diseñados para resultados
+                    funcionales y estéticamente impecables.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 CONTROLES
+                 ================================================= -->
+            <div class="flex shrink-0 gap-3">
+
+                <button
+                    type="button"
+                    data-carousel-prev
+                    aria-label="Especialidad anterior"
+                    class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary/20 text-primary transition-all duration-300 hover:bg-primary hover:text-on-primary disabled:pointer-events-none disabled:opacity-30 sm:h-14 sm:w-14"
+                >
+                    <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                    >
+                        west
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    data-carousel-next
+                    aria-label="Siguiente especialidad"
+                    class="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary/20 text-primary transition-all duration-300 hover:bg-primary hover:text-on-primary disabled:pointer-events-none disabled:opacity-30 sm:h-14 sm:w-14"
+                >
+                    <span
+                        class="material-symbols-outlined"
+                        aria-hidden="true"
+                    >
+                        east
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             CAROUSEL
+             ===================================================== -->
+        <div class="relative">
+
+            <div
+                data-carousel
+                class="-mx-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-8 scroll-smooth sm:-mx-6 sm:gap-6 sm:px-6 md:gap-8"
+                style="scrollbar-width: none;"
+            >
+
+                <!-- =================================================
+                     CARD 1
+                     ================================================= -->
+                <article
+                    data-carousel-item
+                    class="group relative aspect-[3/4] w-[calc(100vw-40px)] max-w-[450px] shrink-0 snap-start overflow-hidden rounded-2xl shadow-2xl sm:w-[350px] md:w-[calc((100vw-96px)/2)] lg:w-[calc((100vw-128px)/3)]"
+                >
+
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWgGLAJUPnHp-EvLhJpglbqibWrE0huGmIg166EEGjaS01u2fvRoR8uURxezZaSdWUs0hd_nFloYjLd_cP979VKtuDsPIfkhqICPj6A7xtUrNZCmszfpyMBZrwmzFqjQUJ489GbyT3tLZBVRZVrPJSFHMghG8Es2wGnnY7VNA2-yOUhA-AxqV1TdUhKJ6pjpmsiClKOH9z_QrIjY-AyQ7hK58YyKnG00HchqmSFDKsPbaTnXs6Hn4LBrcA3uQb8TuBQnLr8sDahY39"
+                        alt="Diseño de sonrisa digital"
+                        loading="lazy"
+                        class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/25 to-transparent"
+                    ></div>
+
+                    <div
+                        class="absolute inset-x-0 bottom-0 p-6 sm:p-8"
+                    >
+
+                        <span
+                            class="mb-2 block text-xs font-bold uppercase tracking-widest text-on-primary/70"
+                        >
+                            Estética Premium
+                        </span>
+
+                        <h3
+                            class="mb-4 text-2xl font-headline font-bold leading-tight text-on-primary sm:text-3xl"
+                        >
+                            Diseño de Sonrisa Digital
+                        </h3>
+
+                        <p
+                            class="mb-6 line-clamp-2 text-sm leading-relaxed text-on-primary/80 sm:text-base"
+                        >
+                            Tecnología CAD/CAM para previsualizar y crear
+                            la sonrisa perfecta antes de iniciar.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="flex items-center gap-2 rounded-xl bg-white/20 px-5 py-3 text-sm font-bold text-white backdrop-blur-md transition-all hover:bg-white hover:text-primary sm:px-6 sm:text-base"
+                        >
+                            Ver Detalles
+
+                            <span
+                                class="material-symbols-outlined text-sm"
+                                aria-hidden="true"
+                            >
+                                arrow_forward
+                            </span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     CARD 2
+                     ================================================= -->
+                <article
+                    data-carousel-item
+                    class="group relative aspect-[3/4] w-[calc(100vw-40px)] max-w-[450px] shrink-0 snap-start overflow-hidden rounded-2xl shadow-2xl sm:w-[350px] md:w-[calc((100vw-96px)/2)] lg:w-[calc((100vw-128px)/3)]"
+                >
+
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy909-cin9AaTkxK2K-Sl6rN06wDJQUJHChJKC3yDXqzY4exNKljjI97FvkAfOa7HncV-LTHAB4-fPuk6nHh5Waif7Ga5uWK4vPEZPV_dqobFq61zk5OfOiZvgDSL9Lc_L7k_d0jgq1RDF-ZYCaa3TLnJUlmIqwIfWDbVKDoYB8mq4ILGshdeJhAccD5g_QZz0cD4PphLhZqE8VICrOvCy2uYZX4O5tNOEfYKiOP6dRFBc1fMfGJgEbMiCnHxud5z9eEKxqzC0O50S"
+                        alt="Implantología 3D"
+                        loading="lazy"
+                        class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/25 to-transparent"
+                    ></div>
+
+                    <div
+                        class="absolute inset-x-0 bottom-0 p-6 sm:p-8"
+                    >
+
+                        <span
+                            class="mb-2 block text-xs font-bold uppercase tracking-widest text-on-primary/70"
+                        >
+                            Alta Precisión
+                        </span>
+
+                        <h3
+                            class="mb-4 text-2xl font-headline font-bold leading-tight text-on-primary sm:text-3xl"
+                        >
+                            Implantología 3D
+                        </h3>
+
+                        <p
+                            class="mb-6 line-clamp-2 text-sm leading-relaxed text-on-primary/80 sm:text-base"
+                        >
+                            Recupera la funcionalidad con implantes de
+                            última generación y precisión milimétrica.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="flex items-center gap-2 rounded-xl bg-white/20 px-5 py-3 text-sm font-bold text-white backdrop-blur-md transition-all hover:bg-white hover:text-secondary sm:px-6 sm:text-base"
+                        >
+                            Ver Detalles
+
+                            <span
+                                class="material-symbols-outlined text-sm"
+                                aria-hidden="true"
+                            >
+                                arrow_forward
+                            </span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =================================================
+                     CARD 3
+                     ================================================= -->
+                <article
+                    data-carousel-item
+                    class="group relative aspect-[3/4] w-[calc(100vw-40px)] max-w-[450px] shrink-0 snap-start overflow-hidden rounded-2xl shadow-2xl sm:w-[350px] md:w-[calc((100vw-96px)/2)] lg:w-[calc((100vw-128px)/3)]"
+                >
+
+                    <img
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPCOWi0L0ChRPtARQBhlcGWsLMcKSRc9HxolXC3rbNNbX2gTYzdPwE5BDVsSK9zihdjQfrda8ovny36_gYGPck-e8VLDE3I15hl2hV3jf7b1wRxarF55AdaLQLmizcxSLH2yaQT5FQIi-8v-F3EQIFhMNcvwV0bdU54_t619qTdweCeT8CWGSzNgW2DCsFl9g4rb3SVDkNWXwkMIScx9RQtMnuMr11PtgA6vNqMXqeKIhYvcdSEnHk6mw3ZFu9G5AL5wlZBFLKr6In"
+                        alt="Odontología preventiva"
+                        loading="lazy"
+                        class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-tertiary/95 via-tertiary/25 to-transparent"
+                    ></div>
+
+                    <div
+                        class="absolute inset-x-0 bottom-0 p-6 sm:p-8"
+                    >
+
+                        <span
+                            class="mb-2 block text-xs font-bold uppercase tracking-widest text-on-primary/70"
+                        >
+                            Salud Integral
+                        </span>
+
+                        <h3
+                            class="mb-4 text-2xl font-headline font-bold leading-tight text-on-primary sm:text-3xl"
+                        >
+                            Odontología Preventiva
+                        </h3>
+
+                        <p
+                            class="mb-6 line-clamp-2 text-sm leading-relaxed text-on-primary/80 sm:text-base"
+                        >
+                            Cuidado experto para mantener tu salud oral
+                            y prevenir complicaciones futuras.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="flex items-center gap-2 rounded-xl bg-white/20 px-5 py-3 text-sm font-bold text-white backdrop-blur-md transition-all hover:bg-white hover:text-tertiary sm:px-6 sm:text-base"
+                        >
+                            Ver Detalles
+
+                            <span
+                                class="material-symbols-outlined text-sm"
+                                aria-hidden="true"
+                            >
+                                arrow_forward
+                            </span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- =================================================
+                 INDICADORES
+                 ================================================= -->
+            <div
+                data-carousel-dots
+                class="mt-2 flex justify-center gap-2"
+                aria-label="Indicadores del carrusel"
+            ></div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Medical Team Section (NEW) -->
+<section class="py-20 bg-surface-container-low">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Nuestros Expertos</span>
+<h2 class="text-5xl font-headline font-extrabold mb-12 tracking-tight">El Equipo Médico</h2>
+<div class="space-y-12">
+<div class="group cursor-pointer">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Dr. Alejandro Vesper</h3>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<p class="text-on-surface-variant mb-4">Especialista en Diseño de Sonrisa y Estética Avanzada. Más de 15 años transformando sonrisas.</p>
+<div class="flex gap-2">
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Harvard Dental School</span>
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Estética</span>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30"></div>
+<div class="group cursor-pointer">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Dra. Lucía Mendoza</h3>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+<p class="text-on-surface-variant mb-4">Experta en Implantología 3D y Cirugía Maxilofacial con enfoque mínimamente invasivo.</p>
+<div class="flex gap-2">
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">U. de Madrid</span>
+<span class="bg-primary/5 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Cirugía</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-square rounded-xl overflow-hidden shadow-2xl">
+<img alt="Featured Medical Staff" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJqY2oS13tucpTQR-AUeTeM5O4JGOeZmreBzdf9qRyORcYNC91VDXpotO4JTzC7MOKkhU1U25BSpPpOqkLpPqVeod9v_9ToLI7n3ssbzb7BZ1jLyjjj6AgjgpSF6hIokApPqqGgImjmAOWA9zDPN3s7K0_kNcKiE-ei75t1d5GWy5gIq7_vmMMKNoIRiDJsrSCyJz8BQR9aZyUWYU1nwAxLhqmb_VCbwZyOOagVmcl1m5oVZ85kR9POIC56_WH2Yu3uDLkYMSP6pyu"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-xl shadow-xl max-w-xs">
+<p class="text-sm italic font-body text-on-surface-variant mb-4">"Nuestra misión es fusionar la ciencia más avanzada con una calidez humana que haga sentir a cada paciente en casa."</p>
+<p class="font-bold text-primary">— Dr. Alejandro Vesper</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vanguard Technology Section (NEW) -->
+<section class="py-20 bg-surface font-lato">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<!-- Left side: Gallery/Mosaic -->
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden shadow-xl aspect-square bg-primary-container/20 group hover:scale-[1.02] transition-transform duration-500" style="border-radius: 3rem;">
+<img alt="Medical scanner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3oTvjqKWTcwZQY2B_3nmpZCu41Na2e08mRD0EcYLnMgHahBdVPXQgMpFCgEIjoq7ilIAkB03polZ_WK522mSIqxsLGF0WBj5ItLoRnySUgVgn_XZUOQXlWScVWSgAOV7mRGWwzBcsdtJLwqWTK60Rx0eF0JSxwsJHAYLvvm3C0l-hmp0BOqmJUVN1FV872O9SF1M7H-84WFdYJ5zoh3HJpKYMD7MYKwwzAu2GDWnitVfgcT-yGxGE-d-VSPvP7ZspyanoAGOeSdSS"/>
+</div>
+<div class="space-y-4 pt-8">
+<div class="rounded-xl overflow-hidden shadow-xl aspect-[4/3] bg-primary-container/20 group hover:scale-[1.02] transition-transform duration-500" style="border-radius: 3rem;">
+<img alt="High precision tools" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJqY2oS13tucpTQR-AUeTeM5O4JGOeZmreBzdf9qRyORcYNC91VDXpotO4JTzC7MOKkhU1U25BSpPpOqkLpPqVeod9v_9ToLI7n3ssbzb7BZ1jLyjjj6AgjgpSF6hIokApPqqGgImjmAOWA9zDPN3s7K0_kNcKiE-ei75t1d5GWy5gIq7_vmMMKNoIRiDJsrSCyJz8BQR9aZyUWYU1nwAxLhqmb_VCbwZyOOagVmcl1m5oVZ85kR9POIC56_WH2Yu3uDLkYMSP6pyu"/>
+</div>
+<div class="rounded-xl overflow-hidden shadow-xl aspect-square bg-primary-container/20 group hover:scale-[1.02] transition-transform duration-500" style="border-radius: 3rem;">
+<img alt="3D Imaging" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy909-cin9AaTkxK2K-Sl6rN06wDJQUJHChJKC3yDXqzY4exNKljjI97FvkAfOa7HncV-LTHAB4-fPuk6nHh5Waif7Ga5uWK4vPEZPV_dqobFq61zk5OfOiZvgDSL9Lc_L7k_d0jgq1RDF-ZYCaa3TLnJUlmIqwIfWDbVKDoYB8mq4ILGshdeJhAccD5g_QZz0cD4PphLhZqE8VICrOvCy2uYZX4O5tNOEfYKiOP6dRFBc1fMfGJgEbMiCnHxud5z9eEKxqzC0O50S"/>
+</div>
+</div>
+</div>
+<!-- Right side: Detailed list -->
+<div class="lg:w-1/2">
+<span class="text-azure-deep font-bold tracking-widest uppercase text-xs mb-4 block">Innovación Clínica</span>
+<h2 class="text-5xl font-bold mb-12 tracking-tight text-on-surface">Tecnología de Vanguardia</h2>
+<div class="space-y-10">
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-2xl flex items-center justify-center text-azure-deep shadow-sm">
+<span class="material-symbols-outlined text-3xl">brush</span>
+</div>
+<div>
+<h4 class="text-2xl font-bold text-azure-deep mb-2">Equipo de Fluorización</h4>
+<p class="text-on-surface-variant leading-relaxed">Sistema de remineralización profunda con aplicación controlada para fortalecer el esmalte de manera indolora y altamente efectiva.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-2xl flex items-center justify-center text-azure-deep shadow-sm">
+<span class="material-symbols-outlined text-3xl">biotech</span>
+</div>
+<div>
+<h4 class="text-2xl font-bold text-azure-deep mb-2">Resonancia 3D</h4>
+<p class="text-on-surface-variant leading-relaxed">Diagnóstico volumétrico de alta resolución que permite una planificación quirúrgica precisa con una exposición mínima a la radiación.</p>
+</div>
+</div>
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-2xl flex items-center justify-center text-azure-deep shadow-sm">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="text-2xl font-bold text-azure-deep mb-2">Implantes Dentales Robóticos</h4>
+<p class="text-on-surface-variant leading-relaxed">Cirugía guiada por computadora que garantiza una colocación exacta, reduciendo el tiempo de recuperación y aumentando la durabilidad.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 'Consigue Cambios' (Before & After) (NEW) -->
+<section class="py-20 bg-surface">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-4 tracking-tight">Consigue Cambios</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Resultados reales que devuelven la confianza. Observa el impacto de nuestros tratamientos estéticos y funcionales.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Case 1 -->
+<div class="bg-surface-container-low rounded-xl p-8 shadow-sm">
+<div class="flex gap-4 mb-8">
+<div class="flex-1 relative rounded-xl overflow-hidden aspect-video">
+<img alt="Before treatment" class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWgGLAJUPnHp-EvLhJpglbqibWrE0huGmIg166EEGjaS01u2fvRoR8uURxezZaSdWUs0hd_nFloYjLd_cP979VKtuDsPIfkhqICPj6A7xtUrNZCmszfpyMBZrwmzFqjQUJ489GbyT3tLZBVRZVrPJSFHMghG8Es2wGnnY7VNA2-yOUhA-AxqV1TdUhKJ6pjpmsiClKOH9z_QrIjY-AyQ7hK58YyKnG00HchqmSFDKsPbaTnXs6Hn4LBrcA3uQb8TuBQnLr8sDahY39"/>
+<span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">Antes</span>
+</div>
+<div class="flex-1 relative rounded-xl overflow-hidden aspect-video shadow-2xl">
+<img alt="After treatment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWgGLAJUPnHp-EvLhJpglbqibWrE0huGmIg166EEGjaS01u2fvRoR8uURxezZaSdWUs0hd_nFloYjLd_cP979VKtuDsPIfkhqICPj6A7xtUrNZCmszfpyMBZrwmzFqjQUJ489GbyT3tLZBVRZVrPJSFHMghG8Es2wGnnY7VNA2-yOUhA-AxqV1TdUhKJ6pjpmsiClKOH9z_QrIjY-AyQ7hK58YyKnG00HchqmSFDKsPbaTnXs6Hn4LBrcA3uQb8TuBQnLr8sDahY39"/>
+<span class="absolute top-2 left-2 bg-primary text-on-primary text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">Después</span>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<h4 class="font-headline font-bold text-xl">Diseño de Carillas</h4>
+<p class="text-sm text-on-surface-variant italic">Tratamiento realizado en 2 sesiones</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">Ver Caso <span class="material-symbols-outlined text-sm">open_in_new</span></button>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="bg-surface-container-low rounded-xl p-8 shadow-sm">
+<div class="flex gap-4 mb-8">
+<div class="flex-1 relative rounded-xl overflow-hidden aspect-video">
+<img alt="Before treatment" class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPCOWi0L0ChRPtARQBhlcGWsLMcKSRc9HxolXC3rbNNbX2gTYzdPwE5BDVsSK9zihdjQfrda8ovny36_gYGPck-e8VLDE3I15hl2hV3jf7b1wRxarF55AdaLQLmizcxSLH2yaQT5FQIi-8v-F3EQIFhMNcvwV0bdU54_t619qTdweCeT8CWGSzNgW2DCsFl9g4rb3SVDkNWXwkMIScx9RQtMnuMr11PtgA6vNqMXqeKIhYvcdSEnHk6mw3ZFu9G5AL5wlZBFLKr6In"/>
+<span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">Antes</span>
+</div>
+<div class="flex-1 relative rounded-xl overflow-hidden aspect-video shadow-2xl">
+<img alt="After treatment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPCOWi0L0ChRPtARQBhlcGWsLMcKSRc9HxolXC3rbNNbX2gTYzdPwE5BDVsSK9zihdjQfrda8ovny36_gYGPck-e8VLDE3I15hl2hV3jf7b1wRxarF55AdaLQLmizcxSLH2yaQT5FQIi-8v-F3EQIFhMNcvwV0bdU54_t619qTdweCeT8CWGSzNgW2DCsFl9g4rb3SVDkNWXwkMIScx9RQtMnuMr11PtgA6vNqMXqeKIhYvcdSEnHk6mw3ZFu9G5AL5wlZBFLKr6In"/>
+<span class="absolute top-2 left-2 bg-primary text-on-primary text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">Después</span>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<div>
+<h4 class="font-headline font-bold text-xl">Ortodoncia Invisible</h4>
+<p class="text-sm text-on-surface-variant italic">Tratamiento finalizado en 12 meses</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">Ver Caso <span class="material-symbols-outlined text-sm">open_in_new</span></button>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-primary/5 text-primary border border-primary/20 px-10 py-4 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-all">Ver Galería Completa de Casos</button>
+</div>
+</div>
+</section>
+<!-- Location & Contact -->
+<section class="py-20 bg-surface-container-low">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16">
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-headline font-extrabold mb-8">Hablemos de tu Sonrisa</h2>
+<p class="text-on-surface-variant mb-12">Nuestro equipo está listo para brindarte una atención excepcional. Agenda tu consulta inicial hoy mismo.</p>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-1">Dirección Central</h4>
+<p class="text-on-surface-variant">Calle de la Serenidad 123, Distrito de Salud, Ciudad Dental.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary">phone_iphone</span>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-1">WhatsApp Directo</h4>
+<p class="text-on-surface-variant">+51 987 654 321</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-1">Horarios de Atención</h4>
+<p class="text-on-surface-variant">Lun - Vie: 8:00 AM - 8:00 PM<br/>Sáb: 9:00 AM - 2:00 PM</p>
+</div>
+</div>
+</div>
+<div class="mt-12 rounded-xl overflow-hidden h-64 shadow-inner bg-surface-container-highest">
+<img alt="Location map" class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoZW81UCk3AhCsjlkWx5aEhx_uElCPMtzwWAMZCK7bSr_3IZuOtA3a68U5oAzjBxzPIAcxTuAa1oU3QtiNnliZN2wgsG-Gn8fVTJoO0d2uORQqoaIvhx-EdnzCAL3udVaZsBqVHd7sPhkEQQR6RnLi8IB2_2i0AMO2OWnfHgwPM8WJbn37uWst2fp63fhLkb31ca_uIiWpDSHo2SEtSsWkC9WvrblhCMkIqP_CHwZNrSqZ8LJ39rr4-0Gk4vl6cUMoMRBdVaE8SCg4"/>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container-lowest p-10 md:p-12 rounded-xl shadow-xl shadow-primary/5">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-2">Nombre Completo</label>
+<input class="w-full px-6 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none" placeholder="Ej: Maria García" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-2">Teléfono</label>
+<input class="w-full px-6 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none" placeholder="999 999 999" required="" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-2">Servicio de Interés</label>
+<select class="w-full px-6 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none appearance-none">
+<option>Limpieza y Prevención</option>
+<option>Diseño de Sonrisa</option>
+<option>Implantes Dentales</option>
+<option>Ortodoncia Invisible</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant ml-2">Mensaje</label>
+<textarea class="w-full px-6 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all outline-none resize-none" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-headline font-bold text-lg hover:scale-[1.02] active:scale-[0.98] transition-transform shadow-lg shadow-primary/10 flex items-center justify-center gap-3" type="submit">
+                            Enviar vía WhatsApp
+                            <span class="material-symbols-outlined">send</span>
+</button>
+<p class="text-center text-xs text-on-surface-variant opacity-60">Al enviar, aceptas nuestros términos de privacidad.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width rounded-t-[3rem] mt-5">
+<div class="max-w-7xl mx-auto px-12 py-10 flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
+<div class="space-y-6 text-center md:text-left">
+<div class="text-lg font-black text-cyan-900 dark:text-cyan-100 font-headline uppercase tracking-widest">Belleza Dental</div>
+<p class="text-slate-500 max-w-xs leading-relaxed font-body">
+                    Transformando vidas a través de sonrisas saludables y estéticas en un entorno de paz absoluta.
+                </p>
+<div class="flex gap-4 justify-center md:justify-start">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-slate-600 group-hover:text-on-primary-container">favorite</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container transition-colors group" href="#">
+<span class="material-symbols-outlined text-slate-600 group-hover:text-on-primary-container">photo_camera</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-4">
+<a class="text-slate-500 hover:text-cyan-600 hover:underline underline-offset-4 opacity-80 font-body text-sm" href="#">Privacidad</a>
+<a class="text-slate-500 hover:text-cyan-600 hover:underline underline-offset-4 opacity-80 font-body text-sm" href="#">Términos</a>
+<a class="text-slate-500 hover:text-cyan-600 hover:underline underline-offset-4 opacity-80 font-body text-sm" href="#">Preguntas Frecuentes</a>
+<a class="text-slate-500 hover:text-cyan-600 hover:underline underline-offset-4 opacity-80 font-body text-sm" href="#">Soporte</a>
+</div>
+<div class="text-center md:text-right">
+<p class="text-slate-500 font-body text-sm leading-relaxed mb-2">© 2024 Belleza Dental. El Santuario de tu Sonrisa.</p>
+<p class="text-xs text-slate-400 font-body">Diseñado con excelencia clínica para pacientes extraordinarios.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const carousel = document.querySelector("[data-carousel]");
+    const items = [...document.querySelectorAll("[data-carousel-item]")];
+
+    const prevButton = document.querySelector("[data-carousel-prev]");
+    const nextButton = document.querySelector("[data-carousel-next]");
+    const dotsContainer = document.querySelector("[data-carousel-dots]");
+
+    if (!carousel || !items.length) return;
+
+
+    /*
+     * ---------------------------------------------------------
+     * CONFIGURACIÓN
+     * ---------------------------------------------------------
+     */
+
+    let currentIndex = 0;
+
+
+    /*
+     * ---------------------------------------------------------
+     * CREAR INDICADORES
+     * ---------------------------------------------------------
+     */
+
+    items.forEach((_, index) => {
+
+        const dot = document.createElement("button");
+
+        dot.type = "button";
+
+        dot.setAttribute(
+            "aria-label",
+            `Ir a especialidad ${index + 1}`
+        );
+
+        dot.className = `
+            h-2
+            rounded-full
+            bg-primary/20
+            transition-all
+            duration-300
+            w-2
+        `;
+
+        dot.addEventListener("click", () => {
+            goToSlide(index);
+        });
+
+        dotsContainer.appendChild(dot);
+    });
+
+
+    const dots = [...dotsContainer.children];
+
+
+    /*
+     * ---------------------------------------------------------
+     * OBTENER DISTANCIA DE MOVIMIENTO
+     * ---------------------------------------------------------
+     */
+
+    function getScrollAmount() {
+
+        const item = items[0];
+
+        if (!item) return 0;
+
+        const itemWidth = item.offsetWidth;
+
+        const styles = window.getComputedStyle(carousel);
+
+        const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+
+        /*
+         * En desktop mostramos varias cards.
+         * Movemos aproximadamente una card por interacción.
+         */
+        return itemWidth + gap;
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * IR A SLIDE
+     * ---------------------------------------------------------
+     */
+
+    function goToSlide(index) {
+
+        currentIndex = Math.max(
+            0,
+            Math.min(index, items.length - 1)
+        );
+
+        const amount = getScrollAmount();
+
+        carousel.scrollTo({
+            left: amount * currentIndex,
+            behavior: "smooth"
+        });
+
+        updateUI();
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * SIGUIENTE
+     * ---------------------------------------------------------
+     */
+
+    function next() {
+
+        if (currentIndex < items.length - 1) {
+            goToSlide(currentIndex + 1);
+        }
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * ANTERIOR
+     * ---------------------------------------------------------
+     */
+
+    function previous() {
+
+        if (currentIndex > 0) {
+            goToSlide(currentIndex - 1);
+        }
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * ACTUALIZAR INTERFAZ
+     * ---------------------------------------------------------
+     */
+
+    function updateUI() {
+
+        prevButton.disabled = currentIndex === 0;
+
+        nextButton.disabled =
+            currentIndex === items.length - 1;
+
+
+        dots.forEach((dot, index) => {
+
+            const active = index === currentIndex;
+
+            dot.classList.toggle(
+                "w-6",
+                active
+            );
+
+            dot.classList.toggle(
+                "w-2",
+                !active
+            );
+
+            dot.classList.toggle(
+                "bg-primary",
+                active
+            );
+
+            dot.classList.toggle(
+                "bg-primary/20",
+                !active
+            );
+
+        });
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * EVENTOS
+     * ---------------------------------------------------------
+     */
+
+    prevButton.addEventListener(
+        "click",
+        previous
+    );
+
+    nextButton.addEventListener(
+        "click",
+        next
+    );
+
+
+    /*
+     * ---------------------------------------------------------
+     * DETECTAR SCROLL MANUAL / SWIPE
+     * ---------------------------------------------------------
+     */
+
+    let scrollTimeout;
+
+    carousel.addEventListener(
+        "scroll",
+        () => {
+
+            clearTimeout(scrollTimeout);
+
+            scrollTimeout = setTimeout(() => {
+
+                const amount = getScrollAmount();
+
+                if (!amount) return;
+
+                const detectedIndex = Math.round(
+                    carousel.scrollLeft / amount
+                );
+
+                currentIndex = Math.max(
+                    0,
+                    Math.min(
+                        detectedIndex,
+                        items.length - 1
+                    )
+                );
+
+                updateUI();
+
+            }, 80);
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    /*
+     * ---------------------------------------------------------
+     * RESIZE
+     * ---------------------------------------------------------
+     */
+
+    window.addEventListener(
+        "resize",
+        () => {
+
+            const amount = getScrollAmount();
+
+            carousel.scrollTo({
+                left: amount * currentIndex,
+                behavior: "auto"
+            });
+
+        }
+    );
+
+
+    /*
+     * ---------------------------------------------------------
+     * INICIALIZAR
+     * ---------------------------------------------------------
+     */
+
+    updateUI();
+
+});
+</script>
+<script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    let menuOpen = false;
+
+    function toggleMenu() {
+        menuOpen = !menuOpen;
+
+        if (menuOpen) {
+            mobileMenu.classList.remove(
+                'grid-rows-[0fr]',
+                'opacity-0'
+            );
+
+            mobileMenu.classList.add(
+                'grid-rows-[1fr]',
+                'opacity-100'
+            );
+
+            menuIcon.textContent = 'close';
+
+            menuButton.setAttribute(
+                'aria-expanded',
+                'true'
+            );
+
+            menuButton.setAttribute(
+                'aria-label',
+                'Cerrar menú'
+            );
+        } else {
+            mobileMenu.classList.remove(
+                'grid-rows-[1fr]',
+                'opacity-100'
+            );
+
+            mobileMenu.classList.add(
+                'grid-rows-[0fr]',
+                'opacity-0'
+            );
+
+            menuIcon.textContent = 'menu';
+
+            menuButton.setAttribute(
+                'aria-expanded',
+                'false'
+            );
+
+            menuButton.setAttribute(
+                'aria-label',
+                'Abrir menú'
+            );
+        }
+    }
+
+    menuButton.addEventListener('click', toggleMenu);
+
+
+    // Cerrar menú al seleccionar una opción
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (menuOpen) {
+                toggleMenu();
+            }
+        });
+    });
+
+
+    // Cerrar menú al pasar nuevamente a desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && menuOpen) {
+            toggleMenu();
+        }
+    });
+</script>
+</body></html>

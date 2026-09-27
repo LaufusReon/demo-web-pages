@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SNACK ATTACK | The Boldest Flavors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Archivo+Narrow:wght@500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#eeeeee",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f9f9f9",
+                      "tertiary": "#006c46",
+                      "primary-container": "#f3ff33",
+                      "outline": "#787960",
+                      "primary-fixed-dim": "#c5cf00",
+                      "surface-container-low": "#f3f3f3",
+                      "secondary": "#b71422",
+                      "inverse-primary": "#c5cf00",
+                      "on-background": "#1b1b1b",
+                      "error": "#ba1a1a",
+                      "outline-variant": "#c8c8ac",
+                      "primary-fixed": "#e1ec19",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#410004",
+                      "secondary-fixed-dim": "#ffb3ae",
+                      "on-tertiary-container": "#008053",
+                      "on-surface-variant": "#474833",
+                      "primary": "#5d6300",
+                      "on-primary-container": "#6e7500",
+                      "on-primary-fixed": "#1b1d00",
+                      "on-tertiary-fixed": "#002112",
+                      "inverse-surface": "#303030",
+                      "on-surface": "#1b1b1b",
+                      "on-error-container": "#93000a",
+                      "on-secondary-fixed-variant": "#930014",
+                      "surface-bright": "#f9f9f9",
+                      "tertiary-fixed": "#4effb1",
+                      "surface-container-highest": "#e2e2e2",
+                      "tertiary-container": "#d3ffe2",
+                      "on-primary-fixed-variant": "#464a00",
+                      "tertiary-fixed-dim": "#00e296",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#dadada",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#db3237",
+                      "on-tertiary-fixed-variant": "#005233",
+                      "background": "#f9f9f9",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-container": "#fffbff",
+                      "surface-tint": "#5d6300",
+                      "surface-container-high": "#e8e8e8",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f1f1f1",
+                      "secondary-fixed": "#ffdad7",
+                      "on-secondary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "xl": "80px",
+                      "unit": "4px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "xs": "8px",
+                      "margin-desktop": "64px",
+                      "md": "24px",
+                      "lg": "48px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Montserrat"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "label-lg": ["Archivo Narrow"],
+                      "body-lg": ["Archivo Narrow"],
+                      "headline-sm": ["Montserrat"],
+                      "display": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "label-sm": ["Archivo Narrow"],
+                      "body-md": ["Archivo Narrow"]
+              },
+              "fontSize": {
+                      "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.1", "fontWeight": "900"}],
+                      "label-lg": ["14px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                      "body-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "display": ["80px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "900"}],
+                      "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                      "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .neobrutal-shadow-sm { box-shadow: 4px 4px 0px 0px rgba(0,0,0,1); }
+        .neobrutal-shadow-md { box-shadow: 6px 6px 0px 0px rgba(0,0,0,1); }
+        .neobrutal-shadow-lg { box-shadow: 8px 8px 0px 0px rgba(0,0,0,1); }
+        
+        .active-btn-press:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .animate-in { animation: slideIn 0.5s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-surface border-b-4 border-on-background shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-md py-sm z-50">
+<div class="font-headline-md text-headline-md font-black text-on-surface uppercase tracking-tighter">
+            BURGER FAST
+        </div>
+<nav class="hidden md:flex gap-md items-center">
+<a class="font-headline-sm text-headline-sm text-primary font-bold border-b-4 border-primary hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all" href="#menu">Menú</a>
+<a class="font-headline-sm text-headline-sm text-on-surface font-medium hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all" href="#about">Ofertas</a>
+<a class="font-headline-sm text-headline-sm text-on-surface font-medium hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all" href="#location">Ubicación</a>
+<a class="bg-primary-container border-2 border-on-background px-sm py-xs font-bold neobrutal-shadow-sm hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all" href="#order">Order Now</a>
+</nav>
+<button class="md:hidden border-2 border-on-background p-xs neobrutal-shadow-sm">
+<span class="material-symbols-outlined">menu</span>
+</button>   
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex flex-col md:flex-row items-center justify-center px-margin-mobile md:px-margin-desktop py-lg gap-lg overflow-hidden">
+<div class="z-10 flex-1 space-y-md text-center md:text-left">
+<h1 class="font-display text-display uppercase leading-none animate-in">
+                    BURGER <span class="text-secondary">FAST</span>
+</h1>
+<p class="font-headline-md text-headline-md-mobile md:text-headline-md bg-primary-container inline-block px-xs border-2 border-on-background neobrutal-shadow-sm animate-in" style="animation-delay: 0.1s">
+                    El sabor inigualable de la ciudad
+                </p>
+<div class="pt-md animate-in" style="animation-delay: 0.2s">
+<button class="bg-primary-container text-on-background border-4 border-on-background px-lg py-sm font-headline-sm text-headline-sm neobrutal-shadow-lg hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all uppercase tracking-tighter">
+                        ORDENA AHORA
+                    </button>
+</div>
+</div>
+<div class="flex-1 w-full max-w-xl animate-in" style="animation-delay: 0.3s">
+<div class="border-4 border-on-background bg-surface-container neobrutal-shadow-lg p-xs rotate-2 hover:rotate-0 transition-transform duration-500">
+<div class="aspect-square bg-cover bg-center border-2 border-on-background" data-alt="A macro photography shot of a towering, gourmet neobrutalist-style burger with melting cheddar cheese, vibrant red tomato slices, and crisp green lettuce on a toasted brioche bun. The lighting is harsh and high-contrast, creating deep shadows and bright highlights that emphasize textures. The color palette features intense yellows, deep reds, and rich browns against a neutral studio background, perfectly capturing the high-energy vibe of a bold snack bar." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKB4L3dJHitvpP9O0ewFadlNT_qw8kzolTg-Mtbnl6zOlS2H-jorXzPCUxh08YRPJ7PD3ndvHNvEx65Nnl_CPyGOGhXfBxq3izDFZl17wFGKzhXby2mLbp5OnxnSXF9cA84d6BTS1qIsr-n786W3H4R7ExBuu0-XxXfIxFuKu3ttI6UW1BAuR95vSi4UZoVa4L_kuT4WN-zoYeTKEHON7Th_S556yWHJCmV29wc-6dA5Qn7ahPkNjBJ4ijwQxw06gBMvNuD1qiNNQl')">
+</div>
+</div>
+</div>
+</section>
+<!-- About Section: NUESTRA VIBRA -->
+<section class="bg-on-background py-xl px-margin-mobile md:px-margin-desktop text-surface-container-lowest" id="about">
+<div class="max-w-4xl mx-auto space-y-md">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase border-b-4 border-primary-container inline-block mb-sm">NUESTRO ESTILO</h2>
+<div class="grid md:grid-cols-2 gap-md">
+<p class="font-body-lg text-body-lg">
+                        No lo hacemos común. No lo hacemos lento. BURGER FAST es creada para aquellos con hambre dede lo bueno, lo sabroso y lo inolvidable. Hecho en una cocina de ardientes sabores. is built for the hungry, the bold, and the fast-paced. Our kitchen is a high-octane flavor factory.
+                    </p>
+<div class="border-2 border-primary-container p-md neobrutal-shadow-sm bg-primary text-on-primary rotate-[-1deg]">
+<p class="font-headline-sm text-headline-sm uppercase">RÁPIDO. JUGOSO. SABROSO. NO TE ARREPENTIRÁS.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop" id="menu">
+<div class="flex flex-col md:flex-row justify-between items-end mb-lg gap-sm">
+<div>
+<h2 class="font-display text-headline-lg uppercase tracking-tight">EL MENU</h2>
+<p class="font-body-lg text-body-lg">Elije tu comida. Sabores que dejan huella.</p>
+</div>
+<div class="flex gap-xs flex-wrap">
+<button class="bg-primary-container border-2 border-on-background px-sm py-xs font-bold neobrutal-shadow-sm">HAMBURGUESAS</button>
+<button class="bg-surface border-2 border-on-background px-sm py-xs font-bold hover:bg-surface-container transition-colors">HOT DOGS</button>
+<button class="bg-surface border-2 border-on-background px-sm py-xs font-bold hover:bg-surface-container transition-colors">MÁS</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Burger 1 -->
+<div class="group bg-surface-container-lowest border-4 border-on-background p-xs neobrutal-shadow-md hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-all animate-in" style="animation-delay: 0.1s">
+<div class="aspect-video border-2 border-on-background mb-sm overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of a massive neobrutalist-style double bacon cheeseburger with glazed buns and thick-cut fries spilling out from a checkered wrapper. The scene is lit with warm, punchy yellow and red lighting, giving it a vibrant urban fast-food atmosphere. The image is crisp with high contrast and saturated colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBtRKctww4KSo46q1cVG7ml_CeAkCE6mnf_fizhMz6klhvWug8rptvmkD_aahGSElHKT1B_urH9QzWAEWTZLIuFYw97P4fKwVbiH1_ibU2tiSyGizSto0xkxAnVXJH3cAgp-p-q259VIa5Gf66oNOghwsXC-iYQ4VnM5vpUjRv6sgWLLUX7KP0L3ac5TO3VurI4BtoqzaQdrMyRql00XTrjIfonHV2BBIloi3AL3pZu36ESzqNQSFhXjc85iHyIWVuo6RjCKzbtIEs"/>
+</div>
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase">LA GRAN RETADORA</h3>
+<span class="bg-secondary text-on-secondary px-xs font-bold text-headline-sm border-2 border-on-background">$12.50</span>
+</div>
+<p class="font-body-md text-body-md mb-md">Doble Carne, Triple Queso, Salsa Secreta Picante, experiencia auténtica.</p>
+<button class="w-full bg-primary-container border-2 border-on-background py-xs font-black uppercase hover:bg-primary-fixed active-btn-press transition-colors">Consultar</button>
+</div>
+<!-- Hot Dog 1 -->
+<div class="group bg-surface-container-lowest border-4 border-on-background p-xs neobrutal-shadow-md hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-all animate-in" style="animation-delay: 0.2s">
+<div class="aspect-video border-2 border-on-background mb-sm overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A gourmet loaded hot dog topped with bright yellow mustard, neon green relish, and crispy caramelized onions, presented in a red plastic basket. High-contrast lighting and bold, saturated colors emphasize the textures of the ingredients. The style is modern neobrutalist with a focus on raw, punchy food aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZF_cK3Q9O_RlCjsKJ2MefT_bHGcI1bl-Gw0JZUUgbIYRt66eFqdqtKWEC5hm7D3IYvXUp3mUE3f3UjByR07hbQkrWgYfTns8Rrt8JhkIwQbv9PS5OqQjMiPTNCPbRpDessl23ZukhJwBQl6aHpH100chAlCE9JA6-tRCzRTsGIllt4_iEu9qsLEXG0lGKr90DMWXyA3F8f1MxfUrLosHl19inLTlorncQbeWJWRyC4bvAwzhwXcI4gMgT1Qdw_oFyFP3hd41aPbbX"/>
+</div>
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase">LA CALLEJERA</h3>
+<span class="bg-secondary text-on-secondary px-xs font-bold text-headline-sm border-2 border-on-background">$8.00</span>
+</div>
+<p class="font-body-md text-body-md mb-md">Salchicha Asada, Tocino Frito y nuestro toque de Mostaza Ardiente.</p>
+<button class="w-full bg-primary-container border-2 border-on-background py-xs font-black uppercase hover:bg-primary-fixed active-btn-press transition-colors">Consultar</button>
+</div>
+<!-- Side 1 -->
+<div class="group bg-surface-container-lowest border-4 border-on-background p-xs neobrutal-shadow-md hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-all animate-in" style="animation-delay: 0.3s">
+<div class="aspect-video border-2 border-on-background mb-sm overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A pile of thick-cut sweet potato fries dusted with vibrant spices and served with a side of creamy white dipping sauce. The photography is bold and direct, using high-key lighting to make the orange and white colors pop against a dark, textured tabletop. Minimalist yet aggressive food presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCtypzUmpD3G85dN_9eiguuE-5zYRBRjW9h9ERB2fQ4xD22z2fo1eyV0ClFWI3j9lP1IsKVLOjqPiYYt0gDW2PVZaHN0lO2c7m668PhiQNpp8GXzc_9PXAa95LCOo8RrCpiwX1vxn4GBovvxyDHePWRvUARFuprgo68lXjXMRX6mx00MTsCBm6I5M2Bp094xsz1vy1Il41TW4tUQygr_txBu2zsx096IGgyqqUm4fcG0V20QiaRGyPXGcOMGIo5oohog94lkul_432"/>
+</div>
+<div class="flex justify-between items-start mb-xs">
+<h3 class="font-headline-sm text-headline-sm uppercase">PÁPAS FRITAS</h3>
+<span class="bg-secondary text-on-secondary px-xs font-bold text-headline-sm border-2 border-on-background">$5.50</span>
+</div>
+<p class="font-body-md text-body-md mb-md">Crujientes, Irresistibles, Sabrosas.</p>
+<button class="w-full bg-primary-container border-2 border-on-background py-xs font-black uppercase hover:bg-primary-fixed active-btn-press transition-colors">Consultar</button>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container" id="location">
+<div class="flex flex-col md:flex-row gap-lg items-center">
+<div class="flex-1 space-y-md">
+<h2 class="font-display text-headline-lg uppercase">VISÍTANOS</h2>
+<div class="bg-surface-container-lowest border-4 border-on-background p-md neobrutal-shadow-lg">
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px; font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="font-headline-sm text-headline-sm">Calle de los Sabores 123, Centro Ciudad</p>
+</div>
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-secondary" style="font-size: 32px; font-variation-settings: 'FILL' 1;">schedule</span>
+<div>
+<p class="font-bold">Lun - Vie: 12:00 PM - 11:00 PM</p>
+<p class="font-bold">Sab - Dom: 01:00 PM - 02:00 AM</p>
+</div>
+</div>
+<button class="bg-on-background text-surface-container-lowest px-md py-xs font-bold uppercase w-full hover:bg-secondary transition-colors">GET DIRECTIONS</button>
+</div>
+</div>
+<div class="flex-1 w-full h-[400px] min-h-[400px] border-4 border-on-background neobrutal-shadow-lg overflow-hidden grayscale contrast-125">
+<div class="w-full h-full bg-cover bg-center" data-alt="A stylized neobrutalist map graphic showing a city intersection. The map uses flat colors—electric yellow, deep black, and bright red—with heavy strokes and geometric icons representing the restaurant location and surrounding urban grid. The design is bold, functional, and artistically aggressive." data-location="City Center" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- WhatsApp CTA -->
+<a class="fixed bottom-md right-md z-50 flex items-center gap-xs bg-[#25D366] text-on-background border-4 border-on-background px-md py-sm font-black uppercase neobrutal-shadow-lg hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:rotate-12 transition-transform">chat</span>
+<span class="hidden md:inline">Contactar Whatsapp</span>
+</a>
+<!-- Footer -->
+<footer class="bg-on-background text-surface-container-lowest border-t-4 border-on-background px-md py-lg flex flex-col md:flex-row justify-between items-center gap-md w-full">
+<div class="font-headline-sm text-headline-sm text-primary-container uppercase">
+            BURGER FAST. ¡Pruébalo Yá!.
+        </div>
+<div class="flex gap-md font-label-lg text-label-lg uppercase">
+<a class="hover:text-primary-fixed transition-colors" href="#">Terminos</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Privacidad</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Ordenes</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Contacto</a>
+</div>
+<div class="flex gap-sm">
+<a class="w-10 h-10 border-2 border-surface-container-lowest flex items-center justify-center hover:bg-primary-container hover:text-on-background transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 border-2 border-surface-container-lowest flex items-center justify-center hover:bg-primary-container hover:text-on-background transition-all" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+<a class="w-10 h-10 border-2 border-surface-container-lowest flex items-center justify-center hover:bg-primary-container hover:text-on-background transition-all" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+<p class="text-surface-container-low font-label-sm opacity-60">
+            © 2026 BURGER FAST.
+        </p>
+</footer>
+<script>
+        // Micro-interactions and hover effects
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                if(el.classList.contains('neobrutal-shadow-sm') || el.classList.contains('neobrutal-shadow-md') || el.classList.contains('neobrutal-shadow-lg')) {
+                    el.style.transform = 'translate(4px, 4px)';
+                    el.style.boxShadow = '0px 0px 0px 0px rgba(0,0,0,1)';
+                }
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = '';
+                el.style.boxShadow = '';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = '';
+                el.style.boxShadow = '';
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+    </script>
+</body></html>

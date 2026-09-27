@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SABOR URBANO | STREET FLAVOR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#832700",
+                    "on-primary": "#303300",
+                    "primary-container": "#e1ec19",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "surface-bright": "#393939",
+                    "outline-variant": "#474833",
+                    "on-secondary-container": "#511500",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#ffdbcf",
+                    "primary-fixed": "#e1ec19",
+                    "tertiary-container": "#e2e2e2",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-container-highest": "#353535",
+                    "background": "#131313",
+                    "on-secondary-fixed": "#390c00",
+                    "tertiary": "#ffffff",
+                    "surface-container": "#20201f",
+                    "secondary": "#ffb59c",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed": "#1b1d00",
+                    "secondary-fixed-dim": "#ffb59c",
+                    "error-container": "#93000a",
+                    "surface": "#131313",
+                    "on-primary-container": "#636900",
+                    "inverse-primary": "#5d6300",
+                    "surface-tint": "#c5cf00",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-low": "#1c1b1b",
+                    "primary-fixed-dim": "#c5cf00",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-tertiary": "#2f3131",
+                    "on-secondary": "#5c1900",
+                    "on-surface-variant": "#c8c8ac",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-surface": "#e5e2e1",
+                    "inverse-on-surface": "#313030",
+                    "primary": "#ffffff",
+                    "outline": "#929279",
+                    "on-tertiary-container": "#636565",
+                    "on-background": "#e5e2e1",
+                    "secondary-container": "#fa5c1c",
+                    "on-primary-fixed-variant": "#464a00",
+                    "surface-variant": "#353535",
+                    "inverse-surface": "#e5e2e1",
+                    "on-error": "#690005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin": "24px",
+                    "gutter": "16px",
+                    "base": "4px",
+                    "grid-columns": "12"
+            },
+            "fontFamily": {
+                    "headline-md": ["Anton"],
+                    "headline-xl": ["Anton"],
+                    "body-md": ["JetBrains Mono"],
+                    "headline-lg": ["Anton"],
+                    "body-lg": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Anton"],
+                    "label-sm": ["Space Mono"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "headline-xl": ["80px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "48px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain {
+            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+            opacity: 0.05;
+        }
+        .wheat-paste-box {
+            mask-image: radial-gradient(circle at center, black 80%, transparent 100%);
+            transform: rotate(-1deg);
+        }
+        .taped-corner::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 60px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(-45deg);
+            z-index: 10;
+        }
+        .stencil-text {
+            -webkit-text-stroke: 1px #e1ec19;
+            color: transparent;
+        }
+        .block-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(250, 92, 28, 1);
+        }
+        .industrial-grid {
+            background-image: radial-gradient(circle, #353535 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<div class="fixed inset-0 pointer-events-none grain z-[100]"></div>
+<!-- Navigation -->
+<header class="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b-4 border-primary-fixed shadow-[4px_4px_0px_0px_rgba(250,92,28,1)]">
+<nav class="flex justify-between items-center w-full px-margin py-4 max-w-full mx-auto">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase italic tracking-tighter text-primary-fixed bg-secondary-container px-2 border-2 border-primary skew-x-[-12deg]">
+                SABOR URBANO
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-primary-fixed font-bold underline decoration-4 underline-offset-8 font-label-sm text-label-sm uppercase" href="#">NOSOSTROS</a>
+<a class="text-on-background font-medium hover:text-primary-fixed transition-colors font-label-sm text-label-sm uppercase" href="#">EXPLORAR</a>
+<a class="text-on-background font-medium hover:text-primary-fixed transition-colors font-label-sm text-label-sm uppercase" href="#">UBICACIÓN</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="md:hidden material-symbols-outlined text-primary-fixed text-2xl" data-icon="menu">menu</button>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden industrial-grid">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmXvacMlG_0mSijMK5Z2Qt36U2-5nPO5aeUU00Sjy5v4gLyI58tPvqxeT7Q7eDmWn_vuwSWCB2O28DQUqfUeUA6OJvKOIdcuRbahnPg-OBrJe-uiqtZPp4sy7NECyhsp22PVnKelOFlVNjV8jZT-cMeJnITu06OLn-3DFXaR2P4O1l1v8WO4MLrjqbV-F-kcNqVUV2AuWenKdoZQZ1FJyM6RaeNtgKp3yIAWaHGrPo9cpZjlWVgM71fjVVvK8aw9gTuHO_brILcvoN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+</div>
+<div class="relative z-10 text-center px-margin max-w-5xl">
+<div class="inline-block bg-primary-container text-on-primary-container font-label-sm text-label-sm px-4 py-1 mb-6 rotate-[-2deg] block-shadow">
+                Sabor Único
+            </div>
+<h1 class="font-headline-xl text-[60px] md:text-headline-xl uppercase leading-none tracking-tighter text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] mb-4">
+                SABOR <span class="text-primary-fixed italic">URBANO</span>
+</h1>
+<p class="font-headline-md text-headline-md uppercase text-secondary-container mb-12 tracking-widest bg-background/40 inline-block px-4">
+                Aquí no juzgamos cuánto pides. Solo cocinamos con gusto.
+            </p>
+<div class="flex flex-col md:flex-row gap-gutter justify-center">
+<button class="bg-primary-fixed text-on-primary-fixed font-headline-md text-headline-md px-10 py-4 block-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">
+                    PEDIR AHORA
+                </button>
+<button class="border-4 border-white text-white font-headline-md text-headline-md px-10 py-4 hover:bg-white hover:text-black transition-all uppercase">
+                    UBICACIÓN
+                </button>
+</div>
+</div>
+<!-- Decorative Tape -->
+<div class="absolute top-1/4 right-10 w-32 h-10 bg-white/10 rotate-45 border-y border-white/20"></div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container relative overflow-hidden border-y-4 border-primary-fixed">
+<div class="max-w-7xl mx-auto px-margin grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 text-[120px] font-headline-xl opacity-10 select-none uppercase">RAÍCES</div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl uppercase text-primary-fixed mb-8 leading-tight">
+                    Nuestras <br/> Raíces
+                </h2>
+<div class="space-y-6 font-body-lg text-body-lg max-w-lg">
+<p class="bg-background p-6 border-l-8 border-secondary-container italic">
+                        "Un menú que nunca deja de sorprender. Espera a ser asaltado por el verdadero sabor"
+                    </p>
+<p class="text-on-surface-variant">
+                        Impulsado por el arte callejero, por el ajetreo nocturno y construido sobre la energía cruda de la ciudad. Usamos productos locales, cocinamos a lo grande y nunca nos disculpamos por las calorías.
+                    </p>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute inset-0 border-4 border-primary-fixed translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+<div class="bg-surface-variant aspect-square overflow-hidden border-2 border-white relative">
+<img class="w-full h-full object-cover" data-alt="A gritty, cinematic close-up of a urban food kitchen with industrial lighting, concrete walls covered in colorful graffiti, and steam rising from a grill. The atmosphere is high-energy and rebellious, with dark tones and vibrant neon yellow highlights that match the SABOR URBANO brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClhVKhKRSFBZTFZJ8UN5STEkTpfQm_vROmAShgVhCimcz5zlMGxjqKAYEovu8q8j2JNQqmqjqKOpSUgUqwv7xbo6d50cE3Rh6xCTVeduGQEbTxQh4Gv0_Avpd3QsL094EvVOVAFwhsVzMawE8qfNvVvrThadm5h0kRDfDvP9cGHWsNjyZ7c3bEbmfF3fcZbr0owud_HPZFgQaaJBhpOCPC_wfLqry8Lg75d7xPQoRfKXE7UJF0Cy79qfYVcd1QALuyO1lk36O4io4A"/>
+<div class="absolute bottom-4 right-4 bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-3 py-1">SERIAL: SA-001-URBAN</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Menu Section -->
+<section class="py-24 px-margin max-w-full industrial-grid">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl uppercase text-white bg-black inline-block px-8 py-2 border-x-8 border-secondary-container">EL MENÚ</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+<!-- Card 1 -->
+<div class="relative group bg-surface-container-high border-2 border-white p-6 block-shadow hover:translate-y-2 transition-transform">
+<div class="absolute -top-4 -right-4 bg-secondary-container text-white px-4 py-2 font-headline-md text-headline-md rotate-12 z-20">$12.50</div>
+<div class="overflow-hidden mb-6 aspect-square border border-outline">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWa0mGvZ28YkA8BnWTwzXAhO9mDjDwmAnTEPHJFSGuHb9DqTLjvZPj2oZELyk7OhrC753esap5oKQwrsXsVEILDvUOQ9mI8uBA5hvDp45lnNnoLK--HaDfhDlG9X7puoBSL2aEyWRU2wsreIDXnA4f0dgDY7ll0EaZr65s9ZxKJu6dxJzKMvrujydkM1aE1KYa1LiEtLMZYgpRSd_Hqj5YBpyhALsN2J2rgTnS16LTxJWdvyw67Yx5M1h6Kj_7EZqyPz_iq6kVkI0t"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-fixed uppercase mb-2">Deambulante</h3>
+<p class="font-body-md text-on-surface-variant mb-6 h-12">Doble carne, Queso derretido y salsa secreta. Caos Puro.</p>
+<button class="w-full bg-white text-black font-headline-md text-headline-md py-3 hover:bg-primary-fixed transition-colors uppercase mt-2 ">PIDE AHORA</button>
+</div>
+<!-- Card 2 -->
+<div class="relative group bg-surface-container-high border-2 border-white p-6 block-shadow hover:translate-y-2 transition-transform md:mt-12">
+<div class="absolute -top-4 -right-4 bg-secondary-container text-white px-4 py-2 font-headline-md text-headline-md rotate-[-8deg] z-20">$8.00</div>
+<div class="overflow-hidden mb-6 aspect-square border border-outline">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxXb6ToF3XqUSNm5WLw7Mjsun-M6cJU5MlYrRIg8PnV1ulRv7KWynN9hZf50ni0lcjdgjXflXKtCHvBs2gSy3YdGGVgUZ2WwXNCxx2UF_tpU-cb_pSh3ZTaR1E7rq1zn0MQDeTJdEuyV2rEd9KVXU83MvyBhOiHBeNyeTroljLS7dbJ8ugGREz7p38CYueU3yneVVJSrOSAsY4UY5TpE-zC_r3PcQN-qKakVOW_ToNajr-dZ9-whTfckNQIXne7cjIDCJ_8lyIaO0H"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-fixed uppercase mb-2">Furia de Calle</h3>
+<p class="font-body-md text-on-surface-variant mb-6 h-12">Hecha con dedicación, inspirada por el flow, inigualablemente picante.</p>
+<button class="w-full bg-white text-black font-headline-md text-headline-md py-3 hover:bg-primary-fixed transition-colors uppercase mt-2 ">PIDE AHORA</button>
+</div>
+<!-- Card 3 -->
+<div class="relative group bg-surface-container-high border-2 border-white p-6 block-shadow hover:translate-y-2 transition-transform">
+<div class="absolute -top-4 -right-4 bg-secondary-container text-white px-4 py-2 font-headline-md text-headline-md rotate-12 z-20">$5.50</div>
+<div class="overflow-hidden mb-6 aspect-square border border-outline">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOjvISj0jQSsgKSUQOZl9XxlXF7qdp5zAHMxt1tbd7XKdTQtOOA8RnMaJZ24IYPmlMvEPY-F8fP8PUktzI1CzovGCyXXL--8BBWrmI7PhQjJI86O84g7WkeWRqVnZdIcFGFu0tzJ2hCQze9dl3RlEhPPw2R2hYJNoSXMqAwWEFP74BBKAJ4RnB6-mJNZM2WwIo9WTttKiKQnOx_9K5ZZjuiBxF4zjah_Smgjvr44wiHBjw8xYL7Zq1WvQCeziPgcmDs26DteSeY_OQ"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary-fixed uppercase mb-2">PÁPAS HOP</h3>
+<p class="font-body-md text-on-surface-variant mb-6 h-12">Triplemente freído, extra crocante. Altamente adictivo.</p>
+<button class="w-full bg-white text-black font-headline-md text-headline-md py-3 hover:bg-primary-fixed transition-colors uppercase mt-2 ">PIDE AHORA</button>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-24 bg-background relative border-t-8 h-auto border-primary-fixed">
+<div class="max-w-7xl mx-auto px-margin flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 w-full">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl uppercase text-white mb-4">LA BASE</h2>
+<div class="inline-block bg-primary-container text-black font-body-lg text-body-lg px-4 py-2 mb-8 block-shadow">
+                    Back Alley 13, District 0
+                </div>
+<div class="space-y-4 font-body-md text-on-surface-variant mb-8">
+<p class="flex items-center gap-4"><span class="material-symbols-outlined text-primary-fixed" data-icon="schedule">schedule</span> 18:00 - 04:00 (O CUANDO CERREMOS)</p>
+<p class="flex items-center gap-4"><span class="material-symbols-outlined text-primary-fixed" data-icon="directions_run">directions_run</span> CAMINA AHORA, RESERVA YA</p>
+</div>
+<button class="flex items-center gap-4 bg-secondary-container text-white font-headline-md text-headline-md px-8 py-4 hover:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                    APÚNTATE YA EN WHATSAPP
+                </button>
+</div>
+<div class="flex-1 w-full h-[400px] border-4 border-white grayscale relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary-fixed opacity-10 pointer-events-none z-10"></div>
+<div class="w-full h-full min-h-[400px]" data-alt="A stylized, high-contrast urban map of a city district in dark mode. The streets are represented by glowing primary-fixed yellow lines against a charcoal black background. A heavy, hand-drawn circle marks 'Territory 13' with a spray-paint effect, giving it a gritty, underground aesthetic." data-location="New York City" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCKZX8jgPlTuj89O2r4VzxIThWlIC9O9ookau5-J4uDlB7pSoct2HqSf1hpB5bTi16EFItPdSoqGcwWfNrCVCFxL_7rOerUqe-KEZbY7EkXrTFAtuFcuGAm7KUcXM5dEiDARMRhFUXsEZI_6VVfEID2rI0HHBr-szGLfcENsR_NatCpd64QK4c9Qib6et6W3HHCYKVfirlIaDvosUOEmrX9TYdyUpYU2XY_c65gJpqRKQIXadIcic9EAG5qRndpDBvYNiOz0IbU9Pj')"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+<span class="material-symbols-outlined text-6xl text-primary-fixed animate-bounce" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="absolute bottom-4 left-4 bg-black/80 p-2 z-20 text-white font-label-sm text-label-sm border border-white">MARKED TERRITORY: SA_HQ</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest text-primary-fixed py-16 border-t-4 border-primary-fixed relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin flex flex-col md:flex-row justify-between items-center gap-gutter z-10 relative">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-headline-md text-headline-md text-secondary-container mb-4">SABOR URBANO</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-center md:text-left">
+                    ©2026 SABOR URBANO - OUROBOS
+                </p>
+</div>
+<div class="flex gap-8">
+<a aria-label="Instagram" class="text-on-surface-variant hover:text-primary-fixed transition-all material-symbols-outlined text-4xl" data-icon="photo_camera" href="#">photo_camera</a>
+<a aria-label="TikTok" class="text-on-surface-variant hover:text-primary-fixed transition-all material-symbols-outlined text-4xl" data-icon="video_library" href="#">video_library</a>
+<a aria-label="YouTube" class="text-on-surface-variant hover:text-primary-fixed transition-all material-symbols-outlined text-4xl" data-icon="play_circle" href="#">play_circle</a>
+</div>
+<div class="flex flex-wrap justify-center gap-6 font-label-sm text-label-sm uppercase">
+<a class="hover:text-secondary-container transition-all" href="#">MANIFIESTO</a>
+<a class="hover:text-secondary-container transition-all" href="#">TERINOS</a>
+<a class="hover:text-secondary-container transition-all" href="#">ARTE</a>
+</div>
+</div>
+<!-- Background Stencil Decor -->
+<div class="absolute -bottom-10 -right-10 text-[200px] font-headline-xl opacity-5 select-none uppercase stencil-text rotate-[-12deg]">ATTACK</div>
+</footer>
+<script>
+        // Simple parallax on scroll for hero image
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.relative.min-h-screen img');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Hover sound/effect simulation (visual only)
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transition = 'transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            });
+        });
+    </script>
+</body></html>

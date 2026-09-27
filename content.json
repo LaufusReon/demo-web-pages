@@ -1,0 +1,218 @@
+{
+  "site": {
+    "name": "ZenDentistry",
+    "logo": "ZenDentistry",
+    "favicon": "🦷",
+    "tagline": "Built on Trust. Defined by Care."
+  },
+  "nav": {
+    "links": [
+      { "label": "Home", "url": "#home" },
+      { "label": "Services", "url": "#services" },
+      { "label": "Dentists", "url": "#dentists" },
+      { "label": "Locations", "url": "#locations" },
+      { "label": "Smile Gallery", "url": "#gallery" },
+      { "label": "Reviews", "url": "#reviews" },
+      { "label": "FAQ", "url": "#faq" }
+    ],
+    "cta": "Reserve Appointment",
+    "ctaUrl": "#contact"
+  },
+  "hero": {
+    "eyebrow": "Zen Dentistry",
+    "heading": "Built on Trust. Defined by Care.",
+    "regions": ["Manhattan", "Brooklyn", "Long Island", "Queens", "Westchester"],
+    "ctaLabel": "Reserve Appointment",
+    "ctaUrl": "#contact",
+    "image": "https://zendentistrynyc.com/wp-content/uploads/2025/10/erasebg-transformed.webp"
+  },
+  "welcome": {
+    "heading": "Welcome to Zen Dentistry",
+    "paragraph": "Our modern NY, Long Island, Westchester offices are equipped with advanced technology to ensure comfort and exceptional results. Whether you need a routine exam, dental cleaning, emergency dental care, surgical dental care, cosmetic enhancement, or comprehensive dental care, our experienced team is here to help. As a leading dentist in Manhattan, Brooklyn, Queens, Long Island and Westchester, we prioritize prompt service, easily available appointments and patient education for life-long oral health. Schedule your appointment today with a trusted dentist, in NY, Westchester, Long Island. Experience the highest standard of care in a welcoming environment.",
+    "cta": "Reserve Appointment",
+    "ctaUrl": "#contact",
+    "stats": [
+      { "value": "1,200", "suffix": "+", "label": "Google Reviews" },
+      { "value": "800", "suffix": "+", "label": "ZocDoc Reviews" },
+      { "value": "650", "suffix": "+", "label": "Yelp Reviews" },
+      { "value": "18", "suffix": "", "label": "Locations" }
+    ]
+  },
+  "services": {
+    "heading": "Services",
+    "items": [
+      { "name": "General Dentistry", "icon": "🪥", "url": "#" },
+      { "name": "Cosmetic Dentistry", "icon": "✨", "url": "#" },
+      { "name": "Restorative Dentistry", "icon": "🦷", "url": "#" },
+      { "name": "Advanced Dentistry", "icon": "🔬", "url": "#" },
+      { "name": "Periodontal Dentistry", "icon": "🩺", "url": "#" },
+      { "name": "Orthodontics", "icon": "😁", "url": "#" },
+      { "name": "Dental Implantology", "icon": "⚙️", "url": "#" },
+      { "name": "Oral Surgery", "icon": "🏥", "url": "#" },
+      { "name": "Emergency Dentistry", "icon": "🚨", "url": "#" },
+      { "name": "Pediatric Dentistry", "icon": "🧒", "url": "#" }
+    ]
+  },
+  "gallery": {
+    "heading": "Smile Gallery",
+    "paragraph": "Explore real patient transformations showcasing the power of modern dentistry and personalized care. Our smile gallery highlights before-and-after results that reflect improved aesthetics, function, and confidence. Get inspired and see what's possible for your smile.",
+    "cta": "Reserve Appointment",
+    "ctaUrl": "#contact",
+    "items": [
+      { "title": "Gum lift with porcelain veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/before-after-4.webp" },
+      { "title": "Full mouth rehabilitation with porcelain veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/before-after-2.webp" },
+      { "title": "Composite bonding", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/before-after-1.webp" },
+      { "title": "Upper six porcelain veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/before-after-3.webp" },
+      { "title": "Upper lateral porcelain veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-07-at-1.45.22-PM.jpeg" },
+      { "title": "Upper porcelain veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-07-at-1.45.20-PM.jpeg" },
+      { "title": "Upper central porcelain veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-07-at-1.44.32-PM-1.jpeg" },
+      { "title": "Lower veneers", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-07-at-1.44.32-PM.jpeg" }
+    ]
+  },
+  "reviews": {
+    "heading": "Published Reviews",
+    "paragraph": "At Zen Dentistry, we have been providing top-tier dental care in New York. Our modern NY offices are equipped with advanced technology to ensure comfort and exceptional results.",
+    "items": [
+      {
+        "text": "I will be honest I have never been a fan of the dentist but this entire team is so professional and kind. I was able to go through my cavity filling process with care and breaks to help alleviate the stress of getting a filling.",
+        "author": "Shefali P.",
+        "source": "YELP",
+        "date": "Feb 21, 2026"
+      },
+      {
+        "text": "Very nice staff made my daughter feel very comfortable and did an amazing job with her teeth. Definitely recommend.",
+        "author": "Dilenia U.",
+        "source": "ZOCDOC",
+        "date": "Feb 21, 2026"
+      },
+      {
+        "text": "I had a great experience at this dental office! Dr. Malhotra was very helpful and thorough in pointing out the areas I needed to improve, including three fillings.",
+        "author": "Betsy DeJesus",
+        "source": "GOOGLE",
+        "date": "Feb 21, 2026"
+      },
+      {
+        "text": "It's my third time here and I love seeing Dr. Malhotra (dentist) and Princess (front desk)! The staff here know my fear of dental procedures and kept me calm and comfortable.",
+        "author": "Marla F.",
+        "source": "YELP",
+        "date": "Feb 21, 2026"
+      },
+      {
+        "text": "Dr. Liang is an amazing dentist. She is very attentive, efficient, and caring. She takes the time to explain everything and answers every question patiently.",
+        "author": "Beatrise",
+        "source": "GOOGLE",
+        "date": "Feb 21, 2026"
+      },
+      {
+        "text": "Always a great experience at Zen dentistry. Very clean office and exceptionally friendly staff. Dr. Tan is the man!",
+        "author": "Eric S.",
+        "source": "YELP",
+        "date": "Feb 21, 2026"
+      }
+    ]
+  },
+  "locations": {
+    "heading": "Locations",
+    "regions": ["All Regions", "Manhattan", "Brooklyn", "Queens", "Long Island", "Westchester"],
+    "items": [
+      { "name": "Midtown East/Upper East Side", "region": "Manhattan", "address": "30 East 60th St, Suite 401, New York, NY 10022", "phone": "(212) 537-3894", "email": "midtown@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/Midtown-East.jpg" },
+      { "name": "Financial District", "region": "Manhattan", "address": "217 Broadway, Suite 612, New York, NY 10007", "phone": "(646) 604-5700", "email": "broadway@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/Financial-District.jpg" },
+      { "name": "Grand Central", "region": "Manhattan", "address": "18 E 48th St, Suite 1602, New York, NY 10017", "phone": "(212) 308-9188", "email": "grandcentral@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/11/Financial-District.jpg" },
+      { "name": "Upper West Side", "region": "Manhattan", "address": "164 W 96th St, New York, NY 10025", "phone": "(212) 749-0600", "email": "upperwestside@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/Upper-East-Size.jpg" },
+      { "name": "Union Square", "region": "Manhattan", "address": "200 Park Ave, Suite 1414, New York, NY 10003", "phone": "(212) 255-5730", "email": "unionsquare@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/Union-square.jpg" },
+      { "name": "East Village", "region": "Manhattan", "address": "333 East 14th Street, New York, NY 10003", "phone": "(212) 473-9002", "email": "eastvillage@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/East-Village.jpg" },
+      { "name": "Lower East Side", "region": "Manhattan", "address": "145 Canal St, 2nd Fl, New York, NY 10002", "phone": "(917) 388-3678", "email": "info@bowerydental.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/gallery-001.jpg" },
+      { "name": "Park Slope (Brooklyn)", "region": "Brooklyn", "address": "215 5th Ave, Park Slope, NY 11215", "phone": "(718) 789-2400", "email": "parkslope@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/new-rochelle-location-img.webp" },
+      { "name": "Sheepshead Bay", "region": "Brooklyn", "address": "Brooklyn, NY", "phone": "(718) 934-1970", "email": "brooklyn@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/east-village-location-img.webp" },
+      { "name": "Forest Hills", "region": "Queens", "address": "104-20 Queens Blvd #1G, Forest Hills, NY 11375", "phone": "(718) 896-0505", "email": "queens@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/garden-3-img.webp" },
+      { "name": "Astoria", "region": "Queens", "address": "Astoria, NY", "phone": "(718) 728-5759", "email": "astoria@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/garden-3-img.webp" },
+      { "name": "Garden City", "region": "Long Island", "address": "601 Franklin Ave, Suite 211, Garden City, NY 11530", "phone": "(516) 739-1851", "email": "gardencity@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/garden-city.jpg" },
+      { "name": "Levittown", "region": "Long Island", "address": "3601 Hempstead-Bethpage Tpke, Suite 125, Levittown, NY 11756", "phone": "(516) 453-6440", "email": "levittown@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/east-village-location-img.webp" },
+      { "name": "Huntington", "region": "Long Island", "address": "52 Elm St #5, Huntington, NY 11743", "phone": "(631) 424-8818", "email": "huntington@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/garden-city.jpg" },
+      { "name": "New Rochelle", "region": "Westchester", "address": "1 Radisson Plaza Suite 903, New Rochelle, NY 10801", "phone": "(914) 636-4118", "email": "westchester@zendentistrynyc.com", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/New-Rochelle.jpg" }
+    ],
+    "cta": "Reserve Appointment",
+    "ctaUrl": "#contact"
+  },
+  "dentists": {
+    "heading": "Dentists",
+    "paragraph": "At Zen Dentistry, Dr. Sarah Singer, DMD, and the team of highly skilled, extensively trained dental professionals deliver exceptional dental care in New York and surrounding areas. Our dentists come from leading institutions and bring deep clinical expertise across preventive, restorative, and advanced dental treatments.",
+    "cta": "View All Dentists",
+    "ctaUrl": "#",
+    "items": [
+      { "name": "Dr. Anastasia Cintula", "bio": "General dentist based in New York City, dedicated to delivering compassionate, high-quality care. Earned her DDS from University at Buffalo School of Dental Medicine.", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/Dr.-Anastasia-Cintula.webp" },
+      { "name": "Dr. Tandeep Malhotra, DDS", "bio": "Completed his DDS from University at Buffalo, earning his degree with distinction, with a focus on accessible, high-quality care.", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/Dr.-Tandeep-Malhotra-DDS.webp" },
+      { "name": "Dr. Arshjot Ahuja, DDS", "bio": "Leading dentist in Los Angeles and New York. Received his Doctor of Dental Surgery from the Arthur A. Dugoni School of Dentistry.", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/arsh.webp" },
+      { "name": "Dr. Taran Reynolds, DDS", "bio": "General dentist with an extraordinary eye for detail. Graduated from the University of Rochester in 2007.", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/Dr.-Taran-Reynolds.webp" },
+      { "name": "Dr. Michelle (Chu qiao) Liang, DMD", "bio": "Dedicated and detail-oriented dentist emphasizing prevention and conservative treatment. Dual board-certified in Canada and the US.", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/Dr.-Michelle-Liang-DDS.webp" },
+      { "name": "Dr. Diana Chan, DDS", "bio": "Highly skilled and compassionate dentist dedicated to exceptional care. Earned her DDS from NYU College of Dentistry.", "image": "https://zendentistrynyc.com/wp-content/uploads/2026/01/diana.webp" }
+    ]
+  },
+  "patientSafety": {
+    "heading": "Patient Safety",
+    "paragraph": "At Zen Dentistry, we have been providing top-tier dental care in New York. Our modern NY offices are equipped with advanced technology to ensure comfort and exceptional results.",
+    "items": [
+      { "title": "Medical Grade Sterilization", "text": "We follow a two step process to make our instruments sterile. First the instruments are thoroughly washed to remove any visible debris and air dried.", "icon": "🧪" },
+      { "title": "CDC Recommended Disinfection", "text": "CDC has divided noncritical surfaces in dental offices into clinical contact and housekeeping surfaces.", "icon": "🧼" },
+      { "title": "UV Disinfection of Non-Medical Equipment", "text": "UVC radiation has effectively been used for decades to reduce the spread of bacteria, such as tuberculosis.", "icon": "💡" }
+    ]
+  },
+  "blogs": {
+    "heading": "Blogs",
+    "cta": "View All Blogs",
+    "ctaUrl": "#",
+    "items": [
+      { "title": "Smile design – A brief overview", "excerpt": "Smile design is the process of creating a beautiful and natural-looking smile that enhances a person's overall appearance...", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/blog1.webp", "url": "#" },
+      { "title": "Oral health", "excerpt": "Oral health is an integral part of our overall health, and it's essential to take care of our teeth and gums to maintain good health...", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/blog2.webp", "url": "#" },
+      { "title": "Common causes of tooth pain", "excerpt": "Tooth pain is a common problem that can range from mild discomfort to severe agony. It can be caused by a variety of factors...", "image": "https://zendentistrynyc.com/wp-content/uploads/2025/12/blog3.webp", "url": "#" }
+    ]
+  },
+  "quote": {
+    "text": "A smile is a curve that sets everything straight."
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      { "q": "How Do I Find a Trusted Dentist in New York?", "a": "Finding a dentist in New York is easy with Zen Dentistry. Our experienced team provides top-tier dental care in a modern and comfortable setting. Book your appointment today for personalized treatment." },
+      { "q": "Do You Offer Teeth Whitening in New York?", "a": "Yes! At Zen Dentistry, we provide professional teeth whitening in New York to brighten your smile. Our advanced treatments remove stains and discoloration, giving you a whiter, more confident smile." },
+      { "q": "Do Your New York Dentists Treat Dental Emergencies?", "a": "Yes! At Zen Dentistry, we offer prompt and gentle care for dental emergencies. Whether you have a toothache, broken tooth, or other urgent concerns, our skilled dentists are here to help." },
+      { "q": "How Often Should I Visit a Dentist in New York?", "a": "For optimal oral health, we recommend visiting Zen Dentistry every six months for a routine exam and cleaning. Regular check-ups help prevent issues and keep your smile healthy and bright." }
+    ]
+  },
+  "ctaBanner": {
+    "heading": "Ready To Transform Your Smile?",
+    "paragraph": "Take the first step towards a healthier, more confident smile by booking your appointment with our expert team. Whether you're seeking general dentistry, cosmetic enhancements, teeth-straightening solutions, or specialized restorative treatments, we have you covered.",
+    "cta": "Reserve Appointment",
+    "ctaUrl": "#contact"
+  },
+  "smileVisualization": {
+    "heading": "Smile Visualization",
+    "paragraph": "Take a smiling selfie and we'll show you what Invisalign® treatment can do for you. Sometimes insurances can cover up to $2500 of Invisalign treatment. Call our office or follow the link to find out.",
+    "image": "https://zendentistrynyc.com/wp-content/uploads/2025/10/WhatsApp-Image-2026-01-03-at-3.22.23-PM.jpeg"
+  },
+  "contact": {
+    "heading": "Connect With Us",
+    "cta": "Reserve Appointment",
+    "ctaUrl": "#contact",
+    "social": {
+      "instagram": "https://www.instagram.com/zen.dentistry/",
+      "facebook": "#"
+    }
+  },
+  "footer": {
+    "text": "© 2026 Zen Dentistry NYC | All Rights Reserved",
+    "links": [
+      { "label": "Privacy Policy", "url": "#" },
+      { "label": "Terms & Conditions", "url": "#" }
+    ]
+  },
+  "theme": {
+    "colorPrimary": "#0077b6",
+    "colorPrimaryDark": "#023e8a",
+    "colorAccent": "#00b4d8",
+    "colorLight": "#caf0f8",
+    "colorSky": "#90e0ef",
+    "colorBg": "#f0faff",
+    "colorText": "#03045e"
+  }
+}

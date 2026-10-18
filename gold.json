@@ -1,0 +1,198 @@
+{
+  "site": {
+    "name": "LEX AUREA",
+    "shortName": "LA",
+    "tagline": "Estudio Jurídico",
+    "description": "Asesoramiento jurídico estratégico con experiencia, precisión y compromiso.",
+    "copyright": "LEX AUREA · Estudio Jurídico",
+    "language": "es"
+  },
+
+  "navigation": [
+    {
+      "label": "Inicio",
+      "href": "#inicio"
+    },
+    {
+      "label": "Nosotros",
+      "href": "#nosotros"
+    },
+    {
+      "label": "Valores",
+      "href": "#valores"
+    },
+    {
+      "label": "Servicios",
+      "href": "#servicios"
+    },
+    {
+      "label": "Contacto",
+      "href": "#contacto"
+    }
+  ],
+
+  "hero": {
+    "eyebrow": "Excelencia · Integridad · Estrategia",
+    "title": "La defensa de sus intereses comienza con una estrategia.",
+    "description": "Representación y asesoramiento jurídico fundamentado en experiencia, análisis y atención personalizada.",
+    "primaryAction": {
+      "label": "Solicitar consulta",
+      "href": "#contacto"
+    },
+    "secondaryAction": {
+      "label": "Conocer el estudio",
+      "href": "#nosotros"
+    },
+    "seal": {
+      "top": "LEX",
+      "center": "A",
+      "bottom": "IUS · VERITAS"
+    }
+  },
+
+  "about": {
+    "eyebrow": "El estudio",
+    "title": "Experiencia jurídica con visión estratégica",
+    "description": "Nuestro estudio trabaja sobre una premisa esencial: cada situación jurídica requiere comprensión, precisión y una estrategia construida específicamente para sus circunstancias.",
+    "secondaryDescription": "Acompañamos a nuestros clientes desde el análisis inicial hasta la resolución de sus asuntos, procurando que cada decisión esté respaldada por conocimiento jurídico y una visión integral.",
+    "stats": [
+      {
+        "number": "15+",
+        "label": "Años de experiencia"
+      },
+      {
+        "number": "08",
+        "label": "Áreas jurídicas"
+      },
+      {
+        "number": "24h",
+        "label": "Respuesta inicial"
+      }
+    ]
+  },
+
+  "values": {
+    "eyebrow": "Nuestros principios",
+    "title": "Los valores que sostienen nuestra práctica",
+    "items": [
+      {
+        "number": "01",
+        "title": "Integridad",
+        "description": "Actuamos con transparencia, responsabilidad profesional y respeto por los principios que rigen nuestra profesión."
+      },
+      {
+        "number": "02",
+        "title": "Precisión",
+        "description": "Analizamos cada detalle para construir argumentos jurídicos claros, sólidos y técnicamente fundamentados."
+      },
+      {
+        "number": "03",
+        "title": "Estrategia",
+        "description": "Cada caso requiere una lectura particular. Diseñamos caminos jurídicos orientados a los objetivos de nuestros clientes."
+      }
+    ]
+  },
+
+  "services": {
+    "eyebrow": "Áreas de práctica",
+    "title": "Servicios jurídicos",
+    "description": "Una estructura multidisciplinaria para atender las principales necesidades legales de personas y organizaciones.",
+    "items": [
+      {
+        "number": "I",
+        "title": "Derecho Civil",
+        "description": "Asesoramiento y representación en obligaciones, contratos, responsabilidad civil, propiedad y relaciones patrimoniales."
+      },
+      {
+        "number": "II",
+        "title": "Derecho Comercial",
+        "description": "Acompañamiento jurídico para empresas, sociedades, contratos comerciales y operaciones empresariales."
+      },
+      {
+        "number": "III",
+        "title": "Derecho Laboral",
+        "description": "Asesoramiento en relaciones laborales, conflictos, contratos y procedimientos vinculados al ámbito profesional."
+      },
+      {
+        "number": "IV",
+        "title": "Derecho Familiar",
+        "description": "Orientación jurídica en asuntos familiares con especial atención a la confidencialidad y sensibilidad de cada situación."
+      },
+      {
+        "number": "V",
+        "title": "Derecho Corporativo",
+        "description": "Diseño y revisión de estructuras jurídicas para organizaciones, empresas y emprendimientos."
+      },
+      {
+        "number": "VI",
+        "title": "Litigios y Representación",
+        "description": "Representación y estrategia procesal para la defensa de derechos e intereses ante las instancias correspondientes."
+      }
+    ]
+  },
+
+  "cta": {
+    "eyebrow": "Atención personalizada",
+    "title": "Conversemos sobre su situación jurídica",
+    "description": "Una primera conversación permite comprender el contexto, identificar las cuestiones principales y determinar el camino adecuado.",
+    "button": "Contactar por WhatsApp",
+    "whatsappNumber": "59170000000",
+    "whatsappMessage": "Hola, quisiera solicitar una consulta jurídica con LEX AUREA."
+  },
+
+  "schedule": {
+    "eyebrow": "Atención",
+    "title": "Horario de atención",
+    "description": "Nuestro equipo atiende consultas previa coordinación de horario.",
+    "days": [
+      {
+        "day": "Lunes — Viernes",
+        "hours": "08:30 — 18:00"
+      },
+      {
+        "day": "Sábado",
+        "hours": "09:00 — 13:00"
+      },
+      {
+        "day": "Domingo",
+        "hours": "Cerrado"
+      }
+    ],
+    "appointment": "Consultas fuera de horario disponibles previa coordinación."
+  },
+
+  "direction": {
+    "eyebrow": "Dónde encontrarnos",
+    "title": "Nuestra oficina",
+    "address": "Av. Principal Nº 0000, Zona Central",
+    "city": "La Paz, Bolivia",
+    "reference": "A pocos minutos del centro financiero y administrativo de la ciudad.",
+    "mapUrl": "https://www.google.com/maps?q=La%20Paz%20Bolivia&output=embed",
+    "button": "Abrir ubicación"
+  },
+
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Solicite una consulta",
+    "description": "Complete sus datos y nos pondremos en contacto para coordinar una primera conversación.",
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Cuéntenos brevemente su consulta"
+    },
+    "submit": "Solicitar consulta",
+    "privacy": "La información proporcionada será utilizada únicamente para responder a su solicitud.",
+    "success": "Gracias. Prepararemos su solicitud para coordinar el contacto."
+  },
+
+  "footer": {
+    "description": "Asesoramiento jurídico estratégico basado en experiencia, precisión e integridad.",
+    "navigationTitle": "Navegación",
+    "contactTitle": "Contacto",
+    "phone": "+591 700 00000",
+    "email": "contacto@lexaurea.bo",
+    "address": "La Paz, Bolivia",
+    "legal": "Todos los derechos reservados."
+  }
+}

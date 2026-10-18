@@ -1,0 +1,184 @@
+{
+  "site": {
+    "name": "MATERIA CAFÉ",
+    "shortName": "MATERIA",
+    "description": "Café de autor, arte y materia en movimiento.",
+    "language": "es"
+  },
+
+  "navigation": {
+    "links": [
+      { "label": "Nosotros", "href": "#about" },
+      { "label": "Carta", "href": "#services" },
+      { "label": "Visítanos", "href": "#location" }
+    ],
+    "cta": {
+      "label": "RESERVAR",
+      "href": "https://wa.me/59170000000"
+    }
+  },
+
+  "hero": {
+    "eyebrow": "CAFÉ / ARTE / MATERIA",
+    "title": "EL CAFÉ COMO OBRA",
+    "description": "Un espacio donde el café de especialidad encuentra el lenguaje del arte.",
+    "primaryCta": {
+      "label": "DESCUBRIR LA CARTA",
+      "href": "#services"
+    },
+    "secondaryCta": {
+      "label": "ENCONTRAR EL ESPACIO",
+      "href": "#location"
+    },
+    "image": {
+      "src": "assets/images/hero.jpg",
+      "alt": "Espacio artístico de Materia Café"
+    },
+    "badge": "01 / 06"
+  },
+
+  "about": {
+    "eyebrow": "01 / CONCEPTO",
+    "title": "NO SERVIMOS SOLO CAFÉ.",
+    "highlight": "CONSTRUIMOS EXPERIENCIAS.",
+    "description": "Materia nace del encuentro entre café, diseño y cultura. Cada preparación, objeto y espacio forma parte de una composición pensada para detener el tiempo.",
+    "image": {
+      "src": "assets/images/about.jpg",
+      "alt": "Interior artístico de Materia Café"
+    },
+    "stats": [
+      {
+        "value": "12+",
+        "label": "ORÍGENES"
+      },
+      {
+        "value": "04",
+        "label": "MÉTODOS"
+      },
+      {
+        "value": "01",
+        "label": "ESPACIO"
+      }
+    ]
+  },
+
+  "values": {
+    "eyebrow": "02 / PRINCIPIOS",
+    "title": "TRES FORMAS DE ENTENDER EL CAFÉ",
+    "items": [
+      {
+        "number": "01",
+        "title": "ORIGEN",
+        "description": "Seleccionamos cafés cuyo territorio puede sentirse en cada taza.",
+        "color": "red"
+      },
+      {
+        "number": "02",
+        "title": "PRECISIÓN",
+        "description": "Temperatura, molienda y tiempo trabajan juntos para revelar cada perfil.",
+        "color": "blue"
+      },
+      {
+        "number": "03",
+        "title": "EXPERIENCIA",
+        "description": "El espacio también forma parte de la bebida: música, arte, objetos y personas.",
+        "color": "yellow"
+      }
+    ]
+  },
+
+  "services": {
+    "eyebrow": "03 / CARTA",
+    "title": "MATERIA PARA BEBER",
+    "description": "Una selección construida alrededor del café de especialidad y sus distintas formas de expresión.",
+    "items": [
+      {
+        "number": "01",
+        "title": "ESPRESSO",
+        "description": "Concentrado, intenso y preciso.",
+        "price": "Bs. 18",
+        "image": {
+          "src": "assets/images/coffee-01.jpg",
+          "alt": "Espresso de especialidad"
+        },
+        "color": "red"
+      },
+      {
+        "number": "02",
+        "title": "V60",
+        "description": "Claridad, aroma y una extracción limpia.",
+        "price": "Bs. 28",
+        "image": {
+          "src": "assets/images/coffee-02.jpg",
+          "alt": "Café filtrado V60"
+        },
+        "color": "blue"
+      },
+      {
+        "number": "03",
+        "title": "COLD BREW",
+        "description": "Extracción lenta, cuerpo suave y final prolongado.",
+        "price": "Bs. 25",
+        "image": {
+          "src": "assets/images/coffee-03.jpg",
+          "alt": "Cold brew artesanal"
+        },
+        "color": "yellow"
+      }
+    ]
+  },
+
+  "whatsapp": {
+    "eyebrow": "04 / ENCUENTRO",
+    "title": "TU MESA ESTÁ ESPERANDO",
+    "description": "Reserva tu espacio, pregunta por nuestra carta o simplemente escríbenos.",
+    "number": "59170000000",
+    "message": "Hola, quiero reservar una mesa en Materia Café.",
+    "label": "ESCRIBIR POR WHATSAPP"
+  },
+
+  "schedule": {
+    "eyebrow": "05 / TIEMPO",
+    "title": "CUANDO LA MATERIA SE ENCUENTRA",
+    "days": [
+      {
+        "day": "LUN — JUE",
+        "hours": "08:00 — 21:00"
+      },
+      {
+        "day": "VIE — SÁB",
+        "hours": "08:00 — 23:00"
+      },
+      {
+        "day": "DOMINGO",
+        "hours": "09:00 — 18:00"
+      }
+    ]
+  },
+
+  "location": {
+    "eyebrow": "06 / DIRECCIÓN",
+    "title": "ENCUÉNTRANOS",
+    "address": "Av. Arce 1234, La Paz, Bolivia",
+    "reference": "A pocos minutos del centro de la ciudad.",
+    "mapsUrl": "https://maps.google.com/",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=",
+    "phone": "+591 70000000",
+    "email": "hola@materiacafe.bo"
+  },
+
+  "footer": {
+    "tagline": "CAFÉ / ARTE / MATERIA",
+    "copyright": "MATERIA CAFÉ",
+    "social": [
+      {
+        "label": "INSTAGRAM",
+        "href": "#"
+      },
+      {
+        "label": "FACEBOOK",
+        "href": "#"
+      }
+    ]
+  }
+}

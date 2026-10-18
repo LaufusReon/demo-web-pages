@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="LEX AUREA - Estudio Jurídico. Asesoramiento jurídico estratégico, representación y defensa."
+  />
+
+  <title>LEX AUREA | Estudio Jurídico</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            decoGold: "#d4af37",
+            decoBlue: "#1a1a2e",
+            decoNavy: "#2d2d44",
+            decoBlack: "#0f0f1a",
+            decoCream: "#f0e6d0",
+            decoMuted: "#8a7a5a"
+          },
+
+          fontFamily: {
+            serif: [
+              "Georgia",
+              "Times New Roman",
+              "serif"
+            ]
+          },
+
+          transitionDuration: {
+            "400": "400ms"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --blue: #1a1a2e;
+      --navy: #2d2d44;
+      --black: #0f0f1a;
+      --cream: #f0e6d0;
+      --muted: #8a7a5a;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: Georgia, "Times New Roman", serif;
+      overflow-x: hidden;
+    }
+
+    .duration-400 {
+      transition-duration: 400ms;
+    }
+
+    .deco-line {
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--gold),
+        transparent
+      );
+    }
+
+    .deco-line-solid {
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .deco-diamond {
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--gold);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .deco-small-diamond {
+      width: 7px;
+      height: 7px;
+      border: 1px solid var(--gold);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .deco-corner {
+      position: relative;
+    }
+
+    .deco-corner::before,
+    .deco-corner::after {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-color: var(--gold);
+      pointer-events: none;
+    }
+
+    .deco-corner::before {
+      top: 12px;
+      left: 12px;
+      border-top: 2px solid;
+      border-left: 2px solid;
+    }
+
+    .deco-corner::after {
+      right: 12px;
+      bottom: 12px;
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+    }
+
+    .deco-radial {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .deco-radial::before {
+      content: "";
+      position: absolute;
+      width: 460px;
+      height: 460px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      clip-path: polygon(
+        50% 0%,
+        55% 42%,
+        100% 50%,
+        55% 58%,
+        50% 100%,
+        45% 58%,
+        0% 50%,
+        45% 42%
+      );
+    }
+
+    .deco-pattern {
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 46%,
+          rgba(212, 175, 55, 0.08) 47%,
+          rgba(212, 175, 55, 0.08) 53%,
+          transparent 54%
+        ),
+        linear-gradient(
+          -45deg,
+          transparent 46%,
+          rgba(212, 175, 55, 0.08) 47%,
+          rgba(212, 175, 55, 0.08) 53%,
+          transparent 54%
+        );
+      background-size: 28px 28px;
+    }
+
+    .gold-shimmer {
+      background-image: linear-gradient(
+        110deg,
+        #d4af37 0%,
+        #d4af37 35%,
+        #f0d879 50%,
+        #d4af37 65%,
+        #d4af37 100%
+      );
+      background-size: 200% auto;
+      background-position: left;
+    }
+
+    .gold-shimmer:hover {
+      background-position: right;
+    }
+
+    .deco-seal {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .deco-seal::before {
+      content: "";
+      position: absolute;
+      inset: 9px;
+      border: 1px solid var(--gold);
+    }
+
+    .deco-seal::after {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border: 1px solid rgba(212, 175, 55, 0.65);
+      transform: rotate(45deg);
+    }
+
+    .service-number {
+      position: relative;
+    }
+
+    .service-number::before,
+    .service-number::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 42px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .service-number::before {
+      right: calc(100% + 12px);
+    }
+
+    .service-number::after {
+      left: calc(100% + 12px);
+    }
+
+    .focus-deco:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 5px;
+    }
+
+    @media (max-width: 640px) {
+      .deco-seal {
+        width: 135px;
+        height: 135px;
+      }
+
+      .service-number::before,
+      .service-number::after {
+        width: 22px;
+      }
+
+      .service-number::before {
+        right: calc(100% + 8px);
+      }
+
+      .service-number::after {
+        left: calc(100% + 8px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <script src="./goldApp.js"></script>
+
+</body>
+</html>

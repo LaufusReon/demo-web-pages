@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Materia Café — café de especialidad, arte y cultura."
+  />
+
+  <title>Materia Café — Café / Arte / Materia</title>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.loli.net/css2?family=Archivo:wght@700;800;900&family=Space+Mono&display=swap"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --paper: #EFE9DC;
+      --ink: #17130E;
+      --red: #E0231B;
+      --blue: #1C4A87;
+      --yellow: #F4B301;
+
+      --expo: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      overflow-x: hidden;
+      font-family: "Space Mono", monospace;
+    }
+
+    ::selection {
+      background: var(--red);
+      color: var(--paper);
+    }
+
+    .kc-heading {
+      font-family: "Archivo", "Anton", "Helvetica Neue", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.055em;
+      line-height: 0.88;
+    }
+
+    .kc-mono {
+      font-family: "Space Mono", monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kc-border {
+      border: 2px solid var(--ink);
+    }
+
+    .kc-button {
+      text-transform: uppercase;
+      font-family: "Archivo", sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      font-size: 0.875rem;
+      border: 2px solid var(--ink);
+      border-radius: 0;
+      transition:
+        background-color 300ms var(--expo),
+        color 300ms var(--expo),
+        transform 300ms var(--expo);
+    }
+
+    .kc-button:focus-visible,
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--red);
+      outline-offset: 4px;
+    }
+
+    .kc-button:active {
+      transform: scale(0.98);
+    }
+
+    .kc-button:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .kc-card {
+      background: var(--paper);
+      border: 2px solid var(--ink);
+      border-radius: 0;
+    }
+
+    .kc-input {
+      background: transparent;
+      border: 2px solid var(--ink);
+      border-radius: 0;
+      color: var(--ink);
+    }
+
+    .kc-input::placeholder {
+      color: rgba(23, 19, 14, 0.3);
+    }
+
+    .kc-input:focus {
+      outline: none;
+    }
+
+    /* --------------------------------
+       CONSTRUCTIVIST PRIMITIVES
+    -------------------------------- */
+
+    .kc-disc {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: var(--red);
+    }
+
+    .kc-disc-blue {
+      background: var(--blue);
+    }
+
+    .kc-disc-yellow {
+      background: var(--yellow);
+    }
+
+    .kc-square {
+      width: 28px;
+      height: 28px;
+      background: var(--red);
+    }
+
+    .kc-triangle {
+      width: 0;
+      height: 0;
+      border-left: 45px solid transparent;
+      border-right: 45px solid transparent;
+      border-bottom: 82px solid var(--blue);
+    }
+
+    .kc-bar {
+      width: 260px;
+      height: 24px;
+      background: var(--red);
+      transform: rotate(-45deg);
+    }
+
+    .kc-bar-blue {
+      background: var(--blue);
+    }
+
+    .kc-bar-yellow {
+      background: var(--yellow);
+    }
+
+    /* --------------------------------
+       MECHANICAL MOTION
+    -------------------------------- */
+
+    @keyframes kc-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes kc-orbit {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes kc-pendulum {
+      0%,
+      100% {
+        transform: rotate(-24deg);
+      }
+
+      50% {
+        transform: rotate(24deg);
+      }
+    }
+
+    @keyframes kc-march {
+      to {
+        transform: translateX(24px);
+      }
+    }
+
+    @keyframes kc-sweep {
+      from {
+        transform: translateX(-110%) skewX(-12deg);
+      }
+
+      to {
+        transform: translateX(0) skewX(-12deg);
+      }
+    }
+
+    @keyframes kc-enter {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .kc-spin {
+      animation: kc-spin 12s linear infinite;
+    }
+
+    .kc-orbit {
+      animation: kc-orbit 12s linear infinite;
+    }
+
+    .kc-pendulum {
+      transform-origin: top center;
+      animation: kc-pendulum 3.8s ease-in-out infinite;
+    }
+
+    .kc-march {
+      animation: kc-march 900ms steps(3) alternate infinite;
+    }
+
+    .kc-enter {
+      animation: kc-enter 800ms var(--expo) both;
+    }
+
+    .kc-delay-1 {
+      animation-delay: 120ms;
+    }
+
+    .kc-delay-2 {
+      animation-delay: 240ms;
+    }
+
+    .kc-delay-3 {
+      animation-delay: 360ms;
+    }
+
+    /* --------------------------------
+       IMAGE SYSTEM
+    -------------------------------- */
+
+    .kc-image {
+      position: relative;
+      overflow: hidden;
+      background: var(--ink);
+      border: 2px solid var(--ink);
+    }
+
+    .kc-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(1.1);
+    }
+
+    .kc-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--red);
+      mix-blend-mode: multiply;
+      opacity: 0.28;
+      pointer-events: none;
+    }
+
+    /* --------------------------------
+       SECTION DIVIDERS
+    -------------------------------- */
+
+    .kc-diagonal-divider {
+      height: 70px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .kc-diagonal-divider::before {
+      content: "";
+      position: absolute;
+      width: 140%;
+      height: 26px;
+      left: -20%;
+      top: 22px;
+      background: var(--blue);
+      transform: rotate(-3deg);
+    }
+
+    .kc-diagonal-divider::after {
+      content: "";
+      position: absolute;
+      width: 140%;
+      height: 12px;
+      left: -20%;
+      top: 50px;
+      background: var(--yellow);
+      transform: rotate(-3deg);
+    }
+
+    /* --------------------------------
+       MOBILE NAV
+    -------------------------------- */
+
+    .kc-mobile-menu {
+      transform: translateY(-110%);
+      transition: transform 500ms var(--expo);
+    }
+
+    .kc-mobile-menu.is-open {
+      transform: translateY(0);
+    }
+
+    @media (min-width: 768px) {
+      .kc-mobile-menu {
+        display: none;
+      }
+    }
+
+    /* --------------------------------
+       REDUCED MOTION
+    -------------------------------- */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .kc-spin,
+      .kc-orbit,
+      .kc-pendulum,
+      .kc-march,
+      .kc-enter {
+        animation: none !important;
+      }
+
+      .kc-mobile-menu {
+        transition: none;
+      }
+
+      .kc-button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+  <header
+    id="top"
+    class="relative z-50 bg-[#EFE9DC] border-b-2 border-[#17130E]"
+  >
+    <nav
+      class="px-6 md:px-10 py-5"
+      aria-label="Navegación principal"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between gap-6"
+      >
+
+        <a
+          id="nav-logo"
+          href="#top"
+          class="kc-heading text-2xl md:text-3xl"
+          aria-label="Volver al inicio"
+        >
+          MATERIA
+        </a>
+
+        <div
+          id="desktop-nav"
+          class="hidden md:flex items-center gap-8"
+        ></div>
+
+        <button
+          id="menu-button"
+          type="button"
+          class="kc-button md:hidden px-4 py-3"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menú"
+        >
+          MENU
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="kc-mobile-menu fixed inset-x-0 top-[73px] z-40 bg-[#17130E] text-[#EFE9DC] border-b-2 border-[#17130E] p-6 md:hidden"
+    ></div>
+  </header>
+
+
+  <main>
+
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+    <section
+      id="hero"
+      class="relative min-h-[calc(100vh-75px)] overflow-hidden bg-[#E0231B] px-6 md:px-10 py-20 md:py-28 flex items-center"
+    >
+
+      <!-- static diagonal scaffold -->
+      <div
+        class="absolute left-[-10%] top-[48%] w-[125%] h-5 bg-[#17130E] -rotate-[30deg]"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="absolute right-[5%] top-[18%] w-20 h-20 bg-[#F4B301]"
+        aria-hidden="true"
+      ></div>
+
+      <!-- dominant orbit -->
+      <div
+        class="absolute right-[5%] md:right-[12%] top-[14%] w-56 h-56 md:w-80 md:h-80 kc-orbit"
+        aria-hidden="true"
+      >
+        <div
+          class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-12 h-12 md:w-20 md:h-20 rounded-full bg-[#1C4A87]"
+        ></div>
+
+        <div
+          class="absolute inset-8 md:inset-12 border-[8px] border-[#17130E] rounded-full"
+        ></div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto w-full relative z-10"
+      >
+
+        <div class="max-w-5xl">
+
+          <p
+            id="hero-eyebrow"
+            class="kc-mono text-[11px] mb-8"
+          ></p>
+
+          <div
+            class="relative inline-block kc-enter"
+          >
+
+            <div
+              class="absolute -left-4 -top-5 md:-left-8 md:-top-8 bg-[#F4B301] w-[105%] h-[85%] -rotate-[4deg]"
+              aria-hidden="true"
+            ></div>
+
+            <h1
+              id="hero-title"
+              class="kc-heading relative text-[clamp(3.4rem,11vw,9rem)] max-w-5xl"
+            ></h1>
+
+          </div>
+
+          <p
+            id="hero-description"
+            class="mt-10 max-w-xl text-sm md:text-base leading-7"
+          ></p>
+
+          <div
+            class="mt-10 flex flex-col sm:flex-row gap-4"
+          >
+
+            <a
+              id="hero-primary"
+              class="kc-button bg-[#17130E] text-[#EFE9DC] px-6 py-4 inline-block text-center"
+            ></a>
+
+            <a
+              id="hero-secondary"
+              class="kc-button bg-transparent px-6 py-4 inline-block text-center"
+            ></a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div
+        class="absolute bottom-6 left-6 md:left-10 kc-mono text-[10px]"
+        id="hero-badge"
+      ></div>
+
+    </section>
+
+
+    <!-- ===================================================
+         DIVIDER
+    ==================================================== -->
+
+    <div class="kc-diagonal-divider" aria-hidden="true"></div>
+
+
+    <!-- ===================================================
+         ABOUT
+    ==================================================== -->
+
+    <section
+      id="about"
+      class="bg-[#EFE9DC] px-6 md:px-10 py-20 md:py-28"
+    >
+
+      <div
+        class="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-20 items-center"
+      >
+
+        <div>
+
+          <p
+            id="about-eyebrow"
+            class="kc-mono text-[11px] mb-7"
+          ></p>
+
+          <h2
+            id="about-title"
+            class="kc-heading text-5xl md:text-7xl"
+          ></h2>
+
+          <div
+            class="mt-6 bg-[#1C4A87] text-[#EFE9DC] p-5 md:p-7 inline-block -rotate-[3deg]"
+          >
+            <p
+              id="about-highlight"
+              class="kc-heading text-3xl md:text-5xl"
+            ></p>
+          </div>
+
+          <p
+            id="about-description"
+            class="mt-10 max-w-xl text-sm md:text-base leading-7"
+          ></p>
+
+          <div
+            id="about-stats"
+            class="mt-10 grid grid-cols-3 gap-3 max-w-xl"
+          ></div>
+
+        </div>
+
+        <div
+          id="about-image"
+          class="kc-image h-[420px] md:h-[560px]"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         VALUES
+    ==================================================== -->
+
+    <section
+      id="values"
+      class="bg-[#17130E] text-[#EFE9DC] px-6 md:px-10 py-20 md:py-28 overflow-hidden"
+    >
+
+      <div class="max-w-7xl mx-auto">
+
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14"
+        >
+
+          <div>
+            <p
+              id="values-eyebrow"
+              class="kc-mono text-[11px] text-[#EFE9DC]/60 mb-7"
+            ></p>
+
+            <h2
+              id="values-title"
+              class="kc-heading text-4xl md:text-6xl"
+            ></h2>
+          </div>
+
+          <div
+            class="kc-triangle kc-pendulum shrink-0"
+            aria-hidden="true"
+          ></div>
+
+        </div>
+
+        <div
+          id="values-grid"
+          class="grid md:grid-cols-3 gap-6"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         SERVICES / MENU
+    ==================================================== -->
+
+    <section
+      id="services"
+      class="bg-[#EFE9DC] px-6 md:px-10 py-20 md:py-28"
+    >
+
+      <div class="max-w-7xl mx-auto">
+
+        <div
+          class="grid lg:grid-cols-[0.7fr_1.3fr] gap-12 mb-14"
+        >
+
+          <div>
+
+            <p
+              id="services-eyebrow"
+              class="kc-mono text-[11px] mb-7"
+            ></p>
+
+            <h2
+              id="services-title"
+              class="kc-heading text-5xl md:text-7xl"
+            ></h2>
+
+          </div>
+
+          <p
+            id="services-description"
+            class="max-w-xl text-sm md:text-base leading-7 lg:pt-10"
+          ></p>
+
+        </div>
+
+        <div
+          id="services-grid"
+          class="grid md:grid-cols-3 gap-6"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         MARCHING STRIP
+    ==================================================== -->
+
+    <section
+      class="bg-[#F4B301] border-y-2 border-[#17130E] py-6 overflow-hidden"
+      aria-hidden="true"
+    >
+
+      <div
+        class="flex gap-6 items-center w-max kc-march"
+      >
+        <span class="kc-square bg-[#E0231B]"></span>
+        <span class="kc-square bg-[#1C4A87]"></span>
+        <span class="kc-square bg-[#E0231B]"></span>
+        <span class="kc-square bg-[#1C4A87]"></span>
+        <span class="kc-square bg-[#E0231B]"></span>
+        <span class="kc-square bg-[#1C4A87]"></span>
+        <span class="kc-square bg-[#E0231B]"></span>
+        <span class="kc-square bg-[#1C4A87]"></span>
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         WHATSAPP CTA
+    ==================================================== -->
+
+    <section
+      id="contact"
+      class="relative overflow-hidden bg-[#E0231B] px-6 md:px-10 py-20 md:py-28"
+    >
+
+      <div
+        class="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[320px] h-[320px] border-[28px] border-[#17130E] rounded-full kc-spin"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="absolute left-[8%] bottom-8 w-16 h-16 bg-[#1C4A87] rotate-45"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="max-w-7xl mx-auto relative z-10"
+      >
+
+        <p
+          id="whatsapp-eyebrow"
+          class="kc-mono text-[11px] mb-7"
+        ></p>
+
+        <h2
+          id="whatsapp-title"
+          class="kc-heading text-5xl md:text-8xl max-w-5xl"
+        ></h2>
+
+        <p
+          id="whatsapp-description"
+          class="mt-8 max-w-xl text-sm md:text-base leading-7"
+        ></p>
+
+        <a
+          id="whatsapp-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="kc-button bg-[#17130E] text-[#EFE9DC] px-7 py-5 mt-10 inline-block"
+        ></a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         SCHEDULE
+    ==================================================== -->
+
+    <section
+      id="schedule"
+      class="bg-[#1C4A87] text-[#EFE9DC] px-6 md:px-10 py-20 md:py-28"
+    >
+
+      <div
+        class="max-w-7xl mx-auto grid lg:grid-cols-[0.7fr_1.3fr] gap-14"
+      >
+
+        <div>
+
+          <p
+            id="schedule-eyebrow"
+            class="kc-mono text-[11px] text-[#EFE9DC]/70 mb-7"
+          ></p>
+
+          <h2
+            id="schedule-title"
+            class="kc-heading text-5xl md:text-7xl"
+          ></h2>
+
+        </div>
+
+        <div
+          id="schedule-grid"
+          class="border-t-2 border-[#EFE9DC]"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         LOCATION
+    ==================================================== -->
+
+    <section
+      id="location"
+      class="bg-[#EFE9DC] px-6 md:px-10 py-20 md:py-28"
+    >
+
+      <div class="max-w-7xl mx-auto">
+
+        <div class="mb-12">
+
+          <p
+            id="location-eyebrow"
+            class="kc-mono text-[11px] mb-7"
+          ></p>
+
+          <h2
+            id="location-title"
+            class="kc-heading text-5xl md:text-7xl"
+          ></h2>
+
+        </div>
+
+        <div
+          class="grid lg:grid-cols-[1.4fr_0.6fr] gap-6"
+        >
+
+          <div
+            class="kc-card min-h-[420px] relative overflow-hidden"
+          >
+
+            <iframe
+              id="map-frame"
+              class="absolute inset-0 w-full h-full border-0"
+              loading="lazy"
+              title="Ubicación de Materia Café"
+            ></iframe>
+
+            <div
+              class="absolute top-4 left-4 bg-[#F4B301] border-2 border-[#17130E] px-4 py-3"
+            >
+              <span class="kc-mono text-[10px]">
+                LOCATION
+              </span>
+            </div>
+
+          </div>
+
+          <div
+            class="kc-card p-6 md:p-8 flex flex-col justify-between"
+          >
+
+            <div>
+
+              <span class="kc-mono text-[10px]">
+                DIRECCIÓN
+              </span>
+
+              <p
+                id="location-address"
+                class="kc-heading text-3xl md:text-4xl mt-5"
+              ></p>
+
+              <p
+                id="location-reference"
+                class="text-sm leading-6 mt-6"
+              ></p>
+
+            </div>
+
+            <div class="mt-10">
+
+              <p
+                id="location-phone"
+                class="kc-mono text-[11px] mb-3"
+              ></p>
+
+              <p
+                id="location-email"
+                class="kc-mono text-[11px]"
+              ></p>
+
+              <a
+                id="maps-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="kc-button mt-7 px-5 py-4 inline-block"
+              >
+                ABRIR MAPA
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer
+    class="bg-[#17130E] text-[#EFE9DC] px-6 md:px-10 py-16 md:py-20 border-t-2 border-[#17130E]"
+  >
+
+    <div
+      class="max-w-7xl mx-auto"
+    >
+
+      <div
+        class="grid md:grid-cols-2 gap-10 items-end"
+      >
+
+        <div>
+
+          <span
+            id="footer-logo"
+            class="kc-heading text-4xl md:text-6xl block"
+          ></span>
+
+          <p
+            id="footer-tagline"
+            class="kc-mono text-[10px] text-[#EFE9DC]/60 mt-5"
+          ></p>
+
+        </div>
+
+        <div
+          id="footer-social"
+          class="md:text-right flex md:justify-end gap-6"
+        ></div>
+
+      </div>
+
+      <div
+        class="border-t-2 border-[#EFE9DC]/30 mt-12 pt-6 flex flex-col md:flex-row justify-between gap-4"
+      >
+
+        <span
+          id="footer-copy"
+          class="kc-mono text-[9px] text-[#EFE9DC]/50"
+        ></span>
+
+        <a
+          href="#top"
+          class="kc-mono text-[9px] text-[#EFE9DC]/50 hover:text-[#EFE9DC] transition-colors"
+        >
+          VOLVER ARRIBA
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    /* =====================================================
+       CONTENT LOADER
+    ====================================================== */
+
+    async function loadContent() {
+
+      try {
+
+        const response = await fetch("./coffeeContent.json");
+
+        if (!response.ok) {
+          throw new Error("No se pudo cargar content.json");
+        }
+
+        const content = await response.json();
+
+        renderNavigation(content);
+        renderHero(content);
+        renderAbout(content);
+        renderValues(content);
+        renderServices(content);
+        renderWhatsApp(content);
+        renderSchedule(content);
+        renderLocation(content);
+        renderFooter(content);
+
+      } catch (error) {
+
+        console.error(error);
+
+      }
+
+    }
+
+
+    /* =====================================================
+       NAVIGATION
+    ====================================================== */
+
+    function renderNavigation(content) {
+
+      const navigation = content.navigation;
+
+      document.querySelector("#nav-logo").textContent =
+        content.site.shortName;
+
+      const desktopNav =
+        document.querySelector("#desktop-nav");
+
+      const mobileNav =
+        document.querySelector("#mobile-menu");
+
+      desktopNav.innerHTML = "";
+
+      mobileNav.innerHTML = "";
+
+      navigation.links.forEach(link => {
+
+        const desktopLink =
+          document.createElement("a");
+
+        desktopLink.href = link.href;
+        desktopLink.textContent = link.label;
+
+        desktopLink.className =
+          "kc-mono text-[10px] hover:text-[#E0231B] transition-colors";
+
+        desktopNav.appendChild(desktopLink);
+
+
+        const mobileLink =
+          document.createElement("a");
+
+        mobileLink.href = link.href;
+        mobileLink.textContent = link.label;
+
+        mobileLink.className =
+          "block py-4 border-b-2 border-[#EFE9DC]/20 kc-heading text-3xl";
+
+        mobileNav.appendChild(mobileLink);
+
+      });
+
+
+      const desktopCta =
+        document.createElement("a");
+
+      desktopCta.href = navigation.cta.href;
+      desktopCta.textContent = navigation.cta.label;
+
+      desktopCta.className =
+        "kc-button bg-[#E0231B] text-[#EFE9DC] px-4 py-3";
+
+      desktopNav.appendChild(desktopCta);
+
+
+      const mobileCta =
+        document.createElement("a");
+
+      mobileCta.href = navigation.cta.href;
+      mobileCta.textContent = navigation.cta.label;
+
+      mobileCta.className =
+        "kc-button block bg-[#E0231B] text-[#EFE9DC] px-5 py-4 mt-5 text-center";
+
+      mobileNav.appendChild(mobileCta);
+
+    }
+
+
+    /* =====================================================
+       HERO
+    ====================================================== */
+
+    function renderHero(content) {
+
+      const hero = content.hero;
+
+      document.querySelector("#hero-eyebrow").textContent =
+        hero.eyebrow;
+
+      document.querySelector("#hero-title").textContent =
+        hero.title;
+
+      document.querySelector("#hero-description").textContent =
+        hero.description;
+
+      const primary =
+        document.querySelector("#hero-primary");
+
+      primary.textContent = hero.primaryCta.label;
+      primary.href = hero.primaryCta.href;
+
+      const secondary =
+        document.querySelector("#hero-secondary");
+
+      secondary.textContent = hero.secondaryCta.label;
+      secondary.href = hero.secondaryCta.href;
+
+      document.querySelector("#hero-badge").textContent =
+        hero.badge;
+
+    }
+
+
+    /* =====================================================
+       ABOUT
+    ====================================================== */
+
+    function renderAbout(content) {
+
+      const about = content.about;
+
+      document.querySelector("#about-eyebrow").textContent =
+        about.eyebrow;
+
+      document.querySelector("#about-title").textContent =
+        about.title;
+
+      document.querySelector("#about-highlight").textContent =
+        about.highlight;
+
+      document.querySelector("#about-description").textContent =
+        about.description;
+
+
+      const image =
+        document.querySelector("#about-image");
+
+      image.innerHTML = `
+        <img
+          src="${about.image.src}"
+          alt="${about.image.alt}"
+          loading="lazy"
+        />
+      `;
+
+
+      const stats =
+        document.querySelector("#about-stats");
+
+      stats.innerHTML = "";
+
+      about.stats.forEach(stat => {
+
+        const element =
+          document.createElement("div");
+
+        element.className =
+          "kc-card p-4 md:p-5";
+
+        element.innerHTML = `
+          <strong class="kc-heading text-3xl md:text-4xl block">
+            ${stat.value}
+          </strong>
+
+          <span class="kc-mono text-[9px] block mt-3">
+            ${stat.label}
+          </span>
+        `;
+
+        stats.appendChild(element);
+
+      });
+
+    }
+
+
+    /* =====================================================
+       VALUES
+    ====================================================== */
+
+    function renderValues(content) {
+
+      const values = content.values;
+
+      document.querySelector("#values-eyebrow").textContent =
+        values.eyebrow;
+
+      document.querySelector("#values-title").textContent =
+        values.title;
+
+
+      const grid =
+        document.querySelector("#values-grid");
+
+      grid.innerHTML = "";
+
+      const colors = {
+        red: "#E0231B",
+        blue: "#1C4A87",
+        yellow: "#F4B301"
+      };
+
+
+      values.items.forEach((item, index) => {
+
+        const card =
+          document.createElement("article");
+
+        card.className =
+          "relative border-2 border-[#EFE9DC] p-6 min-h-[320px] flex flex-col justify-between overflow-hidden";
+
+        card.innerHTML = `
+
+          <div
+            class="absolute top-0 right-0 w-20 h-20"
+            style="background:${colors[item.color]}"
+            aria-hidden="true"
+          ></div>
+
+          <div>
+
+            <span class="kc-mono text-[10px]">
+              ${item.number}
+            </span>
+
+            <h3
+              class="kc-heading text-3xl md:text-4xl mt-10"
+            >
+              ${item.title}
+            </h3>
+
+          </div>
+
+          <p class="text-sm leading-6 max-w-sm">
+            ${item.description}
+          </p>
+
+        `;
+
+        grid.appendChild(card);
+
+      });
+
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ====================================================== */
+
+    function renderServices(content) {
+
+      const services = content.services;
+
+      document.querySelector("#services-eyebrow").textContent =
+        services.eyebrow;
+
+      document.querySelector("#services-title").textContent =
+        services.title;
+
+      document.querySelector("#services-description").textContent =
+        services.description;
+
+
+      const grid =
+        document.querySelector("#services-grid");
+
+      grid.innerHTML = "";
+
+
+      const colors = {
+        red: "#E0231B",
+        blue: "#1C4A87",
+        yellow: "#F4B301"
+      };
+
+
+      services.items.forEach(item => {
+
+        const card =
+          document.createElement("article");
+
+        card.className =
+          "kc-card overflow-hidden group";
+
+
+        card.innerHTML = `
+
+          <div class="h-64 kc-image border-0 border-b-2">
+
+            <img
+              src="${item.image.src}"
+              alt="${item.image.alt}"
+              loading="lazy"
+            />
+
+            <div
+              class="absolute left-5 top-5 px-3 py-2 border-2 border-[#17130E]"
+              style="background:${colors[item.color]}"
+            >
+              <span class="kc-mono text-[9px]">
+                ${item.number}
+              </span>
+            </div>
+
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex items-start justify-between gap-4">
+
+              <h3 class="kc-heading text-3xl md:text-4xl">
+                ${item.title}
+              </h3>
+
+              <span class="kc-mono text-[10px] shrink-0">
+                ${item.price}
+              </span>
+
+            </div>
+
+            <p class="text-sm leading-6 mt-5 max-w-sm">
+              ${item.description}
+            </p>
+
+          </div>
+
+        `;
+
+        grid.appendChild(card);
+
+      });
+
+    }
+
+
+    /* =====================================================
+       WHATSAPP
+    ====================================================== */
+
+    function renderWhatsApp(content) {
+
+      const data = content.whatsapp;
+
+      document.querySelector("#whatsapp-eyebrow").textContent =
+        data.eyebrow;
+
+      document.querySelector("#whatsapp-title").textContent =
+        data.title;
+
+      document.querySelector("#whatsapp-description").textContent =
+        data.description;
+
+
+      const link =
+        document.querySelector("#whatsapp-link");
+
+      const whatsappUrl =
+        `https://wa.me/${data.number}?text=${encodeURIComponent(data.message)}`;
+
+      link.href = whatsappUrl;
+      link.textContent = data.label;
+
+    }
+
+
+    /* =====================================================
+       SCHEDULE
+    ====================================================== */
+
+    function renderSchedule(content) {
+
+      const data = content.schedule;
+
+      document.querySelector("#schedule-eyebrow").textContent =
+        data.eyebrow;
+
+      document.querySelector("#schedule-title").textContent =
+        data.title;
+
+
+      const grid =
+        document.querySelector("#schedule-grid");
+
+      grid.innerHTML = "";
+
+
+      data.days.forEach(item => {
+
+        const row =
+          document.createElement("div");
+
+        row.className =
+          "grid grid-cols-[0.8fr_1.2fr] gap-5 py-7 border-b-2 border-[#EFE9DC]";
+
+
+        row.innerHTML = `
+
+          <span class="kc-mono text-[10px]">
+            ${item.day}
+          </span>
+
+          <strong class="kc-heading text-2xl md:text-4xl">
+            ${item.hours}
+          </strong>
+
+        `;
+
+        grid.appendChild(row);
+
+      });
+
+    }
+
+
+    /* =====================================================
+       LOCATION
+    ====================================================== */
+
+    function renderLocation(content) {
+
+      const location = content.location;
+
+      document.querySelector("#location-eyebrow").textContent =
+        location.eyebrow;
+
+      document.querySelector("#location-title").textContent =
+        location.title;
+
+      document.querySelector("#location-address").textContent =
+        location.address;
+
+      document.querySelector("#location-reference").textContent =
+        location.reference;
+
+      document.querySelector("#location-phone").textContent =
+        location.phone;
+
+      document.querySelector("#location-email").textContent =
+        location.email;
+
+
+      document.querySelector("#map-frame").src =
+        location.mapEmbed;
+
+      const mapsLink =
+        document.querySelector("#maps-link");
+
+      mapsLink.href =
+        location.mapsUrl;
+
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ====================================================== */
+
+    function renderFooter(content) {
+
+      const footer = content.footer;
+
+      document.querySelector("#footer-logo").textContent =
+        footer.copyright;
+
+      document.querySelector("#footer-tagline").textContent =
+        footer.tagline;
+
+
+      const social =
+        document.querySelector("#footer-social");
+
+      social.innerHTML = "";
+
+
+      footer.social.forEach(item => {
+
+        const link =
+          document.createElement("a");
+
+        link.href = item.href;
+        link.textContent = item.label;
+
+        link.className =
+          "kc-mono text-[10px] hover:text-[#E0231B] transition-colors";
+
+        social.appendChild(link);
+
+      });
+
+
+      document.querySelector("#footer-copy").textContent =
+        `© ${new Date().getFullYear()} ${footer.copyright}`;
+
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ====================================================== */
+
+    const menuButton =
+      document.querySelector("#menu-button");
+
+    const mobileMenu =
+      document.querySelector("#mobile-menu");
+
+
+    menuButton.addEventListener("click", () => {
+
+      const isOpen =
+        mobileMenu.classList.toggle("is-open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+
+    });
+
+
+    mobileMenu.addEventListener("click", event => {
+
+      if (event.target.tagName === "A") {
+
+        mobileMenu.classList.remove("is-open");
+
+        menuButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    });
+
+
+    /* =====================================================
+       START
+    ====================================================== */
+
+    loadContent();
+
+  </script>
+
+</body>
+</html>

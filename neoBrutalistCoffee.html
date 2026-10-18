@@ -1,0 +1,331 @@
+Page: Garabato - Neo-Brutalist Coffee Experience
+
+```html
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARABATO - DISRUPTIVE COFFEE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,400&amp;family=Ranchers&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-ranchers { font-family: 'Ranchers', cursive; }
+        .font-mono-tech { font-family: 'Space Mono', monospace; }
+        .neo-shadow-black { box-shadow: 8px 8px 0px 0px #000000; }
+        .neo-shadow-white { box-shadow: 8px 8px 0px 0px #FFFFFF; }
+        .neo-shadow-volt { box-shadow: 8px 8px 0px 0px #CCFF00; }
+        .writing-vertical { writing-mode: vertical-rl; }
+        .heavy-border { border: 4px solid #000000; }
+        .extra-heavy-border { border: 8px solid #000000; }
+        .brutalist-input:focus { outline: none; background: #CCFF00; }
+        .btn-brutalist:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px 0px #000000; }
+        .btn-brutalist-white:hover { transform: translate(4px, 4px); box-shadow: 0px 0px 0px 0px #FFFFFF; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body>
+    <div class="bg-[#121212] min-h-screen text-white overflow-x-hidden" data-sd-id="1">
+        <!-- STICKY NAVIGATION -->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-white border-b-4 border-black h-20 flex items-center justify-between px-8" data-sd-id="2">
+            <div class="flex items-center gap-4" data-sd-id="3">
+                <div class="w-12 h-12 bg-black border-4 border-black rotate-3 flex items-center justify-center" data-sd-id="4">
+                    <iconify-icon icon="mdi:coffee-maker-outline" class="text-white text-3xl"></iconify-icon>
+                </div>
+                <span class="font-extrabold text-3xl text-black tracking-tighter" data-sd-id="5">GARABATO</span>
+            </div>
+            <div class="flex items-center gap-6" data-sd-id="6">
+                <div class="hidden md:block" data-sd-id="7">
+                    <span class="font-mono-tech font-bold uppercase tracking-[0.1em] text-black bg-[#CCFF00] px-4 py-1 border-2 border-black neo-shadow-black" data-sd-id="8">V.01-BETA</span>
+                </div>
+                <a id="nav-beta-link" href="#" class="btn-brutalist bg-black text-white px-6 py-2 border-4 border-black rounded-lg font-mono-tech uppercase tracking-widest text-sm neo-shadow-black transition-all duration-75" data-sd-id="9">
+                    JOIN BETA
+                </a>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="relative pt-40 pb-32 flex flex-col items-center px-4 bg-white" data-sd-id="10">
+            <div class="absolute top-32 left-1/2 -translate-x-1/2 -rotate-2 z-10" data-sd-id="11">
+                <span class="bg-white border-4 border-black px-6 py-2 font-mono-tech font-bold text-black text-xl uppercase tracking-tighter shadow-none" data-sd-id="12">SPECIALTY COFFEE</span>
+            </div>
+            <h1 class="font-ranchers text-[180px] leading-[0.85] text-black uppercase text-center drop-shadow-[8px_8px_0px_#000000] max-w-5xl z-0" data-sd-id="13">
+                BREWED FOR DISRUPTION
+            </h1>
+            <p class="mt-8 text-3xl italic text-black font-bold uppercase tracking-tight text-center" data-sd-id="14">
+                HIGH-OCTANE CAFFEINE FOR HIGH-OUTPUT ARCHITECTS
+            </p>
+            
+            <div class="mt-16 w-full max-w-xl flex heavy-border neo-shadow-black" data-sd-id="15">
+                <input type="email" placeholder="ENTER YOUR EMAIL..." class="brutalist-input flex-1 px-6 py-4 text-black font-mono-tech text-lg placeholder:text-gray-400 border-none bg-white" data-sd-id="16">
+                <button class="bg-black text-white px-10 py-4 font-ranchers text-2xl uppercase tracking-wider border-l-4 border-black hover:bg-[#CCFF00] hover:text-black transition-colors" data-sd-id="17">
+                    NOTIFY ME
+                </button>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF STICKER BAR -->
+        <div class="bg-white border-y-4 border-black py-12 overflow-hidden" data-sd-id="18">
+            <div class="flex justify-center gap-12 px-8 flex-wrap" data-sd-id="19">
+                <div class="bg-white heavy-border p-4 rotate-2 neo-shadow-black flex items-center gap-4 max-w-xs" data-sd-id="20">
+                    <div class="w-16 h-16 bg-[#CCFF00] heavy-border" data-sd-id="21"></div>
+                    <p class="font-mono-tech text-black text-xs font-bold leading-tight uppercase" data-sd-id="22">"LITERAL ROCKET FUEL FOR MY SPRINT WEEKS." - DEV.01</p>
+                </div>
+                <div class="bg-white heavy-border p-4 -rotate-1 neo-shadow-black flex items-center gap-4 max-w-xs" data-sd-id="23">
+                    <div class="w-16 h-16 bg-black" data-sd-id="24"></div>
+                    <p class="font-mono-tech text-black text-xs font-bold leading-tight uppercase" data-sd-id="25">"THE ACIDITY PROFILE IS PURE TECHNICAL PRECISION." - ROASTER.X</p>
+                </div>
+                <div class="bg-white heavy-border p-4 rotate-1 neo-shadow-black flex items-center gap-4 max-w-xs" data-sd-id="26">
+                    <div class="w-16 h-16 bg-gray-200 heavy-border" data-sd-id="27"></div>
+                    <p class="font-mono-tech text-black text-xs font-bold leading-tight uppercase" data-sd-id="28">"0% FLUFF. 100% EXTRACTION. BEST COFFEE." - USER.V4</p>
+                </div>
+                <div class="bg-white heavy-border p-4 -rotate-2 neo-shadow-black flex items-center gap-4 max-w-xs" data-sd-id="29">
+                    <div class="w-16 h-16 bg-[#CCFF00] heavy-border" data-sd-id="30"></div>
+                    <p class="font-mono-tech text-black text-xs font-bold leading-tight uppercase" data-sd-id="31">"FINALLY A SHOP THAT VALUED SPEED." - SHIPPER</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section class="py-32 px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center" data-sd-id="32">
+            <div class="relative" data-sd-id="33">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#CCFF00] opacity-10 rounded-full blur-3xl" data-sd-id="34"></div>
+                <h2 class="font-ranchers text-8xl uppercase leading-none mb-8" data-sd-id="35">
+                    THE COFFEE <br> PARADIGM <br> SHIFT
+                </h2>
+                <p class="text-xl max-w-lg leading-relaxed text-gray-300" data-sd-id="36">
+                    Garabato isn't just a coffee shop. It's an industrial extraction facility designed for high-performance individuals. We remove the fluff, the soft music, and the velvet chairs. We replace them with precision-roasted beans, brutalist speed, and the raw energy required to build the future.
+                </p>
+                <div class="mt-12 bg-[#CCFF00] text-black heavy-border p-6 rotate-3 inline-block neo-shadow-white" data-sd-id="37">
+                    <span class="font-mono-tech font-bold uppercase text-lg" data-sd-id="38">ESTABLISHED 2024 / SECTOR 7G</span>
+                </div>
+            </div>
+            <div class="extra-heavy-border bg-white p-2 neo-shadow-volt" data-sd-id="39">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Industrial Coffee Shop" class="w-full h-[500px] object-cover filter grayscale contrast-150" data-sd-id="40">
+            </div>
+        </section>
+
+        <!-- HIGH-IMPACT COMPARISON -->
+        <section class="border-t-8 border-black" data-sd-id="41">
+            <!-- Row 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-black" data-sd-id="42">
+                <div class="bg-black p-16 flex flex-col justify-center" data-sd-id="43">
+                    <span class="font-mono-tech text-[#475569] uppercase font-bold tracking-widest mb-4" data-sd-id="44">THE OLD WAY</span>
+                    <h3 class="font-ranchers text-8xl text-[#475569] uppercase leading-none" data-sd-id="45">WEAK ROASTS</h3>
+                </div>
+                <div class="bg-[#CCFF00] p-16 flex flex-col justify-center border-l-4 border-black" data-sd-id="46">
+                    <span class="font-mono-tech text-black uppercase font-bold tracking-widest mb-4" data-sd-id="47">THE BETTER WAY</span>
+                    <h3 class="font-ranchers text-8xl text-black uppercase leading-none" data-sd-id="48">KINETIC EXTRACTION</h3>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 border-b-4 border-black" data-sd-id="49">
+                <div class="bg-black p-16 flex flex-col justify-center" data-sd-id="50">
+                    <span class="font-mono-tech text-[#475569] uppercase font-bold tracking-widest mb-4" data-sd-id="51">THE OLD WAY</span>
+                    <h3 class="font-ranchers text-8xl text-[#475569] uppercase leading-none" data-sd-id="52">SLOW QUEUES</h3>
+                </div>
+                <div class="bg-[#CCFF00] p-16 flex flex-col justify-center border-l-4 border-black" data-sd-id="53">
+                    <span class="font-mono-tech text-black uppercase font-bold tracking-widest mb-4" data-sd-id="54">THE BETTER WAY</span>
+                    <h3 class="font-ranchers text-8xl text-black uppercase leading-none" data-sd-id="55">INSTANT DEPLOY</h3>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2" data-sd-id="56">
+                <div class="bg-black p-16 flex flex-col justify-center" data-sd-id="57">
+                    <span class="font-mono-tech text-[#475569] uppercase font-bold tracking-widest mb-4" data-sd-id="58">THE OLD WAY</span>
+                    <h3 class="font-ranchers text-8xl text-[#475569] uppercase leading-none" data-sd-id="59">COMFORT FIRST</h3>
+                </div>
+                <div class="bg-[#CCFF00] p-16 flex flex-col justify-center border-l-4 border-black" data-sd-id="60">
+                    <span class="font-mono-tech text-black uppercase font-bold tracking-widest mb-4" data-sd-id="61">THE BETTER WAY</span>
+                    <h3 class="font-ranchers text-8xl text-black uppercase leading-none" data-sd-id="62">OUTPUT FIRST</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT MENU SLIDERS -->
+        <section class="py-32 bg-[#121212]" data-sd-id="63">
+            <div class="px-12 mb-16" data-sd-id="64">
+                <h2 class="font-ranchers text-8xl uppercase" data-sd-id="65">MENU COMPONENTS</h2>
+                <p class="font-mono-tech text-[#CCFF00] uppercase font-bold" data-sd-id="66">AVAILABLE FOR DEPLOYMENT</p>
+            </div>
+            <div class="flex gap-12 px-12 overflow-x-auto pb-16 no-scrollbar" data-sd-id="67">
+                <!-- Card 1 -->
+                <div class="min-w-[400px] bg-white text-black extra-heavy-border p-8 neo-shadow-white relative" data-sd-id="68">
+                    <div class="w-full h-64 bg-gray-100 mb-6 heavy-border overflow-hidden" data-sd-id="69">
+                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Espresso" class="w-full h-full object-cover grayscale" data-sd-id="70">
+                    </div>
+                    <div class="flex justify-between items-start mb-4" data-sd-id="71">
+                        <h4 class="font-ranchers text-5xl uppercase leading-none" data-sd-id="72">ESPRESSO.SYS</h4>
+                        <span class="font-mono-tech font-bold text-2xl" data-sd-id="73">$3.50</span>
+                    </div>
+                    <p class="mb-8 font-bold text-lg" data-sd-id="74">PURE CONCENTRATED ENERGY. NO BUFFERING. 100% DATA THROUGHPUT.</p>
+                    <button class="w-full bg-[#CCFF00] heavy-border py-4 font-mono-tech font-bold text-xl uppercase tracking-widest neo-shadow-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all" data-sd-id="75">SELECT MODULE</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="min-w-[400px] bg-white text-black extra-heavy-border p-8 neo-shadow-white relative" data-sd-id="76">
+                    <div class="w-full h-64 bg-gray-100 mb-6 heavy-border overflow-hidden" data-sd-id="77">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Cappuccino" class="w-full h-full object-cover grayscale" data-sd-id="78">
+                    </div>
+                    <div class="flex justify-between items-start mb-4" data-sd-id="79">
+                        <h4 class="font-ranchers text-5xl uppercase leading-none" data-sd-id="80">LATTE.ENV</h4>
+                        <span class="font-mono-tech font-bold text-2xl" data-sd-id="81">$4.75</span>
+                    </div>
+                    <p class="mb-8 font-bold text-lg" data-sd-id="82">A SMOOTH WRAPPER OVER A HIGH-POWER CORE. OPTIMIZED FOR TASTE.</p>
+                    <button class="w-full bg-[#CCFF00] heavy-border py-4 font-mono-tech font-bold text-xl uppercase tracking-widest neo-shadow-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all" data-sd-id="83">SELECT MODULE</button>
+                </div>
+                <!-- Card 3 -->
+                <div class="min-w-[400px] bg-white text-black extra-heavy-border p-8 neo-shadow-white relative" data-sd-id="84">
+                    <div class="w-full h-64 bg-gray-100 mb-6 heavy-border overflow-hidden" data-sd-id="85">
+                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Cold Brew" class="w-full h-full object-cover grayscale" data-sd-id="86">
+                    </div>
+                    <div class="flex justify-between items-start mb-4" data-sd-id="87">
+                        <h4 class="font-ranchers text-5xl uppercase leading-none" data-sd-id="88">COLD.BIN</h4>
+                        <span class="font-mono-tech font-bold text-2xl" data-sd-id="89">$5.25</span>
+                    </div>
+                    <p class="mb-8 font-bold text-lg" data-sd-id="90">STEEPED FOR 24H IN OUR COLD DATA STORAGE FACILITY. MAXIMUM KICK.</p>
+                    <button class="w-full bg-[#CCFF00] heavy-border py-4 font-mono-tech font-bold text-xl uppercase tracking-widest neo-shadow-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all" data-sd-id="91">SELECT MODULE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS BLUEPRINT GRID -->
+        <section class="py-32 px-12 bg-[#121212]" data-sd-id="92">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12" data-sd-id="93">
+                <!-- Card 1 -->
+                <div class="bg-white text-black extra-heavy-border p-12 neo-shadow-white relative overflow-hidden" data-sd-id="94">
+                    <div class="absolute -bottom-10 -right-4 font-ranchers text-[200px] text-black/5 pointer-events-none uppercase" data-sd-id="95">01</div>
+                    <div class="bg-[#CCFF00] text-black heavy-border px-4 py-1 -rotate-3 inline-block font-mono-tech font-bold uppercase mb-8" data-sd-id="96">
+                        STEP.01
+                    </div>
+                    <h3 class="font-ranchers text-5xl uppercase mb-6" data-sd-id="97">RAW BEAN INPUT</h3>
+                    <p class="font-bold leading-relaxed" data-sd-id="98">
+                        ETHICALLY SOURCED, TECHNICALLY PROFILED SINGLE ORIGIN DATA POINTS DIRECT FROM ORIGIN.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white text-black extra-heavy-border p-12 neo-shadow-white relative overflow-hidden" data-sd-id="99">
+                    <div class="absolute -bottom-10 -right-4 font-ranchers text-[200px] text-black/5 pointer-events-none uppercase" data-sd-id="100">02</div>
+                    <div class="bg-[#CCFF00] text-black heavy-border px-4 py-1 rotate-2 inline-block font-mono-tech font-bold uppercase mb-8" data-sd-id="101">
+                        STEP.02
+                    </div>
+                    <h3 class="font-ranchers text-5xl uppercase mb-6" data-sd-id="102">ROAST COMPILATION</h3>
+                    <p class="font-bold leading-relaxed" data-sd-id="103">
+                        SMALL BATCH COMPILING AT 220°C TO MAXIMIZE CAFFEINE FREQUENCY AND AROMATIC BANDWIDTH.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white text-black extra-heavy-border p-12 neo-shadow-white relative overflow-hidden" data-sd-id="104">
+                    <div class="absolute -bottom-10 -right-4 font-ranchers text-[200px] text-black/5 pointer-events-none uppercase" data-sd-id="105">03</div>
+                    <div class="bg-[#CCFF00] text-black heavy-border px-4 py-1 -rotate-2 inline-block font-mono-tech font-bold uppercase mb-8" data-sd-id="106">
+                        STEP.03
+                    </div>
+                    <h3 class="font-ranchers text-5xl uppercase mb-6" data-sd-id="107">FINAL SHIP</h3>
+                    <p class="font-bold leading-relaxed" data-sd-id="108">
+                        DELIVERED AT PEAK PRESSURE TO YOUR SYSTEM. ZERO LATENCY. MAXIMUM SATISFACTION.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHATSAPP CTA -->
+        <section class="bg-[#CCFF00] border-y-8 border-black py-24 flex flex-col items-center text-center" data-sd-id="109">
+            <h2 class="font-ranchers text-[100px] text-black uppercase leading-[0.9]" data-sd-id="110">
+                ORDER VIA <br> WHATSAPP
+            </h2>
+            <p class="text-black font-bold text-2xl uppercase max-w-2xl mt-8 mb-12 px-6" data-sd-id="111">
+                DIRECT TERMINAL ACCESS TO OUR BREWERS. SKIP THE FRONTEND. ORDER STRAIGHT TO PRODUCTION.
+            </p>
+            <a id="cta-whatsapp-link" href="#" class="btn-brutalist bg-black text-white px-12 py-6 heavy-border neo-shadow-black flex items-center gap-4 transition-all duration-75 group" data-sd-id="112">
+                <iconify-icon icon="mdi:whatsapp" class="text-4xl group-hover:text-[#CCFF00]"></iconify-icon>
+                <span class="font-mono-tech text-2xl font-bold uppercase tracking-widest" data-sd-id="113">INITIALIZE CHAT</span>
+            </a>
+        </section>
+
+        <!-- SCHEDULE & LOCATION -->
+        <section class="py-32 px-12 bg-[#121212] grid grid-cols-1 md:grid-cols-2 gap-16" data-sd-id="114">
+            <div class="heavy-border bg-white text-black p-10 neo-shadow-volt" data-sd-id="115">
+                <h3 class="font-ranchers text-6xl uppercase mb-8" data-sd-id="116">UPTIME PROTOCOL</h3>
+                <div class="font-mono-tech space-y-4 text-xl" data-sd-id="117">
+                    <div class="flex justify-between border-b-2 border-black pb-2" data-sd-id="118">
+                        <span data-sd-id="119">MON-FRI</span>
+                        <span data-sd-id="120">07:00 - 20:00</span>
+                    </div>
+                    <div class="flex justify-between border-b-2 border-black pb-2" data-sd-id="121">
+                        <span data-sd-id="122">SATURDAY</span>
+                        <span data-sd-id="123">08:00 - 22:00</span>
+                    </div>
+                    <div class="flex justify-between" data-sd-id="124">
+                        <span data-sd-id="125">SUNDAY</span>
+                        <span data-sd-id="126">09:00 - 18:00</span>
+                    </div>
+                </div>
+                <div class="mt-12 bg-black text-white p-4 font-mono-tech uppercase text-sm tracking-tighter" data-sd-id="127">
+                    STATUS: FULLY OPERATIONAL
+                </div>
+            </div>
+            <div class="heavy-border bg-white text-black p-10 neo-shadow-volt" data-sd-id="128">
+                <h3 class="font-ranchers text-6xl uppercase mb-8" data-sd-id="129">LOCATION CODE</h3>
+                <div class="w-full h-64 bg-gray-200 heavy-border mb-6 flex items-center justify-center" data-sd-id="130">
+                    <iconify-icon icon="mdi:map-marker-radius-outline" class="text-8xl opacity-20"></iconify-icon>
+                </div>
+                <p class="font-mono-tech text-2xl font-bold uppercase" data-sd-id="131">
+                    INDUSTRIAL SECTOR 09<br>
+                    WAREHOUSE C-4, DOCKSIDE DR.<br>
+                    VLC / TECH-CITY
+                </p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-black text-white py-20 px-12 relative overflow-hidden" data-sd-id="132">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-20" data-sd-id="133">
+                <div class="flex flex-col gap-8" data-sd-id="134">
+                    <div class="flex items-center gap-4" data-sd-id="135">
+                        <div class="w-12 h-12 bg-[#CCFF00] border-4 border-black rotate-3 flex items-center justify-center" data-sd-id="136">
+                            <iconify-icon icon="mdi:coffee-maker-outline" class="text-black text-3xl"></iconify-icon>
+                        </div>
+                        <span class="font-extrabold text-3xl text-white tracking-tighter" data-sd-id="137">GARABATO</span>
+                    </div>
+                    <p class="font-mono-tech text-gray-500 uppercase text-sm leading-relaxed" data-sd-id="138">
+                        BUILT ON A FOUNDATION OF TECHNICAL PRECISION AND RAW CAFFEINE ADDICTION. NO GRADIENTS WERE HARMED IN THE MAKING OF THIS BRAND.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4 font-mono-tech uppercase font-bold" data-sd-id="139">
+                    <a id="footer-link-1" href="#" class="hover:text-[#CCFF00] transition-colors" data-sd-id="140">ARCHIVE</a>
+                    <a id="footer-link-2" href="#" class="hover:text-[#CCFF00] transition-colors" data-sd-id="141">RESOURCES</a>
+                    <a id="footer-link-3" href="#" class="hover:text-[#CCFF00] transition-colors" data-sd-id="142">LEGAL.DOC</a>
+                    <a id="footer-link-4" href="#" class="hover:text-[#CCFF00] transition-colors" data-sd-id="143">PRIVACY.SH</a>
+                </div>
+                <div class="flex flex-col gap-4 font-mono-tech uppercase font-bold" data-sd-id="144">
+                    <a id="footer-social-1" href="#" class="flex items-center gap-3 hover:text-[#CCFF00]" data-sd-id="145">
+                        <iconify-icon icon="mdi:instagram"></iconify-icon> INSTAGRAM
+                    </a>
+                    <a id="footer-social-2" href="#" class="flex items-center gap-3 hover:text-[#CCFF00]" data-sd-id="146">
+                        <iconify-icon icon="mdi:twitter"></iconify-icon> TWITTER / X
+                    </a>
+                    <a id="footer-social-3" href="#" class="flex items-center gap-3 hover:text-[#CCFF00]" data-sd-id="147">
+                        <iconify-icon icon="mdi:github"></iconify-icon> GITHUB
+                    </a>
+                </div>
+            </div>
+            
+            <!-- VERTICAL BLUEPRINT BARS -->
+            <div class="fixed top-20 right-0 h-[calc(100vh-80px)] w-16 bg-white border-l-4 border-black z-40 hidden xl:flex flex-col items-center justify-center" data-sd-id="148">
+                <div class="writing-vertical font-mono-tech font-bold text-black text-lg tracking-[0.5em] uppercase" data-sd-id="149">
+                    DESIGN - BUILD - SHIP - BREW
+                </div>
+            </div>
+            
+            <div class="mt-20 pt-8 border-t-2 border-gray-900 font-mono-tech text-xs text-gray-600" data-sd-id="150">
+                © 2024 GARABATO INDUSTRIAL. SYSTEM VERSION 1.0.4. ALL RIGHTS RESERVED.
+            </div>
+        </footer>
+    </div>
+
+</body></html>
+<!--
+    at least make the next sections: hero section, about section, value, services, cta for whatsapp, shedule and direction. in this time also be sure of the all inner content in the page will be imported from a json archive for easy modification of the text content
+-->
